@@ -25,19 +25,12 @@ def setup_directory() -> None:
 
 def download_documents() -> None:
     """Tải ít nhất 3 PDF/DOCX từ nguồn công khai."""
-    # TODO: Có thể tải thủ công hoặc dùng requests.
-    #
-    # Ví dụ:
-    # import requests
-    #
-    # sources = {
-    #     "policy-a.pdf": "https://example.edu/policy-a.pdf",
-    # }
-    # for filename, url in sources.items():
-    #     response = requests.get(url, timeout=30)
-    #     response.raise_for_status()
-    #     (DATA_DIR / filename).write_bytes(response.content)
-    raise NotImplementedError("Implement download_documents")
+    # Đã tải thủ công
+    files = list(DATA_DIR.glob("*.pdf")) + list(DATA_DIR.glob("*.docx"))
+    if not files:
+        print("Warning: Khong tim thay file PDF/DOCX nao trong data/landing/legal/")
+    else:
+        print(f"Da tim thay {len(files)} tai lieu.")
 
 
 if __name__ == "__main__":

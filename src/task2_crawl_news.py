@@ -21,25 +21,31 @@ from pathlib import Path
 DATA_DIR = Path(__file__).parent.parent / "data" / "landing" / "news"
 
 ARTICLE_URLS = [
-    # TODO: Thêm ít nhất 5 public URL.
+    "https://visithue.vn/3-ngay-2-dem-o-Hue.html/?pid=MTk4NzN8Y3NkbGRs0",
+    "https://visithue.vn/chuyen-muc/diem-den/?id=NjF8Y3NkbGRs0",
+    "https://visithue.vn/vi-the-dac-biet-cua-am-thuc-hue/?pid=MjI2Njd8Y3NkbGRs0",
+    "https://visithue.vn/chuyen-muc/tour-du-lich/?id=MTE1MXxjc2RsZGw1",
+    "https://visithue.vn/cau-truong-tien-diem-den-khong-the-bo-qua-khi-den-hue/?pid=MjMyNTJ8Y3NkbGRs0"
 ]
 
 
 async def crawl_article(url: str) -> dict:
-    # TODO: Implement crawling logic.
-    #
-    # from datetime import datetime
-    # from crawl4ai import AsyncWebCrawler
-    #
-    # async with AsyncWebCrawler() as crawler:
-    #     result = await crawler.arun(url=url)
-    #     return {
-    #         "url": url,
-    #         "title": result.metadata.get("title", "Unknown"),
-    #         "date_crawled": datetime.now().isoformat(),
-    #         "content_markdown": result.markdown,
-    #     }
-    raise NotImplementedError("Implement crawl_article")
+    from datetime import datetime
+    from crawl4ai import AsyncWebCrawler
+    
+    async with AsyncWebCrawler() as crawler:
+        result = await crawler.arun(url=url)
+        
+        # Xử lý metadata an toàn
+        metadata = result.metadata or {}
+        title = metadata.get("title", "Unknown") if isinstance(metadata, dict) else "Unknown"
+        
+        return {
+            "url": url,
+            "title": title,
+            "date_crawled": datetime.now().isoformat(),
+            "content_markdown": result.markdown,
+        }
 
 
 async def crawl_all() -> None:

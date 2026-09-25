@@ -9,6 +9,7 @@ __pycache__/
 venv/
 env/
 ENV/
+doc.txt
 
 # Packaging / build artifacts
 build/
@@ -55,3 +56,5 @@ pageindex_pdfs/
 # OS
 .DS_Store
 Thumbs.db
+
+
