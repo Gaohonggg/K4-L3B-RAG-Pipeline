@@ -1,66 +1,151 @@
-"""
-Task 3 — Chuẩn hóa dữ liệu sang Markdown.
+"""Task 3: standardize landing data as UTF-8 Markdown files.
 
-Hướng dẫn:
-    1. Dùng MarkItDown để convert PDF/DOCX.
-    2. Đọc JSON và giữ metadata ở đầu file Markdown.
-    3. Giữ cấu trúc thư mục legal/ và news/.
-    4. Không tạo file rỗng hoặc file trùng khi chạy lại.
-
-Cài đặt:
-    Dependency MarkItDown đã được khai báo trong pyproject.toml.
-    
--> Hoặc dùng công cụ nào bạn quen khác Markitdown
+Legal PDF/DOC/DOCX files are converted with MarkItDown. News JSON files
+retain their source metadata in a small Markdown header. Output paths are
+stable, so running the task again updates existing files without duplicates.
 """
 
+from __future__ import annotations
+
+import json
+import warnings
 from pathlib import Path
+from typing import Any
 
 
-LANDING_DIR = Path(__file__).parent.parent / "data" / "landing"
-OUTPUT_DIR = Path(__file__).parent.parent / "data" / "standardized"
+ROOT_DIR = Path(__file__).resolve().parent.parent
+LANDING_DIR = ROOT_DIR / "data" / "landing"
+OUTPUT_DIR = ROOT_DIR / "data" / "standardized"
+
+LEGAL_EXTENSIONS = {".pdf", ".doc", ".docx"}
+NEWS_REQUIRED_FIELDS = ("url", "title", "date_crawled", "content_markdown")
 
 
-def convert_legal_docs() -> None:
-    # TODO:Convert PDF/DOCX vào standardized/legal. 
-    
-    from markitdown import MarkItDown
-    legal_dir = LANDING_DIR / "legal"
-    output_dir = OUTPUT_DIR / "legal"
-    output_dir.mkdir(parents=True, exist_ok=True)
-    converter = MarkItDown()
-    for path in legal_dir.iterdir():
-        if path.suffix.lower() in {".pdf", ".doc", ".docx"}:
-            result = converter.convert(str(path))
-            (output_dir / f"{path.stem}.md").write_text(
-                result.text_content, encoding="utf-8"
+def _write_markdown(path: Path, content: str) -> None:
+    """Write one normalized, non-empty Markdown document."""
+    normalized = content.replace("\r\n", "\n").replace("\r", "\n").strip()
+    if not normalized:
+        raise ValueError(f"Refusing to create an empty Markdown file: {path.name}")
+
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(f"{normalized}\n", encoding="utf-8")
+
+
+def _landing_files(directory: Path, extensions: set[str]) -> list[Path]:
+    if not directory.is_dir():
+        raise FileNotFoundError(f"Landing directory does not exist: {directory}")
+    return sorted(
+        (
+            path
+            for path in directory.iterdir()
+            if path.is_file()
+            and not path.name.startswith(".")
+            and path.suffix.lower() in extensions
+        ),
+        key=lambda path: path.name.casefold(),
+    )
+
+
+def _ensure_unique_output_stems(paths: list[Path], source_type: str) -> None:
+    """Prevent two source files from silently overwriting the same .md file."""
+    seen: dict[str, Path] = {}
+    for path in paths:
+        key = path.stem.casefold()
+        if key in seen:
+            raise ValueError(
+                f"Duplicate {source_type} output name: {seen[key].name!r} and "
+                f"{path.name!r} would both become {path.stem}.md"
             )
+        seen[key] = path
 
 
-def convert_news_articles() -> None:
-    # TODO: Convert JSON vào standardized/news.
-    #
-    import json
-    news_dir = LANDING_DIR / "news"
+def convert_legal_docs() -> list[Path]:
+    """Convert every legal PDF/DOC/DOCX into ``standardized/legal``."""
+    from markitdown import MarkItDown
+
+    source_paths = _landing_files(LANDING_DIR / "legal", LEGAL_EXTENSIONS)
+    _ensure_unique_output_stems(source_paths, "legal")
+
+    converter = MarkItDown()
+    output_dir = OUTPUT_DIR / "legal"
+    written: list[Path] = []
+    for source_path in source_paths:
+        result = converter.convert(str(source_path))
+        # MarkItDown's current result exposes ``markdown``; older releases
+        # used ``text_content``. Support both so valid PDF text is retained.
+        content = getattr(result, "markdown", None)
+        if content is None:
+            content = getattr(result, "text_content", None)
+        if not isinstance(content, str) or not content.strip():
+            warnings.warn(
+                f"MarkItDown returned no text for {source_path.name}; skipping it. "
+                "The PDF may need OCR.",
+                RuntimeWarning,
+                stacklevel=2,
+            )
+            continue
+
+        output_path = output_dir / f"{source_path.stem}.md"
+        _write_markdown(output_path, content)
+        written.append(output_path)
+    return written
+
+
+def _read_news_json(path: Path) -> dict[str, str]:
+    try:
+        raw: Any = json.loads(path.read_text(encoding="utf-8-sig"))
+    except json.JSONDecodeError as exc:
+        raise ValueError(f"Invalid JSON in {path.name}: {exc.msg}") from exc
+
+    if not isinstance(raw, dict):
+        raise ValueError(f"News file must contain a JSON object: {path.name}")
+
+    missing = [field for field in NEWS_REQUIRED_FIELDS if field not in raw]
+    if missing:
+        raise ValueError(f"{path.name} is missing fields: {', '.join(missing)}")
+
+    data: dict[str, str] = {}
+    for field in NEWS_REQUIRED_FIELDS:
+        value = raw[field]
+        if not isinstance(value, str) or not value.strip():
+            raise ValueError(f"{path.name}: {field!r} must be a non-empty string")
+        data[field] = value.strip()
+    return data
+
+
+def _news_markdown(data: dict[str, str]) -> str:
+    return (
+        f"# {data['title']}\n\n"
+        f"**Source:** {data['url']}\n\n"
+        f"**Crawled:** {data['date_crawled']}\n\n"
+        "---\n\n"
+        f"{data['content_markdown']}"
+    )
+
+
+def convert_news_articles() -> list[Path]:
+    """Convert news JSON files while preserving their metadata and content."""
+    source_paths = _landing_files(LANDING_DIR / "news", {".json"})
+    _ensure_unique_output_stems(source_paths, "news")
+
     output_dir = OUTPUT_DIR / "news"
-    output_dir.mkdir(parents=True, exist_ok=True)
-    for path in news_dir.glob("*.json"):
-        data = json.loads(path.read_text(encoding="utf-8"))
-        header = (
-            f"# {data['title']}\n\n"
-            f"**Source:** {data['url']}\n\n"
-            f"**Crawled:** {data['date_crawled']}\n\n---\n\n"
-        )
-        (output_dir / f"{path.stem}.md").write_text(
-            header + data["content_markdown"], encoding="utf-8"
-        )
+    written: list[Path] = []
+    for source_path in source_paths:
+        output_path = output_dir / f"{source_path.stem}.md"
+        _write_markdown(output_path, _news_markdown(_read_news_json(source_path)))
+        written.append(output_path)
+    return written
 
 
-def convert_all() -> None:
-    """Convert toàn bộ dữ liệu landing."""
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    convert_legal_docs()
-    convert_news_articles()
-    print(f"Saved Markdown to: {OUTPUT_DIR}")
+def convert_all() -> tuple[list[Path], list[Path]]:
+    """Convert all supported landing data and return the generated paths."""
+    legal_outputs = convert_legal_docs()
+    news_outputs = convert_news_articles()
+    print(
+        f"Saved {len(legal_outputs)} legal and {len(news_outputs)} news "
+        f"Markdown files to: {OUTPUT_DIR}"
+    )
+    return legal_outputs, news_outputs
 
 
 if __name__ == "__main__":
