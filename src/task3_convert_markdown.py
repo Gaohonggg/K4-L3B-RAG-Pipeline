@@ -71,11 +71,15 @@ def convert_legal_docs() -> list[Path]:
     written: list[Path] = []
     for source_path in source_paths:
         result = converter.convert(str(source_path))
-        content = getattr(result, "text_content", None)
+        # MarkItDown's current result exposes ``markdown``; older releases
+        # used ``text_content``. Support both so valid PDF text is retained.
+        content = getattr(result, "markdown", None)
+        if content is None:
+            content = getattr(result, "text_content", None)
         if not isinstance(content, str) or not content.strip():
             warnings.warn(
                 f"MarkItDown returned no text for {source_path.name}; skipping it. "
-                "The PDF may be scanned or image-only and need OCR.",
+                "The PDF may need OCR.",
                 RuntimeWarning,
                 stacklevel=2,
             )
