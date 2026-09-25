@@ -5,6 +5,7 @@ from pathlib import Path
 ROOT = Path(__file__).parent.parent
 DATA = ROOT / "data"
 EVALUATION = ROOT / "group_project" / "evaluation"
+REPORTS = ROOT / "reports"
 
 
 def visible_files(directory: Path, extensions: set[str]) -> list[Path]:
@@ -50,8 +51,13 @@ def test_golden_dataset_has_15_grounded_cases():
 
 
 def test_evaluation_report_is_completed():
-    report = (EVALUATION / "RESULT.md").read_text(encoding="utf-8")
+    report = (REPORTS / "RESULT.md").read_text(encoding="utf-8")
     assert "TODO" not in report, "Complete every TODO in the evaluation report"
     lowered = report.lower()
-    for heading in ("overall scores", "a/b comparison", "worst performers", "recommendations"):
+    for heading in (
+        "điểm tổng hợp",
+        "so sánh a/b",
+        "các trường hợp kém nhất",
+        "đề xuất cải thiện",
+    ):
         assert heading in lowered

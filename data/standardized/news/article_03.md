@@ -6,47 +6,12 @@
 
 ---
 
-[![](https://visithue.vn/contents/b8c6129e-6677-4f88-90c9-caf0f3ebbce8.png)](https://visithue.vn/)
-[0234.3828288](tel:0234.3828288) sdl@hue.gov.vn
-Sở Văn hóa, Thể thao và Du lịch thành phố Huế Tầng 2, Tòa nhà 6 tầng, Khu Hành chính công, đường Võ Nguyên Giáp, Phường Vỹ Dạ, Thành phố Huế
-Thứ Sáu, 25/09/2026 Nhiều mây - 30°C
-Tài khoản 
-[ Đăng nhập](https://visithue.vn/dang-nhap/) [ Đăng ký](https://visithue.vn/dang-ky/) [ Xác thực với VNeID](https://visithue.vn/LoginWithSSOVNeID/)
-![](https://visithue.vn/images/icon-nav/vietnam.jpg) ![](https://visithue.vn/images/icon-nav/en-US.gif) ![](https://visithue.vn/images/icon-nav/france.jpg) [![](https://visithue.vn/images/icon-nav/ja-JP.gif)](https://www.vietnamhuekanko.com/)
-toggle menu
-  * [Trang chủ](https://visithue.vn/)
-  * [Khám phá Huế](https://visithue.vn/chuyen-muc/kham-pha-hue/?id=NDB8Y3NkbGRs0)
-    * [ ![](https://visithue.vn/contents/80171bdd-9d33-420a-ac9d-3b49b3abdf8c.png) ](https://visithue.vn/chuyen-muc/lich-su/?id=NDF8Y3NkbGRs0) [ Lịch sử ](https://visithue.vn/chuyen-muc/lich-su/?id=NDF8Y3NkbGRs0)
-    * [ ![](https://visithue.vn/contents/a6112020-42f2-4b62-8e95-f18a52898963.png) ](https://visithue.vn/chuyen-muc/van-hoa-hue/?id=NDJ8Y3NkbGRs0) [ Văn hóa Huế ](https://visithue.vn/chuyen-muc/van-hoa-hue/?id=NDJ8Y3NkbGRs0)
-    * [ ![](https://visithue.vn/contents/672edc86-1f7c-45ad-8cc8-8b965d938024.png) ](https://visithue.vn/chuyen-muc/di-san/?id=NDN8Y3NkbGRs0) [ Di sản ](https://visithue.vn/chuyen-muc/di-san/?id=NDN8Y3NkbGRs0)
-    * [ ![](https://visithue.vn/contents/6b81f43c-11c3-41d8-9023-e071506f0e6e.png) ](https://visithue.vn/chuyen-muc/am-thuc-hue/?id=NjB8Y3NkbGRs0) [ Ẩm thực Huế ](https://visithue.vn/chuyen-muc/am-thuc-hue/?id=NjB8Y3NkbGRs0)
-    * [ ![](https://visithue.vn/contents/50b26c38-3b6c-43d0-91be-c9320c982e26.png) ](https://visithue.vn/chuyen-muc/diem-den/?id=NjF8Y3NkbGRs0) [ Điểm đến ](https://visithue.vn/chuyen-muc/diem-den/?id=NjF8Y3NkbGRs0)
-  * [Điều cần làm](https://visithue.vn/chuyen-muc/dieu-can-lam/?id=NDR8Y3NkbGRs0)
-    * [ ![](https://visithue.vn/contents/b937432b-e98f-40f2-9761-eae6b34c12cc.png%20) ](https://visithue.vn/dieu-can-lam/tour-du-lich/?id=MTE1MXxjc2RsZGw1) [ Tour du lịch ](https://visithue.vn/dieu-can-lam/tour-du-lich/?id=MTE1MXxjc2RsZGw1)
-    * [ ![](https://visithue.vn/contents/1b93667e-4d07-41e3-bc07-62763369166c.png) ](https://visithue.vn/dieu-can-lam/mua-sam/?id=MTE1Mnxjc2RsZGw1) [ Mua sắm ](https://visithue.vn/dieu-can-lam/mua-sam/?id=MTE1Mnxjc2RsZGw1)
-    * [ ![](https://visithue.vn/contents/5efabbbe-3559-424a-ae99-9f2bb79fadbd.png) ](https://visithue.vn/dieu-can-lam/dich-vu-an-uong/?id=MTE0OHxjc2RsZGw1) [ Dịch vụ ăn uống ](https://visithue.vn/dieu-can-lam/dich-vu-an-uong/?id=MTE0OHxjc2RsZGw1)
-    * [ ![](https://visithue.vn/contents/378b5b4e-012a-4c04-b7f3-cffb3c13d38b.png) ](https://visithue.vn/dieu-can-lam/luu-tru/?id=MTE0N3xjc2RsZGw1) [ Lưu trú ](https://visithue.vn/dieu-can-lam/luu-tru/?id=MTE0N3xjc2RsZGw1)
-    * [ ![](https://visithue.vn/contents/855e3234-d118-41ba-a467-87e32f8e7a5e.png) ](https://visithue.vn/dieu-can-lam/van-chuyen/?id=NzR8Y3NkbGRs0) [ Vận chuyển ](https://visithue.vn/dieu-can-lam/van-chuyen/?id=NzR8Y3NkbGRs0)
-  * [Độc đáo Huế](https://visithue.vn/chuyen-muc/doc-dao-hue/?id=NTN8Y3NkbGRs0)
-    * [ ![](https://visithue.vn/contents/8dc2ccf4-9e1f-41c2-a7b6-0460632240e8.jpg) ](https://visithue.vn/chuyen-muc/hue-bi-an/?id=NTZ8Y3NkbGRs0) [ Huế bí ẩn ](https://visithue.vn/chuyen-muc/hue-bi-an/?id=NTZ8Y3NkbGRs0)
-    * [ ![](https://visithue.vn/contents/58f6625f-69d4-41f2-ae84-b444209cb447.jpg) ](https://visithue.vn/chuyen-muc/su-kien-trong-tuan/?id=NTV8Y3NkbGRs0) [ Sự kiện trong tuần ](https://visithue.vn/chuyen-muc/su-kien-trong-tuan/?id=NTV8Y3NkbGRs0)
-    * [ ![](https://visithue.vn/contents/da516861-bbdc-4535-b365-65e89e67e059.jpg) ](https://visithue.vn/chuyen-muc/tinh-hoa-hue/?id=NTR8Y3NkbGRs0) [ Tinh hoa Huế ](https://visithue.vn/chuyen-muc/tinh-hoa-hue/?id=NTR8Y3NkbGRs0)
-    * [ ![](https://visithue.vn/contents/a57c011a-5e76-4868-911e-083d99474ce1.jpg) ](https://visithue.vn/chuyen-muc/hue-cua-chung-minh/?id=NTd8Y3NkbGRs0) [ Huế của chúng mình ](https://visithue.vn/chuyen-muc/hue-cua-chung-minh/?id=NTd8Y3NkbGRs0)
-  * [Tin tức](https://visithue.vn/chuyen-muc/tin-tuc/?id=NjJ8Y3NkbGRs0)
-  * [Thông tin cần thiết](https://visithue.vn/chuyen-muc/du-khach-can-biet/?id=MTE1M3xjc2RsZGw1)
-    * [ ![](https://visithue.vn/contents/f016b77b-a4e9-4652-91c1-c6259791f94d.png) ](https://visithue.vn/chuyen-muc/bo-quy-tac-ung-xu/?id=NTh8Y3NkbGRs0) [ Bộ quy tắc ứng xử ](https://visithue.vn/chuyen-muc/bo-quy-tac-ung-xu/?id=NTh8Y3NkbGRs0)
-    * [ ![](https://visithue.vn/contents/d530c146-f571-44db-abce-9d1cb99fced7.png) ](https://visithue.vn/chuyen-muc/ban-can-biet/?id=NTl8Y3NkbGRs0) [ Bạn cần biết ](https://visithue.vn/chuyen-muc/ban-can-biet/?id=NTl8Y3NkbGRs0)
-  * [Hỗ trợ](https://visithue.vn/ho-tro/)
-  * 
-
-![Vị thế đặc biệt của ẩm thực Huế](https://visithue.vn/Medias/Nam2023/Thang1/vi-the-dac-biet-cua-am-thuc-hue.jpg)
-####  Vị thế đặc biệt của ẩm thực Huế 
+####  Vị thế đặc biệt của ẩm thực Huế
 Ẩm thực Huế từ dân gian đến cung đình, từ cung đình trở lại dân gian với những đặc tính, hương vị khó có thể quên, như một đặc trưng chỉ có thể nói là “Ẩm thực Huế”. Ở một khía cạnh, ẩm thực cung đình Huế là một di sản văn hóa cần giữ gìn và phục dựng để trở thành một “đại sứ văn hóa” đặc biệt.
 ## Khi mùa xuân đến, hương vị cung đình từ bánh mứt lại thêm một lần khẳng định vị thế “đại sứ văn hóa” của ẩm thực Huế.
 Dưới triều Nguyễn (từ 1802-1945), nghệ thuật ẩm thực vừa được kế thừa truyền thống ẩm thực lâu đời của đất Bắc, vừa được bổ sung những món ăn phong phú của vùng đất mới phương Nam. Tất cả những nét tinh tế về ẩm thực của 3 miền đất nước đã hội tụ ở vùng đất kinh đô để hình thành và phát triển nên nghệ thuật ẩm thực Huế, đặc biệt là ẩm thực cung đình.
 ## **Ẩm thực cung đình là một di sản văn hóa**
 Ẩm thực cung đình Huế ngày xưa rất phong phú, đa dạng. Các cách thức ăn uống, yến tiệc của triều đình có ghi lại trong sử sách. Như Đại Nam thực lục chính biên viết về nhật ký hàng ngày của nhà vua và Khâm định Đại Nam hội điển sự lệ, ghi lại tất cả các điển lệ, nghi lễ… trong cung đình cũng như ngoài dân gian, bao gồm các loại yến tiệc khác nhau: Tiệc cỗ tế lớn có 161 phẩm vị (món ăn), tiệc cỗ trân tu có 50 món ăn, tiệc cỗ ngọc soạn có 30 món ăn, tiệc cỗ chay hạng nhất có 25 món, tiệc cỗ chay hạng nhì có 20 món.
-![Vị thế đặc biệt của ẩm thực Huế - 1](https://visithue.vn/Medias/Nam2023/Thang1/huetourism-vi-the-dac-biet-cua-am-thuc-hue-1.jpg)
 _Ẩm thực cung đình Huế. Ảnh: Internet_
 Ngoài ra là Ngọc thực: 3 bữa ăn hằng ngày của nhà vua. Điểm tâm gồm 12 món; ăn trưa có 50 món mặn, 16 món ngọt, ăn tối có 50 món mặn, 16 món ngọt. Nhưng để có những mỹ vị đó cũng cần phải có nhiều yếu tố để tạo nên tác phẩm.
 Đầu tiên, nguyên vật liệu sử dụng để chế biến phải là loại thượng hảo hạng, những đặc sản thời trân, từ nhiều địa phương trong nước dâng tiến. Miền Bắc có nhãn Hưng Yên; mía, cam đường Thanh Hoá, vải Hải Dương, chim sâm cầm Hà Nội, sá sùng Quảng Ninh…
@@ -59,70 +24,16 @@ Chén bát, đũa… sử dụng trong cung đình thời Nguyễn cũng rất q
 ## **Bánh mứt Tết hoàng cung có gì lạ?**
 Xưa, trong các dịp Tết, lễ, triều hội, yến tiệc, nhà vua thường chiêu đãi quốc khách và đình thần nhiều món bánh, mứt cung đình. Món nào cũng đẹp mắt, tinh tế và cầu kỳ. Sauk hi triều Nguyễn sụp đổ, thì ẩm thực cung đình nói chung, bánh mứt cung đình Huế nói riêng cũng mai một, thất tán.
 Bánh mứt hoàng cung đã có mặt cùng các cao lương mỹ vị khác để góp vào Tết Việt hương sắc Xuân với những tên gọi như gợi lại cả ngày xưa kinh thành: Chẩm bính, Bạch bính, Bài bính, Liên tử bính, Như Ý bính, Khảo đậu bính, Tứ quý bính, Hoài bính, Sâm bính, bát bửu bính, mứt màu hoa, mứt hạt dâu... , mỗi thứ mang ý nghĩa, giá trị sử dụng và cách trình bày riêng nhưng tất cả đều toát lên vẻ tinh tế, cao sang của ẩm thực cung đình…( chữ “bính” nghĩa là bánh)
-![Vị thế đặc biệt của ẩm thực Huế - 2](https://visithue.vn/Medias/Nam2023/Thang1/huetourism-vi-the-dac-biet-cua-am-thuc-hue-2.jpg)
 _Mứt bát bửu do nghệ nhân ẩm thực cung đình Tôn Nữ Thị Hà thực hiện_
 Có thể nói đây là những tác phẩm tuyệt khéo của đôi bàn tay và cả tâm- trí cùng kiến thức thẩm mỹ tinh tế của nghệ nhân để đưa những phẩm vị nhân gian nâng tầm thành mỹ vị tuyệt hảo. Từ mứt “bát bửu” đến các loại xôi ngọt, bánh, mứt, chè… quen tên đến chưa bao giờ nghe, được bày biện trong bát, đĩa, mâm, quả gỗ sơn son thếp vàng có chạm trổ tinh xảo, hay các đĩa- quả gốm sứ cổ men lam Huế, đẹp như những tác phẩm mỹ thuật hoàn mỹ..
 Mứt “bát bửu” như gói cả hương vị Trời, Đất bốn mùa nước Việt, cũng như lời cầu ước phát lộc, phát tài, thọ khang, may mắn và thịnh vượng. Từ vị ngọt hơi chút đắng nhẹ của mứt “khổ qua”, những gì không may mắn sẽ qua đi đến vị ngọt cay, thơm nhẹ, ấm nóng của mứt “gừng xăm”, “gừng lát”, ý nghĩa thủy chung và còn như một vị thuốc nam tiêu độc, khử chướng khí.
-![Vị thế đặc biệt của ẩm thực Huế - 3](https://visithue.vn/Medias/Nam2023/Thang1/huetourism-vi-the-dac-biet-cua-am-thuc-hue-3.jpg)
 _Mứt “bát bửu” như gói cả hương vị Trời, Đất bốn mùa nước Việt_
 Rồi vị ngọt the mát nhẹ của trái mứt “Phật thủ”, “kim quất”, “cam sành”, mứt “trần bì gừng dẻo”, không chỉ là như một lời nguyện may mắn mà còn là những sứ giả đông dược làm thanh tao hơn giọng nói tiếng cười; Những lát mứt “củ sen”, “củ năng”, “bí đao” làm đẹp cho bàn tiệc trà còn là những ngọt ngào thanh mát, giải nhiệt, mang lại dễ chịu nhẹ nhàng ở mùa nóng nực….
 Giống một sắp đặt ngẫu hứng của người nghệ sĩ, các loại mứt trái quả mang nhiều màu sắc, hương vị giống như tượng trưng cho vũ trụ: Kim- Mộc- Thủy- Hỏa- Thổ, Ngũ hành tương sinh, tạo thành một tổng hòa tuyệt đẹp.
 Món bánh Bó mứt trong dân gian, khi theo chân của các phi tần, cung nữ vào chốn cung đình thì trở thành quyền quý cao sang bằng cách sử dụng các nguyên liệu tốt nhất: Nếp thơm, đường phèn loại một, các loại mứt quý như hồng khô, long nhãn, mứt phật thủ, mứt cam sành, mứt trần bì… Khi dùng cắt ra từng lát mỏng, dùng giấy bóng kính gói lại để nhìn thấy những sợi mứt trái cây đậm nhạt đầy màu sắc xanh, đỏ, vàng, trắng… đẹp mắt. Bánh ăn mềm mại, vị ngọt thanh lẫn vị the, chua, cay… hương thơm mứt trái cây...
-![Vị thế đặc biệt của ẩm thực Huế - 4](https://visithue.vn/Medias/Nam2023/Thang1/huetourism-vi-the-dac-biet-cua-am-thuc-hue-4.jpg)
 _Mứt cung đình. Ảnh: Hoàng Thụy_
 Hay các loại bánh như bánh Khoai tía, bánh Càn, bánh Như ý, bánh Hoa, bánh Phất, bánh củ Hoài…, mỗi loại bánh là một hương vị mang dấu ấn của tinh tế và khéo léo, của công phu và sự kết hợp hòa quyện hương vị màu sắc hoàn hảo…
 Ẩm thực Huế từ dân gian đến cung đình, từ cung đình trở lại dân gian với những đặc tính, hương vị khó có thể quên, như một đặc trưng chỉ có thể nói là “Ẩm thực Huế”. Ở một khía cạnh, ẩm thực cung đình Huế là một di sản văn hóa cần giữ gìn và phục dựng để trở thành một “đại sứ văn hóa” đặc biệt.
 Tại sao không, khi có thể tạo một vị thế cho “ẩm thực Huế” trở thành “đại sứ văn hóa” đặc biệt quảng bá cho du lịch, quảng bá cho sản vật Việt Nam với thế giới?
 **Hoài Hương**
-  
-
 https://tcdulichtphcm.vn/
-[](https://twitter.com/share?url=https://visithue.vn/vi-the-dac-biet-cua-am-thuc-hue/?pid=MjI2Njd8Y3NkbGRs0) [](javascript:;) [](https://www.linkedin.com/shareArticle?mini=true&amp;url=https://visithue.vn/vi-the-dac-biet-cua-am-thuc-hue/?pid=MjI2Njd8Y3NkbGRs0&amp;title=V%E1%BB%8B%20th%E1%BA%BF%20%C4%91%E1%BA%B7c%20bi%E1%BB%87t%20c%E1%BB%A7a%20%E1%BA%A9m%20th%E1%BB%B1c%20Hu%E1%BA%BF) [](javascript:fbShare\('https://visithue.vn/vi-the-dac-biet-cua-am-thuc-hue/?pid=MjI2Njd8Y3NkbGRs0',%20'Fb%20Share',%20'Facebook%20share%20popup',%20'https://visithue.vn/Medias/Nam2023/Thang1/vi-the-dac-biet-cua-am-thuc-hue.jpg',%20720,%20480\))
-######  [Lịch sử](https://visithue.vn/chuyen-muc/lich-su/?id=NDF8Y3NkbGRs0)
-######  [Văn hóa Huế](https://visithue.vn/chuyen-muc/van-hoa-hue/?id=NDJ8Y3NkbGRs0)
-######  [Di sản ](https://visithue.vn/chuyen-muc/di-san/?id=NDN8Y3NkbGRs0)
-######  [Ẩm thực Huế](https://visithue.vn/chuyen-muc/am-thuc-hue/?id=NjB8Y3NkbGRs0)
-######  [Điểm đến](https://visithue.vn/chuyen-muc/diem-den/?id=NjF8Y3NkbGRs0)
-![](https://visithue.vn/images/icon-nav/khuyenmai.png) Tin liên quan
-![Chùa Bảo Vân: Ngôi chùa Sắc tứ trầm mặc khởi đầu từ tấm lòng hiếu hạnh](https://visithue.vn/Medias/Thumb/Nam2026/Thang8/chua-bao-van-ngoi-chua-sac-tu-tram-mac-khoi-dau-tu-tam-long-hieu-hanh.jpg)
-###### Khám phá Huế
-#####  [ Chùa Bảo Vân: Ngôi chùa Sắc tứ trầm mặc khởi ... ](https://visithue.vn/chua-bao-van-ngoi-chua-sac-tu-tram-mac-khoi-dau-tu-tam-long-hieu-hanh/?pid=MjUxOTR8Y3NkbGRs0 "Chùa Bảo Vân: Ngôi chùa Sắc tứ trầm mặc khởi đầu từ tấm lòng hiếu hạnh")
-Nằm lặng lẽ trong một con ngõ nhỏ xứ Huế, chùa Bảo Vân không chỉ là một chốn tâm linh...
-![Huế - Điểm đến đầy tiềm năng của du lịch thể thao](https://visithue.vn/Medias/Thumb/Nam2026/Thang8/hue-%E2%80%93-diem-den-day-tiem-nang-cua-du-lich-the-thao.jpg)
-###### Khám phá Huế
-#####  [ Huế - Điểm đến đầy tiềm năng của du lịch thể ... ](https://visithue.vn/hue-diem-den-day-tiem-nang-cua-du-lich-the-thao/?pid=MjUxODR8Y3NkbGRs0 "Huế - Điểm đến đầy tiềm năng của du lịch thể thao")
-Không chỉ được biết đến là vùng đất di sản với Quần thể Di tích Cố đô, dòng sông Hươn...
-![Du lịch âm nhạc: “Hơi thở mới” đánh thức di sản Cố đô Huế](https://visithue.vn/Medias/Thumb/Nam2026/Thang8/du-lich-am-nhac-%E2%80%9Choi-tho-moi%E2%80%9D-danh-thuc-di-san-co-do-hue.jpg)
-###### Khám phá Huế
-#####  [ Du lịch âm nhạc: “Hơi thở mới” đánh thức di s... ](https://visithue.vn/du-lich-am-nhac-%E2%80%9Choi-tho-moi%E2%80%9D-danh-thuc-di-san-co-do-hue/?pid=MjUxNzN8Y3NkbGRs0 "Du lịch âm nhạc: “Hơi thở mới” đánh thức di sản Cố đô Huế")
-Từ lâu được biết đến với vẻ đẹp trầm mặc và cổ kính, Huế đang chuyển mình mạnh mẽ để ...
-![Một ngày chạm vào hồn quê xứ Huế tại miền quê Thanh Thủy và Mỹ Thượng](https://visithue.vn/Medias/Thumb/Nam2026/Thang8/ve-mien-que-thanh-thuy-my-thuong-mot-ngay-cham-vao-hon-que-xu-hue.jpg)
-###### Khám phá Huế
-#####  [ Một ngày chạm vào hồn quê xứ Huế tại miền quê... ](https://visithue.vn/mot-ngay-cham-vao-hon-que-xu-hue-tai-mien-que-thanh-thuy-va-my-thuong/?pid=MjUxNzF8Y3NkbGRs0 "Một ngày chạm vào hồn quê xứ Huế tại miền quê Thanh Thủy và Mỹ Thượng")
-Chỉ chưa đầy 10km từ trung tâm thành phố Huế, du khách đã có thể rời xa nhịp sống phố...
-Xem thêm
-![](https://visithue.vn/images/icons/loadinggreen.gif)
-##### Đối tác
-[ ![TMG](https://visithue.vn/contents/a8e8242d-ec92-43db-9431-1c5a39c0f202.png) ](https://tmgroup.vn/)
-[ ![Vietravel](https://visithue.vn/contents/93a086d0-5415-47d7-8a73-752f920c6562.png) ](https://www.vietravel.com/)
-[ ![Victoria](https://visithue.vn/contents/351c6c57-d68a-45da-9269-49d63e21f6dc.png) ](https://www.victoriahotels.asia/en/)
-[ ![vivu](https://visithue.vn/contents/ddbe3d48-360f-4de3-9ab2-fe0a4e454d79.png) ](https://www.ivivu.com/)
-[ ![Đại Việt Tourist](https://visithue.vn/contents/3d0021d4-6a03-465f-b917-ee64c3900ada.jpg) ](https://daivietourist.vn/)
-‹›
-[ ![fayfay](https://visithue.vn/contents/72c696c8-67a8-491f-8e70-a6a1ca015a5c.png) ](http://fayfay.com/)
-[ ![Emm](https://visithue.vn/contents/5c5fa72c-24dc-4a4a-b797-f796d8ecc117.png) ](https://emmhotels.com/en/hotels/emm-hotel-hue)
-[ ![Vietnam Airlines](https://visithue.vn/contents/f9ffbb9f-d80d-453a-bf22-6f4fe1b365de.png) ](https://www.vietnamairlines.com/vn/vi/home)
-[ ![Traveloka](https://visithue.vn/contents/a94df26b-0a9d-49d9-9803-4d1930690863.png) ](https://www.traveloka.com/en-vn/)
-[ ![Tour Huế](https://visithue.vn/contents/211471bc-d9c1-4588-8ca2-bc38595e2b12.jpg) ](https://tourhue.vn/)
-‹›
-##### Sở Văn hóa, Thể thao và Du lịch thành phố Huế
-Chịu trách nhiệm nội dung:  Ông Lê Minh Nhân - Giám đốc 
-Giấy phép số: 06/2017/GP-TTĐT - Cấp ngày 29/11/2017
-Ghi rõ nguồn "http://visithue.vn/" khi phát hành lại thông tin.
-All rights reserved.© 2021 Read our terms & conditions 
-Đăng ký để nhận tin hàng tuần   
-
-Đăng ký
-Liên hệ với chúng tôi 
-[ ](https://www.facebook.com/visithuevietnam/) [ ](https://www.youtube.com/@VisitHue75/videos) [ ](https://instagram.com/visithue) [ ](https://twitter.com/hue_tourism) [ ](https://www.tripadvisor.co.uk/Tourism-g293926-Hue_Thua_Thien_Hue_Province-Vacations.html)
-[ ![](https://visithue.vn/images/advertise/appstore.jpg) ](https://itunes.apple.com/us/app//id1435095441?mt=8) [ ![](https://visithue.vn/images/advertise/CHPlay.jpg) ](https://play.google.com/store/apps/details?id=com.info.visithue&hl=vi)

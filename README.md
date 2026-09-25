@@ -13,8 +13,8 @@ Nhóm tự chọn bài toán và thu thập dữ liệu phù hợp; repo không 
 - Pipeline: convert → chunk → index → dense + BM25 → RRF → fallback → generation có citation.
 - Chatbot Streamlit hiển thị câu trả lời và nguồn đã dùng.
 - Golden dataset tối thiểu 15 câu; đánh giá 4 metric và so sánh A/B.
-- `group_project/evaluation/RESULT.md`.
-- Mỗi thành viên nộp báo cáo cá nhân theo template trong `group_project/ịndividual/INDIVIDUAL_REPORT.md`.
+- `reports/RESULT.md`.
+- Mỗi thành viên nộp báo cáo cá nhân theo template trong `reports/INDIVIDUAL_REPORT.md`.
 
 ## Quick start
 
@@ -41,7 +41,24 @@ pytest -q
 
 # 3. Chạy sản phẩm
 streamlit run app.py
+
+# 4. Chạy A/B evaluation và sinh báo cáo
+python -m group_project.evaluation.run_evaluation --top-k 5
+
+# 5. A/B bonus: hybrid + RRF so với LLM reranker
+python -m group_project.evaluation.run_bonus_reranker_evaluation \
+  --top-k 5 --candidate-k 15
 ```
+
+Evaluation dùng cùng golden dataset, generator, evaluator, prompt và `top_k`
+cho hai nhánh. Fallback được tắt bằng threshold `0.0` trong thí nghiệm để
+chỉ còn một biến thay đổi: dense-only hoặc hybrid + RRF. Kết quả chi tiết
+được ghi vào `group_project/evaluation/evaluation_results.json` và báo cáo
+vào `reports/RESULT.md`.
+
+UI có thể bật **LLM reranker nâng cao** trong sidebar. Các source được
+answer trích dẫn sẽ có nhãn riêng và tô sáng từ khóa evidence; nội dung
+source được escape HTML trước khi render.
 
 ## Lộ trình 3 giờ
 
@@ -67,7 +84,7 @@ streamlit run app.py
 - [Module contracts](docs/MODULE_CONTRACTS.md): schema, interface và invariant mà code/test nên tuân theo.
 - [Step-by-step guide](docs/STEP_BY_STEP.md): thứ tự triển khai và tiêu chí hoàn thành từng bước.
 - [Grading rubric](docs/GRADING_RUBRIC.md): Rubric thang điểm.
-- [Individual report](group_project/ịndividual/INDIVIDUAL_REPORT.md): template báo cáo cá nhân.
+- [Individual report](reports/INDIVIDUAL_REPORT.md): template báo cáo cá nhân.
 - [Suggested topics](docs/SUGGESTED_TOPICS.md): danh sách chủ đề tham khảo, không bắt buộc.
 
 ## Kiểm tra

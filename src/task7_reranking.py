@@ -37,4 +37,4 @@ def rerank_rrf(
 
 
 if __name__ == "__main__":
-    print("Implement rerank_rrf, then run contract tests.")
+    print("RRF reranker is ready. Run pytest to verify its contract.")

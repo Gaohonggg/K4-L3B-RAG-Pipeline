@@ -8,6 +8,7 @@ stable, so running the task again updates existing files without duplicates.
 from __future__ import annotations
 
 import json
+import re
 import warnings
 from pathlib import Path
 from typing import Any
@@ -19,6 +20,7 @@ OUTPUT_DIR = ROOT_DIR / "data" / "standardized"
 
 LEGAL_EXTENSIONS = {".pdf", ".doc", ".docx"}
 NEWS_REQUIRED_FIELDS = ("url", "title", "date_crawled", "content_markdown")
+_MARKDOWN_IMAGE = re.compile(r"!\[[^\]]*\]\([^)]*\)")
 
 
 def _write_markdown(path: Path, content: str) -> None:
@@ -113,13 +115,51 @@ def _read_news_json(path: Path) -> dict[str, str]:
     return data
 
 
+def _news_body(data: dict[str, str]) -> str:
+    """Keep article/listing content while removing shared site chrome."""
+    lines = data["content_markdown"].splitlines()
+    start = next(
+        (
+            index
+            for index, line in enumerate(lines)
+            if line.lstrip().startswith("#### ")
+            and line.lstrip("# ").strip() == data["title"]
+        ),
+        None,
+    )
+    if start is None:
+        start = next(
+            (index for index, line in enumerate(lines) if line.lstrip().startswith("#### ")),
+            0,
+        )
+    end = next(
+        (
+            index
+            for index in range(start, len(lines))
+            if "Tin liên quan" in lines[index]
+            or lines[index].lstrip().startswith("##### Đối tác")
+            or lines[index].lstrip().startswith("[](https://twitter.com/share")
+        ),
+        len(lines),
+    )
+    body = [
+        cleaned.rstrip()
+        for line in lines[start:end]
+        if (cleaned := _MARKDOWN_IMAGE.sub("", line)).strip()
+    ]
+    cleaned = "\n".join(body).strip()
+    if len(cleaned) < 200:
+        raise ValueError(f"News body is too short after cleaning: {data['title']}")
+    return cleaned
+
+
 def _news_markdown(data: dict[str, str]) -> str:
     return (
         f"# {data['title']}\n\n"
         f"**Source:** {data['url']}\n\n"
         f"**Crawled:** {data['date_crawled']}\n\n"
         "---\n\n"
-        f"{data['content_markdown']}"
+        f"{_news_body(data)}"
     )
 
 

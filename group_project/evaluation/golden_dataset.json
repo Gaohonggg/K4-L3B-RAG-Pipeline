@@ -1,0 +1,92 @@
+[
+  {
+    "question": "Nghị quyết 02/2026/NQ-HĐND về hỗ trợ du lịch cộng đồng có hiệu lực trong khoảng thời gian nào?",
+    "expected_answer": "Nghị quyết có hiệu lực từ ngày 10/04/2026 đến hết ngày 31/12/2030.",
+    "expected_context": "Nghị quyết này có hiệu lực từ ngày 10 tháng 4 năm 2026 đến hết ngày 31 tháng 12 năm 2030.",
+    "source": "000.00.00.K57-02-2026-NQ-HDND-2026-PL3.md"
+  },
+  {
+    "question": "Quyết định 29/2026/QĐ-UBND về quản lý bãi tắm có hiệu lực từ ngày nào?",
+    "expected_answer": "Quyết định có hiệu lực từ ngày 29/04/2026.",
+    "expected_context": "Quyết định này có hiệu lực thi hành kể từ ngày 29 tháng 4 năm 2026.",
+    "source": "00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md"
+  },
+  {
+    "question": "Theo quy chế, độ dày cát trung bình tối thiểu của bãi tắm biển là bao nhiêu?",
+    "expected_answer": "Độ dày cát trung bình phải từ 30 cm trở lên.",
+    "expected_context": "Có bãi cát mịn, bề mặt được san phẳng, độ dày cát trung bình 30cm trở lên và độ thoải đảm bảo an toàn cho du khách khi tắm biển.",
+    "source": "00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md"
+  },
+  {
+    "question": "Mỗi xuồng cứu sinh tại bãi tắm biển phải có tối thiểu bao nhiêu áo phao cá nhân?",
+    "expected_answer": "Mỗi xuồng phải có tối thiểu 06 áo phao cá nhân.",
+    "expected_context": "Trên mỗi xuồng có trang bị tối thiểu 06 áo phao cá nhân, 02 phao tròn và có bộ đồ lặn kèm theo bình dưỡng khí.",
+    "source": "00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md"
+  },
+  {
+    "question": "Khoảng cách tối đa giữa các trạm quan sát cứu hộ ở bãi tắm biển là bao nhiêu?",
+    "expected_answer": "Khoảng cách tối đa là 300 m.",
+    "expected_context": "Có trạm quan sát cứu hộ cứu nạn, khoảng cách giữa các trạm quan sát tối đa là 300m.",
+    "source": "00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md"
+  },
+  {
+    "question": "Quy chế yêu cầu tỷ lệ diện tích mặt nước trên mỗi nhân viên cứu hộ là bao nhiêu?",
+    "expected_answer": "Phải bố trí ít nhất 01 nhân viên cứu hộ cho mỗi 200 m² mặt nước.",
+    "expected_context": "Số lượng nhân viên cứu hộ phải đảm bảo ít nhất 200m2 mặt nước/01 nhân viên.",
+    "source": "00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md"
+  },
+  {
+    "question": "Đơn vị khai thác bãi tắm phải báo cáo kết quả kinh doanh định kỳ vào ngày nào hàng tháng?",
+    "expected_answer": "Đơn vị phải báo cáo định kỳ vào ngày 20 hàng tháng.",
+    "expected_context": "Định kỳ ngày 20 hàng tháng phải thực hiện báo cáo kết quả hoạt động kinh doanh tháng trước liền kề của đơn vị.",
+    "source": "00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md"
+  },
+  {
+    "question": "Giấy chứng nhận đạt tiêu chí Du lịch xanh thành phố Huế có giá trị bao lâu?",
+    "expected_answer": "Giấy chứng nhận có giá trị 03 năm kể từ ngày ký.",
+    "expected_context": "Giấy chứng nhận đạt tiêu chí Du lịch xanh cho cơ sở du lịch có giá trị trong thời hạn 03 năm kể từ ngày ký.",
+    "source": "1431.md"
+  },
+  {
+    "question": "Bộ tiêu chí Du lịch xanh thành phố Huế áp dụng cho những loại cơ sở nào?",
+    "expected_answer": "Bộ tiêu chí áp dụng cho cơ sở lưu trú du lịch, điểm tham quan du lịch và cơ sở kinh doanh dịch vụ ăn uống trên địa bàn thành phố Huế.",
+    "expected_context": "Bộ tiêu chí Du lịch xanh thành phố Huế áp dụng cho các cơ sở lưu trú du lịch, điểm tham quan du lịch và các cơ sở kinh doanh dịch vụ ăn uống trên địa bàn thành phố Huế.",
+    "source": "1431.md"
+  },
+  {
+    "question": "Theo Bộ tiêu chí của Huế, du lịch xanh được hiểu là gì?",
+    "expected_answer": "Du lịch xanh là loại hình du lịch giảm thiểu tác động đến môi trường, đóng góp cho bảo vệ đa dạng sinh học, sử dụng năng lượng tái tạo, phát huy di sản và phát triển sản phẩm thân thiện với môi trường.",
+    "expected_context": "Du lịch xanh: Loại hình du lịch hoạt động theo phương thức giảm thiểu tác động đến môi trường, đóng góp tích cực cho bảo vệ đa dạng sinh học, sử dụng năng lượng tái tạo và phát huy các di sản thiên nhiên và văn hóa, phát triển các sản phẩm thân thiện với môi trường.",
+    "source": "1431.md"
+  },
+  {
+    "question": "Trong lịch trình 3 ngày 2 đêm ở Huế, giá vé tham quan cung An Định là bao nhiêu?",
+    "expected_answer": "Giá vé tham quan cung An Định là 50.000 đồng/người.",
+    "expected_context": "Cung An Định là địa điểm đáng khám phá tiếp theo khi dừng chân tại đất kinh kỳ. Giá vé: 50.000 đồng/người.",
+    "source": "article_01.md"
+  },
+  {
+    "question": "Lăng Tự Đức cách trung tâm Huế bao xa và giá vé bao nhiêu?",
+    "expected_answer": "Lăng Tự Đức cách trung tâm Huế khoảng 5 km và giá vé là 150.000 đồng/người.",
+    "expected_context": "Cách trung tâm Huế chỉ tầm 5 km, lăng Tự Đức, làng hương, đồi Vọng Cảnh là 3 địa điểm lân cận nhau. Giá vé: 150.000 đồng/người.",
+    "source": "article_01.md"
+  },
+  {
+    "question": "Lịch trình ngày thứ ba trong chuyến 3 ngày 2 đêm ở Huế gợi ý ba địa điểm nào?",
+    "expected_answer": "Ba địa điểm là đầm Lập An, vịnh Lăng Cô và đèo Hải Vân.",
+    "expected_context": "Ngày 3: Đầm Lập An - vịnh Lăng Cô - đèo Hải Vân.",
+    "source": "article_01.md"
+  },
+  {
+    "question": "Tiệc cỗ tế lớn trong ẩm thực cung đình Huế có bao nhiêu phẩm vị?",
+    "expected_answer": "Tiệc cỗ tế lớn có 161 phẩm vị.",
+    "expected_context": "Tiệc cỗ tế lớn có 161 phẩm vị (món ăn), tiệc cỗ trân tu có 50 món ăn, tiệc cỗ ngọc soạn có 30 món ăn.",
+    "source": "article_03.md"
+  },
+  {
+    "question": "Cầu Trường Tiền có bao nhiêu vài và bao nhiêu nhịp?",
+    "expected_answer": "Cầu Trường Tiền có 6 vài và 12 nhịp.",
+    "expected_context": "Cầu Tràng Tiền gồm 6 vài. Cầu có 12 nhịp được thiết kế theo kiểu kiến trúc Gothique; mỗi nhịp có hình bán nguyệt.",
+    "source": "article_05.md"
+  }
+]

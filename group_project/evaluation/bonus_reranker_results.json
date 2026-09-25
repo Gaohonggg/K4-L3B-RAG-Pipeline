@@ -1,0 +1,532 @@
+{
+  "metadata": {
+    "evaluation_date": "2026-09-26",
+    "dataset_size": 15,
+    "top_k": 5,
+    "candidate_k": 15,
+    "baseline": "hybrid + RRF",
+    "experiment": "hybrid + RRF + LLM reranker",
+    "reranker_model": "gpt-4o-mini",
+    "fallback_threshold": 0.0
+  },
+  "summary": {
+    "baseline": {
+      "source_hit_at_k": 1.0,
+      "mrr": 0.9222222222222223,
+      "ndcg_at_k": 0.925991474817251,
+      "context_precision_at_k": 0.6266666666666667,
+      "evidence_token_coverage": 0.9091617933723197
+    },
+    "llm_reranker": {
+      "source_hit_at_k": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 0.9885050253855938,
+      "context_precision_at_k": 0.6666666666666666,
+      "evidence_token_coverage": 0.9740740740740741
+    },
+    "delta": {
+      "source_hit_at_k": 0.0,
+      "mrr": 0.07777777777777772,
+      "ndcg_at_k": 0.06251355056834285,
+      "context_precision_at_k": 0.039999999999999925,
+      "evidence_token_coverage": 0.06491228070175437
+    }
+  },
+  "rows": [
+    {
+      "case_id": 1,
+      "question": "Nghị quyết 02/2026/NQ-HĐND về hỗ trợ du lịch cộng đồng có hiệu lực trong khoảng thời gian nào?",
+      "expected_source": "000.00.00.K57-02-2026-NQ-HDND-2026-PL3.md",
+      "baseline_ids": [
+        "legal/000.00.00.K57-02-2026-NQ-HDND-2026-PL3.md::chunk-2",
+        "legal/000.00.00.K57-02-2026-NQ-HDND-2026-PL3.md::chunk-1",
+        "legal/000.00.00.K57-02-2026-NQ-HDND-2026-PL3.md::chunk-0",
+        "legal/1431.md::chunk-10",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-2"
+      ],
+      "llm_reranker_ids": [
+        "legal/000.00.00.K57-02-2026-NQ-HDND-2026-PL3.md::chunk-2",
+        "legal/000.00.00.K57-02-2026-NQ-HDND-2026-PL3.md::chunk-3",
+        "legal/000.00.00.K57-02-2026-NQ-HDND-2026-PL3.md::chunk-1",
+        "legal/000.00.00.K57-02-2026-NQ-HDND-2026-PL3.md::chunk-0",
+        "legal/1431.md::chunk-10"
+      ],
+      "baseline": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision_at_k": 0.6,
+        "evidence_token_coverage": 1.0
+      },
+      "llm_reranker": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision_at_k": 0.8,
+        "evidence_token_coverage": 1.0
+      }
+    },
+    {
+      "case_id": 2,
+      "question": "Quyết định 29/2026/QĐ-UBND về quản lý bãi tắm có hiệu lực từ ngày nào?",
+      "expected_source": "00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md",
+      "baseline_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-2",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-0",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-4",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-20",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-30"
+      ],
+      "llm_reranker_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-2",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-0",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-4",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-20",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-30"
+      ],
+      "baseline": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision_at_k": 0.8,
+        "evidence_token_coverage": 1.0
+      },
+      "llm_reranker": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision_at_k": 0.8,
+        "evidence_token_coverage": 1.0
+      }
+    },
+    {
+      "case_id": 3,
+      "question": "Theo quy chế, độ dày cát trung bình tối thiểu của bãi tắm biển là bao nhiêu?",
+      "expected_source": "00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md",
+      "baseline_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-9",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-7",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-8",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-32",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-5"
+      ],
+      "llm_reranker_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-7",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-8",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-9",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-32",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-5"
+      ],
+      "baseline": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision_at_k": 0.6,
+        "evidence_token_coverage": 1.0
+      },
+      "llm_reranker": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision_at_k": 0.6,
+        "evidence_token_coverage": 1.0
+      }
+    },
+    {
+      "case_id": 4,
+      "question": "Mỗi xuồng cứu sinh tại bãi tắm biển phải có tối thiểu bao nhiêu áo phao cá nhân?",
+      "expected_source": "00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md",
+      "baseline_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-8",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-13",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-12",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-16",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-9"
+      ],
+      "llm_reranker_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-8",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-13",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-12",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-16",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-9"
+      ],
+      "baseline": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision_at_k": 0.6,
+        "evidence_token_coverage": 1.0
+      },
+      "llm_reranker": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision_at_k": 0.6,
+        "evidence_token_coverage": 1.0
+      }
+    },
+    {
+      "case_id": 5,
+      "question": "Khoảng cách tối đa giữa các trạm quan sát cứu hộ ở bãi tắm biển là bao nhiêu?",
+      "expected_source": "00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md",
+      "baseline_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-9",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-13",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-8",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-12",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-16"
+      ],
+      "llm_reranker_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-9",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-13",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-8",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-12",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-16"
+      ],
+      "baseline": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision_at_k": 0.6,
+        "evidence_token_coverage": 1.0
+      },
+      "llm_reranker": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision_at_k": 0.6,
+        "evidence_token_coverage": 1.0
+      }
+    },
+    {
+      "case_id": 6,
+      "question": "Quy chế yêu cầu tỷ lệ diện tích mặt nước trên mỗi nhân viên cứu hộ là bao nhiêu?",
+      "expected_source": "00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md",
+      "baseline_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-16",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-27",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-12",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-8",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-9"
+      ],
+      "llm_reranker_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-16",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-27",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-12",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-8",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-9"
+      ],
+      "baseline": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision_at_k": 1.0,
+        "evidence_token_coverage": 1.0
+      },
+      "llm_reranker": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision_at_k": 1.0,
+        "evidence_token_coverage": 1.0
+      }
+    },
+    {
+      "case_id": 7,
+      "question": "Đơn vị khai thác bãi tắm phải báo cáo kết quả kinh doanh định kỳ vào ngày nào hàng tháng?",
+      "expected_source": "00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md",
+      "baseline_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-22",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-32",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-6",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-14",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-2"
+      ],
+      "llm_reranker_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-22",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-32",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-6",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-14",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-2"
+      ],
+      "baseline": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 0.9828920819566879,
+        "context_precision_at_k": 0.8,
+        "evidence_token_coverage": 1.0
+      },
+      "llm_reranker": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 0.9828920819566879,
+        "context_precision_at_k": 0.8,
+        "evidence_token_coverage": 1.0
+      }
+    },
+    {
+      "case_id": 8,
+      "question": "Giấy chứng nhận đạt tiêu chí Du lịch xanh thành phố Huế có giá trị bao lâu?",
+      "expected_source": "1431.md",
+      "baseline_ids": [
+        "legal/1431.md::chunk-20",
+        "legal/1431.md::chunk-19",
+        "legal/1431.md::chunk-2",
+        "legal/1431.md::chunk-10",
+        "legal/1431.md::chunk-11"
+      ],
+      "llm_reranker_ids": [
+        "legal/1431.md::chunk-20",
+        "legal/1431.md::chunk-19",
+        "legal/1431.md::chunk-2",
+        "legal/1431.md::chunk-10",
+        "legal/1431.md::chunk-11"
+      ],
+      "baseline": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision_at_k": 1.0,
+        "evidence_token_coverage": 1.0
+      },
+      "llm_reranker": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision_at_k": 1.0,
+        "evidence_token_coverage": 1.0
+      }
+    },
+    {
+      "case_id": 9,
+      "question": "Bộ tiêu chí Du lịch xanh thành phố Huế áp dụng cho những loại cơ sở nào?",
+      "expected_source": "1431.md",
+      "baseline_ids": [
+        "legal/1431.md::chunk-2",
+        "legal/1431.md::chunk-10",
+        "legal/1431.md::chunk-20",
+        "legal/1431.md::chunk-16",
+        "legal/1431.md::chunk-19"
+      ],
+      "llm_reranker_ids": [
+        "legal/1431.md::chunk-2",
+        "legal/1431.md::chunk-10",
+        "legal/1431.md::chunk-20",
+        "legal/1431.md::chunk-16",
+        "legal/1431.md::chunk-19"
+      ],
+      "baseline": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision_at_k": 1.0,
+        "evidence_token_coverage": 1.0
+      },
+      "llm_reranker": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision_at_k": 1.0,
+        "evidence_token_coverage": 1.0
+      }
+    },
+    {
+      "case_id": 10,
+      "question": "Theo Bộ tiêu chí của Huế, du lịch xanh được hiểu là gì?",
+      "expected_source": "1431.md",
+      "baseline_ids": [
+        "legal/1431.md::chunk-20",
+        "legal/1431.md::chunk-11",
+        "legal/1431.md::chunk-8",
+        "legal/1431.md::chunk-2",
+        "legal/1431.md::chunk-16"
+      ],
+      "llm_reranker_ids": [
+        "legal/1431.md::chunk-12",
+        "legal/1431.md::chunk-8",
+        "legal/1431.md::chunk-19",
+        "legal/1431.md::chunk-20",
+        "legal/1431.md::chunk-11"
+      ],
+      "baseline": {
+        "source_hit_at_k": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg_at_k": 0.5,
+        "context_precision_at_k": 0.2,
+        "evidence_token_coverage": 0.5263157894736842
+      },
+      "llm_reranker": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision_at_k": 0.4,
+        "evidence_token_coverage": 1.0
+      }
+    },
+    {
+      "case_id": 11,
+      "question": "Trong lịch trình 3 ngày 2 đêm ở Huế, giá vé tham quan cung An Định là bao nhiêu?",
+      "expected_source": "article_01.md",
+      "baseline_ids": [
+        "news/article_01.md::chunk-1",
+        "news/article_04.md::chunk-4",
+        "news/article_01.md::chunk-6",
+        "news/article_01.md::chunk-0",
+        "news/article_04.md::chunk-2"
+      ],
+      "llm_reranker_ids": [
+        "news/article_01.md::chunk-1",
+        "news/article_01.md::chunk-6",
+        "news/article_04.md::chunk-4",
+        "news/article_01.md::chunk-0",
+        "news/article_04.md::chunk-2"
+      ],
+      "baseline": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 0.9197207891481876,
+        "context_precision_at_k": 0.4,
+        "evidence_token_coverage": 0.6111111111111112
+      },
+      "llm_reranker": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision_at_k": 0.4,
+        "evidence_token_coverage": 0.6111111111111112
+      }
+    },
+    {
+      "case_id": 12,
+      "question": "Lăng Tự Đức cách trung tâm Huế bao xa và giá vé bao nhiêu?",
+      "expected_source": "article_01.md",
+      "baseline_ids": [
+        "news/article_01.md::chunk-6",
+        "news/article_02.md::chunk-2",
+        "news/article_05.md::chunk-11",
+        "news/article_01.md::chunk-7",
+        "news/article_02.md::chunk-4"
+      ],
+      "llm_reranker_ids": [
+        "news/article_01.md::chunk-6",
+        "news/article_02.md::chunk-2",
+        "news/article_05.md::chunk-11",
+        "news/article_01.md::chunk-7",
+        "news/article_02.md::chunk-4"
+      ],
+      "baseline": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 0.8772153153380493,
+        "context_precision_at_k": 0.4,
+        "evidence_token_coverage": 1.0
+      },
+      "llm_reranker": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 0.8772153153380493,
+        "context_precision_at_k": 0.4,
+        "evidence_token_coverage": 1.0
+      }
+    },
+    {
+      "case_id": 13,
+      "question": "Lịch trình ngày thứ ba trong chuyến 3 ngày 2 đêm ở Huế gợi ý ba địa điểm nào?",
+      "expected_source": "article_01.md",
+      "baseline_ids": [
+        "news/article_01.md::chunk-1",
+        "news/article_04.md::chunk-4",
+        "news/article_01.md::chunk-0",
+        "news/article_01.md::chunk-6",
+        "news/article_04.md::chunk-2"
+      ],
+      "llm_reranker_ids": [
+        "news/article_01.md::chunk-9",
+        "news/article_01.md::chunk-6",
+        "news/article_01.md::chunk-1",
+        "news/article_04.md::chunk-4",
+        "news/article_01.md::chunk-0"
+      ],
+      "baseline": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 0.8772153153380493,
+        "context_precision_at_k": 0.4,
+        "evidence_token_coverage": 0.5
+      },
+      "llm_reranker": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision_at_k": 0.6,
+        "evidence_token_coverage": 1.0
+      }
+    },
+    {
+      "case_id": 14,
+      "question": "Tiệc cỗ tế lớn trong ẩm thực cung đình Huế có bao nhiêu phẩm vị?",
+      "expected_source": "article_03.md",
+      "baseline_ids": [
+        "news/article_03.md::chunk-3",
+        "news/article_03.md::chunk-4",
+        "news/article_03.md::chunk-2",
+        "news/article_03.md::chunk-1",
+        "news/article_03.md::chunk-8"
+      ],
+      "llm_reranker_ids": [
+        "news/article_03.md::chunk-3",
+        "news/article_03.md::chunk-4",
+        "news/article_03.md::chunk-2",
+        "news/article_03.md::chunk-1",
+        "news/article_03.md::chunk-8"
+      ],
+      "baseline": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision_at_k": 0.4,
+        "evidence_token_coverage": 1.0
+      },
+      "llm_reranker": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "context_precision_at_k": 0.4,
+        "evidence_token_coverage": 1.0
+      }
+    },
+    {
+      "case_id": 15,
+      "question": "Cầu Trường Tiền có bao nhiêu vài và bao nhiêu nhịp?",
+      "expected_source": "article_05.md",
+      "baseline_ids": [
+        "news/article_05.md::chunk-6",
+        "news/article_05.md::chunk-2",
+        "news/article_05.md::chunk-9",
+        "news/article_05.md::chunk-8",
+        "news/article_05.md::chunk-3"
+      ],
+      "llm_reranker_ids": [
+        "news/article_05.md::chunk-2",
+        "news/article_05.md::chunk-8",
+        "news/article_05.md::chunk-6",
+        "news/article_05.md::chunk-9",
+        "news/article_05.md::chunk-3"
+      ],
+      "baseline": {
+        "source_hit_at_k": 1.0,
+        "mrr": 0.5,
+        "ndcg_at_k": 0.7328286204777911,
+        "context_precision_at_k": 0.6,
+        "evidence_token_coverage": 1.0
+      },
+      "llm_reranker": {
+        "source_hit_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 0.9674679834891693,
+        "context_precision_at_k": 0.6,
+        "evidence_token_coverage": 1.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,1113 @@
+{
+  "metadata": {
+    "evaluation_date": "2026-09-25",
+    "ragas_version": "0.4.3",
+    "judge_model": "gpt-4o-mini",
+    "generator_model": "gpt-4o-mini",
+    "embedding_model": "text-embedding-3-small",
+    "top_k": 5,
+    "fallback_threshold": 0.0
+  },
+  "summary": {
+    "dense_only": {
+      "faithfulness": 0.7333333333333333,
+      "answer_relevancy": 0.15825538440916878,
+      "context_recall": 0.9333333333333333,
+      "context_precision": 0.8133333332734445,
+      "average": 0.65956384608732,
+      "mean_latency_seconds": 2.2309265804632257,
+      "refusal_rate": 0.26666666666666666
+    },
+    "hybrid_rrf": {
+      "faithfulness": 0.6666666666666666,
+      "answer_relevancy": 0.15043525086415366,
+      "context_recall": 0.8666666666666667,
+      "context_precision": 0.805925925866858,
+      "average": 0.6224236275160863,
+      "mean_latency_seconds": 1.90125823613101,
+      "refusal_rate": 0.3333333333333333
+    }
+  },
+  "rows": [
+    {
+      "case_id": 1,
+      "configuration": "dense_only",
+      "question": "Nghị quyết 02/2026/NQ-HĐND về hỗ trợ du lịch cộng đồng có hiệu lực trong khoảng thời gian nào?",
+      "reference": "Nghị quyết có hiệu lực từ ngày 10/04/2026 đến hết ngày 31/12/2030.",
+      "reference_context": "Nghị quyết này có hiệu lực từ ngày 10 tháng 4 năm 2026 đến hết ngày 31 tháng 12 năm 2030.",
+      "response": "Từ ngày 10 tháng 4 năm 2026 đến hết ngày 31 tháng 12 năm 2030. [S1]",
+      "retrieved_contexts": [
+        "Điều 1. Ban hành kèm theo Nghị quyết này Quy định chính sách hỗ trợ\n\nphát triển du lịch cộng đồng trên địa bàn thành phố Huế giai đoạn 2026-2030.\n\nĐiều 2. Điều khoản thi hành\n1.  Nghị  quyết  này  có  hiệu  lực  từ  ngày  10  tháng  4  năm  2026  đến  hết\n\nngày 31 tháng 12 năm 2030.\n\n2.  Nghị  quyết  này  thay  thế  Nghị  quyết  số  05/2019/NQ-HĐND  ngày  09\ntháng 7 năm 2019 của Hội đồng nhân dân tỉnh Thừa Thiên Huế quy định một số\nchính  sách  hỗ  trợ  phát  triển  du  lịch  cộng  đồng  tỉnh  Thừa  Thiên  Huế  đến\nnăm 2025.",
+        "quy phạm pháp luật số 87/2025/QH15;\n\nCăn cứ Luật Du lịch số 09/2017/QH14;\nCăn cứ Luật Ngân sách nhà nước số 89/2025/QH15;\nXét Tờ trình số 2581/TTr-UBND ngày 14 tháng 02 năm 2026 của Ủy ban\nnhân  dân  thành  phố  Huế  về  dự  thảo  Nghị  quyết  của  Hội  đồng  nhân  dân\nthành phố quy định chính sách hỗ trợ phát triển du lịch cộng đồng trên địa bàn\nthành  phố  Huế  giai  đoạn  2026-2030;  Báo  cáo  thẩm  tra  của  Ban  Kinh  tế  -\nNgân sách; ý kiến thảo luận của đại biểu Hội đồng nhân dân tại kỳ họp;\n\nHội  đồng  nhân  dân  ban  hành  Nghị  quyết  quy  định  chính  sách  hỗ  trợ\n\nphát triển du lịch cộng đồng trên địa bàn thành phố Huế giai đoạn 2026-2030.\n\nĐiều 1. Ban hành kèm theo Nghị quyết này Quy định chính sách hỗ trợ",
+        "Căn cứ Quyết định số 1749/QĐ-UBND ngày 19 tháng 6 năm 2025 của Uỷ\nban nhân dân thành phố Huế về việc phê duyệt Đề án phát triển du lịch, dịch vụ\ndu lịch thành phố Huế giai đoạn 2025-2030, tầm nhìn đến năm 2045;\n\nTheo đề nghị của Giám đốc Sở Du lịch tại Tờ trình số 880/TTr-SDL ngày\n\n22 tháng 4 năm 2026.\n\nQUYẾT ĐỊNH:\n\n  Điều 1. Ban hành kèm theo Quyết định này Quy định về Bộ tiêu chí Du\nlịch xanh thành phố Huế, Bộ nhận diện du lịch xanh thành phố Huế và các Bộ\ntiêu chí du lịch xanh áp dụng cho các loại hình dịch vụ du lịch, gồm:\n\n\f 1. Bộ tiêu chí Du lịch xanh dành cho Cơ sở lưu trú du lịch (Phụ lục I)\n\n 2. Bộ tiêu chí Du lịch xanh dành cho Điểm tham quan du lịch (Phụ lục II )\n\n         3. Bộ tiêu chí Du lịch xanh dành cho Cơ sở kinh doanh dịch vụ ăn uống (\nPhụ lục III )",
+        "HỘI ĐỒNG NHÂN DÂN\nTHÀNH PHỐ HUẾ\n\nCỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\n\nĐộc lập - Tự do - Hạnh phúc\n\nSố: 02/2026/NQ-HĐND\n\nThành phố Huế, ngày 31 tháng 3 năm 2026\n\nNGHỊ QUYẾT\nQuy định chính sách hỗ trợ phát triển du lịch cộng đồng\ntrên địa bàn thành phố Huế giai đoạn 2026-2030\n\nCăn cứ Luật Tổ chức chính quyền địa phương số 72/2025/QH15;\nCăn cứ Luật Ban hành văn bản quy phạm pháp luật số 64/2025/QH15;\nCăn  cứ  Luật  sửa  đổi,  bổ  sung  một  số  điều  của  Luật  Ban  hành  văn  bản\n\nquy phạm pháp luật số 87/2025/QH15;",
+        "Tăng cường vai trò quản lý của nhà nước, tạo công cụ hỗ trợ công tác kiểm\ntra, giám sát, đánh giá và xây dựng chính sách hỗ trợ, khuyến khích các mô hình\ndu lịch xanh.\n\nLàm cơ sở xây dựng cơ chế ưu đãi, hỗ trợ và khen thưởng, thúc đẩy doanh\nnghiệp và các chủ thể tham gia tích cực vào quá trình chuyển đổi sang mô hình\ndu lịch xanh và phát triển bền vững.\n\nIII. ĐỐI TƯỢNG, PHẠM VI, THỜI HẠN ÁP DỤNG\n\n1. Đối tượng, phạm vi áp dụng\n\nBộ tiêu chí Du lịch xanh thành phố Huế quy định các tiêu chí du lịch xanh,\nquy trình đánh giá, công nhận đạt chuẩn du lịch xanh áp dụng cho các cơ sở lưu\ntrú  du  lịch,  điểm  tham  quan  du  lịch  và  các  cơ  sở  kinh  doanh  dịch  vụ  ăn  uống\ntrên địa bàn thành phố Huế.\n\n2. Thời hạn áp dụng"
+      ],
+      "source_ids": [
+        "legal/000.00.00.K57-02-2026-NQ-HDND-2026-PL3.md::chunk-2",
+        "legal/000.00.00.K57-02-2026-NQ-HDND-2026-PL3.md::chunk-1",
+        "legal/1431.md::chunk-2",
+        "legal/000.00.00.K57-02-2026-NQ-HDND-2026-PL3.md::chunk-0",
+        "legal/1431.md::chunk-10"
+      ],
+      "retrieval_methods": [
+        "dense",
+        "dense",
+        "dense",
+        "dense",
+        "dense"
+      ],
+      "latency_seconds": 2.2750192909734324,
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.19924850069211775,
+        "context_recall": 1.0,
+        "context_precision": 0.7499999999625
+      }
+    },
+    {
+      "case_id": 2,
+      "configuration": "dense_only",
+      "question": "Quyết định 29/2026/QĐ-UBND về quản lý bãi tắm có hiệu lực từ ngày nào?",
+      "reference": "Quyết định có hiệu lực từ ngày 29/04/2026.",
+      "reference_context": "Quyết định này có hiệu lực thi hành kể từ ngày 29 tháng 4 năm 2026.",
+      "response": "29 tháng 4 năm 2026 [S1]",
+      "retrieved_contexts": [
+        "Theo đề nghị của Sở Du lịch;\n\nỦy ban nhân dân thành phố ban hành Quyết định ban hành Quy chế quản lý\nbãi  tắm  biển,  sông,  hồ  suối,  thác  thuộc  điểm  du  lịch,  khu  du  lịch  đã  được  công\nnhận trên địa bàn thành phố Huế.\n\n\fĐiều  1. Ban  hành  kèm  theo  Quyết  định  này  Quy  chế  quản  lý  Bãi  tắm  biển,\nsông, hồ, suối, thác thuộc điểm du lịch, khu du lịch đã được công nhận trên địa bàn\nthành phố Huế.\n\nĐiều 2. Hiệu lực thi hành\n\nQuyết định này có hiệu lực thi hành kể từ ngày 29 tháng 4 năm 2026 và thay\nthế Quyết định số 53/2023/QĐ-UBND ngày 27 tháng 9 năm 2023 của Ủy ban nhân\ndân tỉnh Ban hành Quy chế quản lý bãi tắm biển, sông, hồ, suối, thác thuộc điểm\ndu lịch, khu du lịch đã được công nhận trên địa bàn tỉnh Thừa Thiên Huế.\n\nĐiều 3. Tổ chức thực hiện",
+        "ỦY BAN NHÂN DÂN\nTHÀNH PHỐ HUẾ\n\nCỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập - Tự do - Hạnh phúc\n\nSố: 29/2026/QĐ-UBND\n\nHuế, ngày 20 tháng 4 năm 2026\n\nQUYẾT ĐỊNH\nBan hành quy chế quản lý bãi tắm biển, sông, hồ, suối, thác thuộc điểm du\nlịch, khu du lịch đã được công nhận trên địa bàn thành phố Huế\n\nCăn cứ Luật Tổ chức chính quyền địa phương số 72/2025/QH15;\n\nCăn cứ Luật Ban hành văn bản quy phạm pháp luật số 64/2025/QH15 được\n\nsửa đổi, bổ sung bởi Luật số 87/2025/QH15;\n\nCăn cứ Luật Du lịch số 09/2017/QH14;\n\nCăn cứ Luật giao thông đường thủy nội địa số 23/2004/QH11 được sửa đổi,\n\nbổ sung bởi Luật số 48/2014/QH13;\n\nCăn cứ Luật Tài nguyên nước số 28/2023/QH15;\n\nCăn cứ Nghị định số 168/2017/NĐ-CP của Chính phủ quy định chi tiết một số\n\nđiều của Luật Du lịch;",
+        "Điều 9. Quy định đối với tổ chức, cá nhân quản lý và khai thác\n\n1. Khảo sát và xây dựng biểu đồ hiện trạng, chiều dài, chiều rộng, độ sâu mực\nnước, độ nước xoáy, độ sóng, thủy triều theo mùa; dấu hiệu xảy ra lũ quét, sạt lỡ\nđất; theo dõi chất lượng nguồn nước để đảm bảo an toàn cho du khách khi tắm, kịp\nthời phát hiện các sự cố bất thường.\n\n2. Thành lập lực lượng cứu hộ cứu nạn, quản lý an ninh trật tự và vệ sinh môi\ntrường, phòng chống cháy nổ, vệ sinh an toàn thực phẩm trong phục vụ khai thác\ncó chuyên môn nghiệp vụ theo chức năng nhiệm vụ của từng vị trí công việc.\n\n3. Xây dựng phương án quản lý, khai thác và sử dụng Bãi tắm biển, sông, hồ,\n\nsuối, thác và thực hiện đúng cam kết trong phương án.",
+        "CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập - Tự do - Hạnh phúc\n\nQUY CHẾ\n\nQuản lý bãi tắm biển, sông, hồ, suối, thác thuộc điểm du lịch, khu du lịch đã\nđược công nhận trên địa bàn thành phố Huế\n (Ban hành kèm theo Quyết định số 29/2026/QĐ-UBND).\n\nChương I\n\nQUY ĐỊNH CHUNG\n\nĐiều 1. Phạm vi điều chỉnh và đối tượng áp dụng\n\n1. Phạm vi điều chỉnh: Quy chế này quy định về công tác quản lý nhà nước;\nđiều kiện, tiêu chuẩn và trách nhiệm của các cơ quan, tổ chức, cá nhân có liên quan\ntrong  quản  lý,  khai  thác  và  sử  dụng  các  bãi  tắm  biển,  sông,  hồ,  suối,  thác  thuộc\nđiểm du lịch, khu du lịch đã được công nhận trên địa bàn thành phố Huế.\n\n2. Đối tượng áp dụng\n\na) Cơ quan quản lý nhà nước theo thẩm quyền.",
+        "luật liên quan đến hoạt động tại bãi tắm biển, sông, hồ, suối, thác.\n\n3.  Chủ  trì,  phối  hợp  với  Sở  Du  lịch,  Sở  Văn  hóa  và  Thể  thao  và  các  ngành\nchức năng trong quản lý, sử dụng, xây dựng tiêu chuẩn như hạ tầng, quy chế …. tại\ncác bãi tắm biển, sông, hồ, suối, thác thuộc điểm du lịch, khu du lịch đã được công\nnhận trên địa bàn quản lý.\n\n4. Qua thực hiện kiểm tra các đơn vị quản lý và khai thác bãi tắm biển, sông,\nhồ, suối, thác thuộc điểm du lịch, khu du lịch đã được công nhận trên địa bàn thành\nphố phát hiện vụ việc có nội dung phức tạp, liên quan đến trách nhiệm quản lý của\nnhiều cấp, nhiều ngành, nhiều lĩnh vực, chưa đủ thẩm quyền để xem xét, đánh giá\nthì UBND các phường, xã có văn bản đề nghị Thanh tra thành phố thực hiện thanh\ntra làm rõ dấu hiệu vi phạm pháp luật."
+      ],
+      "source_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-2",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-0",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-20",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-4",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-30"
+      ],
+      "retrieval_methods": [
+        "dense",
+        "dense",
+        "dense",
+        "dense",
+        "dense"
+      ],
+      "latency_seconds": 3.508981041959487,
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999
+      }
+    },
+    {
+      "case_id": 3,
+      "configuration": "dense_only",
+      "question": "Theo quy chế, độ dày cát trung bình tối thiểu của bãi tắm biển là bao nhiêu?",
+      "reference": "Độ dày cát trung bình phải từ 30 cm trở lên.",
+      "reference_context": "Có bãi cát mịn, bề mặt được san phẳng, độ dày cát trung bình 30cm trở lên và độ thoải đảm bảo an toàn cho du khách khi tắm biển.",
+      "response": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+      "retrieved_contexts": [
+        "4. Có bảng nội quy đặt ở những vị trí dễ quan sát, kích thước tối thiểu 6m2\nbằng 2 thứ tiếng Tiếng Việt và tiếng Anh, phông chữ rõ ràng không tẩy xóa, đảm\nbảo mỹ quan.\n\n5. Có hệ thống biển báo, biển chỉ dẫn đến các điểm dịch vụ và hệ thống giao\nthông nội bộ. Có bãi trông giữ xe phù hợp quy mô kinh doanh, niêm yết giá các\ndịch vụ.\n\n6. Có trạm quan sát cứu hộ cứu nạn, khoảng cách giữa các trạm quan sát tối\nđa là 300m, được xây dựng phù hợp với không gian biển và đảm bảo bao quát toàn\nbộ bãi tắm.\n\n7. Mỗi bãi tắm biển có ít nhất 02 khu nhà tráng nước ngọt (nam, nữ riêng biệt)\n\ncó bố trí mắc treo hoặc giá đựng quần áo, mỗi khu tối thiểu có diện tích đạt 25m2.\n\n8. Nhà vệ sinh công cộng đảm bảo sạch sẽ, được thông gió và đủ ánh sáng,",
+        "Điều 3. Điều kiện về cơ sở hạ tầng\n\n1.  Có  hệ  thống  giao  thông  thuận  lợi,  an  toàn  và  dịch  vụ  cần  thiết  đảm  bảo\n\nphục vụ khách du lịch.\n\n2. Có hệ thống thông tin liên lạc đảm bảo yêu cầu phục vụ công tác cảnh báo,\n\ncứu hộ, cứu nạn.\n\n3. Có hệ thống điện, nước sạch đảm bảo yêu cầu, hệ thống thu gom rác thải và\n\nxử lý nước thải đảm bảo vệ sinh môi trường.\n\nĐiều 4. Điều kiện về cơ sở vật chất trang bị kỹ thuật đối với bãi tắm biển\n\n1. Có bãi cát mịn, bề mặt được san phẳng, độ dày cát trung bình 30cm trở lên\n\nvà độ thoải đảm bảo an toàn cho du khách khi tắm biển.",
+        "5. Có hệ thống biển báo, biển chỉ dẫn đến các điểm dịch vụ và hệ thống giao\nthông nội bộ. Có bãi trông giữ xe phù hợp quy mô kinh doanh, niêm yết giá dịch\nvụ.\n\n5\n\n\f6. Có thiết bị nhận biết phạm vi ranh giới, hệ thống biển báo độ nông sâu, các\nbiển cảnh báo nguy hiểm tại khu vực nước sâu nguy hiểm, khu vực trơn trượt, khu\nvực dành cho người không biết bơi, khu vực dành cho những người biết bơi, khu\nvực cấm nhảy cắm đầu (có độ sâu ít hơn 1,4m).\n\n7. Nhà vệ sinh công cộng đảm bảo sạch sẽ, được thông gió và đủ ánh sáng,\n\nđược bố trí đủ, tương ứng với số lượng khách du lịch vào thời kỳ cao điểm.",
+        "6. Khai thác, sử dụng nước dưới đất tại khu vực bãi tắm biển, sông, hồ, suối,\n\nthác khi chưa được sự đồng ý của cơ quan quản lý nhà nước có thẩm quyền.\n\n7. Sử dụng các vật dụng, thiết bị cũ (lều, bạt, dù che nắng và các loại bàn ghế\nnhựa, dụng cụ...) không đồng bộ, không đảm bảo an toàn sử dụng, mỹ quan cảnh\nquan khu vực bãi tắm biển, suối, thác.\n\n8. Lấn chiếm bãi biển, khe suối, bố trí dù, ghế tại các khu vực tắm.\n\n9.  Điều  khiển  các  phương  tiện  ca  nô  kéo  dù,  ca  nô  lướt  ván,  mô  tô  nước,\nthuyền buồm thể thao và các phương tiện thể thao khác chạy vào khu vực tắm hoặc\nchạy gần hệ thống phao tiêu giới hạn vùng hoạt động khác với tốc độ cao, tạo sóng.\n\nĐiều 9. Quy định đối với tổ chức, cá nhân quản lý và khai thác",
+        "Quy chế này.\n\n4.  Ủy  ban  nhân  dân  các  phường,  xã,  có  trách  nhiệm  triển  khai,  hướng  dẫn,\nkiểm tra việc thực hiện Quy chế này đối với các bãi tắm biển, sông, hồ, suối, thác\nthuộc địa bàn; định kỳ hàng năm hoặc đột xuất báo cáo kết quả thực hiện Quy chế\nnày về Sở Du lịch để tổng hợp báo cáo Ủy ban nhân dân thành phố.\n\n5. Ban quản lý bãi tắm biển, sông, hồ, suối, thác phối hợp với Ủy ban nhân\ndân các phường, xã thực hiện công tác quản lý nội quy, quy chế của bãi tắm biển,\nsông, hồ, suối, thác và các nội dung tại Quy chế này.\n\n6. Tổ chức, cá nhân hoạt động kinh doanh dịch vụ và khách du lịch tại các bãi\ntắm biển, sông, hồ, suối, thác có trách nhiệm thực hiện các nội dung quy định tại\nQuy chế này./.\n\n10"
+      ],
+      "source_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-9",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-7",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-14",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-19",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-32"
+      ],
+      "retrieval_methods": [
+        "dense",
+        "dense",
+        "dense",
+        "dense",
+        "dense"
+      ],
+      "latency_seconds": 1.357452500029467,
+      "scores": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.49999999995
+      }
+    },
+    {
+      "case_id": 4,
+      "configuration": "dense_only",
+      "question": "Mỗi xuồng cứu sinh tại bãi tắm biển phải có tối thiểu bao nhiêu áo phao cá nhân?",
+      "reference": "Mỗi xuồng phải có tối thiểu 06 áo phao cá nhân.",
+      "reference_context": "Trên mỗi xuồng có trang bị tối thiểu 06 áo phao cá nhân, 02 phao tròn và có bộ đồ lặn kèm theo bình dưỡng khí.",
+      "response": "06 áo phao cá nhân [S1]",
+      "retrieved_contexts": [
+        "và độ thoải đảm bảo an toàn cho du khách khi tắm biển.\n\n2. Có ít nhất 01 xuồng cứu sinh (hoặc Ca nô) được đăng ký, đăng kiểm theo\nquy định, đảm bảo chất lượng và đáp ứng công tác cứu hộ cứu nạn khi có sự cố\nxảy  ra,  người  điều  khiển  phương  tiện  phải  có  văn  bằng,  chứng  chỉ  chuyên  môn\ntheo quy định. Trên mỗi xuồng có trang bị tối thiểu 06 áo phao cá nhân, 02 phao\ntròn (01 phao tròn kèm dây ném chiều dài 25-30m) và có bộ đồ lặn kèm theo bình\ndưỡng khí.\n\n3.  Có  thiết  bị  nhận  biết  phạm  vi  ranh  giới,  hệ  thống  phao  tiêu,  cờ  chỉ  giới,\nbiển báo hiệu vùng hành lang an toàn, màu sắc tương phản với màu nước, dễ quan\nsát, đảm bảo yêu cầu cảnh báo.",
+        "sông, hồ, suối, thác phải có đầy đủ các dụng cụ sau:\n\n1. Dây phao:\n\na) Dây phao dọc: Được căng dọc theo khu vực tắm có độ sâu từ 1m40 trở\n\nlên dùng cho các đối tượng đã biết bơi;\n\nb) Dây phao ngang: Được căng ngang để chia khu vực có độ sâu từ 1m trở\n\nxuống dùng cho người chưa biết bơi ngăn với khu vực có độ sâu từ 1m trở lên.\n\n2. Trang bị cứu hộ:\n\na) Sào cứu hộ: Phải có ít nhất 06 sào cứu hộ dài 2,50m, sào cứu hộ sơn màu\nđỏ - trắng, đặt ở các vị trí thuận lợi, dễ nhìn thấy, mỗi sào bố trí cách nhau 15m dọc\ntheo chiều dài của khu vực tắm và tại các cơ sở kinh doanh dịch vụ trong khu vực\nsông, hồ, suối, thác để khách và nhân viên có thể sử dụng khi cần.",
+        "Điều  6.  Điều  kiện,  yêu  cầu  đối  với  người  làm  việc  tại  đơn  vị  khai  thác,\n\nquản lý bãi tắm biển, sông, hồ, suối, thác\n\n1. Có đội ngũ lao động làm nhiệm vụ cứu hộ cứu nạn, cứu đuối nước; an ninh\ntrật tự; người điều khiển phương tiện phải có chứng chỉ chuyên môn theo quy định;\nnhân viên thường xuyên được tập huấn chuyên môn nghiệp vụ.\n\n2. Số lượng nhân viên cứu hộ phải đảm bảo ít nhất 200m2 mặt nước/01 nhân\nviên, trường hợp sông, hồ, suối, thác có nhiều khu vực tắm phải đảm bảo mỗi khu\nvực có 01 nhân viên trong cùng một thời điểm, trường hợp đông người tham gia\nphải đảm bảo ít nhất 50 người bơi/01 nhân viên trong cùng một thời điểm.\n\n3.  Có  ký  kết  hợp  đồng  lao  động  với  cá  nhân  làm  việc  tại  các  bãi  tắm  biển,",
+        "b) Phao cứu sinh: Phải có ít nhất 06 chiếc phao cứu sinh (mỗi phao tròn kèm\ndây ném chiều dài 20-30m), được đặt ở vị trí thuận lợi, dễ nhìn thấy, mỗi phao bố\ntrí cách nhau 15m dọc theo chiều dài của khu vực tắm và đặt tại các hộ kinh doanh\ndịch vụ trong khu vực hồ, suối, thác.\n\n3. Các phương tiện vận tải đường thủy phải chấp hành quy định về đăng ký,\nđăng kiểm, chứng chỉ điều khiển phương tiện; bố trí đủ áo phao tương ứng với số\nlượng khách theo quy định; phao cứu sinh, dụng cụ nổi và thực hiện các biện pháp\nbảo đảm an toàn để phòng ngừa tai nạn đuối nước…\n\n4. Có bảng nội quy đặt ở những vị trí dễ quan sát, kích thước tối thiểu 6m2\nbằng 2 thứ tiếng Tiếng Việt và tiếng Anh, phông chữ rõ ràng không tẩy xóa, đảm\nbảo mỹ quan.",
+        "4. Có bảng nội quy đặt ở những vị trí dễ quan sát, kích thước tối thiểu 6m2\nbằng 2 thứ tiếng Tiếng Việt và tiếng Anh, phông chữ rõ ràng không tẩy xóa, đảm\nbảo mỹ quan.\n\n5. Có hệ thống biển báo, biển chỉ dẫn đến các điểm dịch vụ và hệ thống giao\nthông nội bộ. Có bãi trông giữ xe phù hợp quy mô kinh doanh, niêm yết giá các\ndịch vụ.\n\n6. Có trạm quan sát cứu hộ cứu nạn, khoảng cách giữa các trạm quan sát tối\nđa là 300m, được xây dựng phù hợp với không gian biển và đảm bảo bao quát toàn\nbộ bãi tắm.\n\n7. Mỗi bãi tắm biển có ít nhất 02 khu nhà tráng nước ngọt (nam, nữ riêng biệt)\n\ncó bố trí mắc treo hoặc giá đựng quần áo, mỗi khu tối thiểu có diện tích đạt 25m2.\n\n8. Nhà vệ sinh công cộng đảm bảo sạch sẽ, được thông gió và đủ ánh sáng,"
+      ],
+      "source_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-8",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-12",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-16",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-13",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-9"
+      ],
+      "retrieval_methods": [
+        "dense",
+        "dense",
+        "dense",
+        "dense",
+        "dense"
+      ],
+      "latency_seconds": 2.702094499953091,
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.7499999999625
+      }
+    },
+    {
+      "case_id": 5,
+      "configuration": "dense_only",
+      "question": "Khoảng cách tối đa giữa các trạm quan sát cứu hộ ở bãi tắm biển là bao nhiêu?",
+      "reference": "Khoảng cách tối đa là 300 m.",
+      "reference_context": "Có trạm quan sát cứu hộ cứu nạn, khoảng cách giữa các trạm quan sát tối đa là 300m.",
+      "response": "300m [S1]",
+      "retrieved_contexts": [
+        "4. Có bảng nội quy đặt ở những vị trí dễ quan sát, kích thước tối thiểu 6m2\nbằng 2 thứ tiếng Tiếng Việt và tiếng Anh, phông chữ rõ ràng không tẩy xóa, đảm\nbảo mỹ quan.\n\n5. Có hệ thống biển báo, biển chỉ dẫn đến các điểm dịch vụ và hệ thống giao\nthông nội bộ. Có bãi trông giữ xe phù hợp quy mô kinh doanh, niêm yết giá các\ndịch vụ.\n\n6. Có trạm quan sát cứu hộ cứu nạn, khoảng cách giữa các trạm quan sát tối\nđa là 300m, được xây dựng phù hợp với không gian biển và đảm bảo bao quát toàn\nbộ bãi tắm.\n\n7. Mỗi bãi tắm biển có ít nhất 02 khu nhà tráng nước ngọt (nam, nữ riêng biệt)\n\ncó bố trí mắc treo hoặc giá đựng quần áo, mỗi khu tối thiểu có diện tích đạt 25m2.\n\n8. Nhà vệ sinh công cộng đảm bảo sạch sẽ, được thông gió và đủ ánh sáng,",
+        "b) Phao cứu sinh: Phải có ít nhất 06 chiếc phao cứu sinh (mỗi phao tròn kèm\ndây ném chiều dài 20-30m), được đặt ở vị trí thuận lợi, dễ nhìn thấy, mỗi phao bố\ntrí cách nhau 15m dọc theo chiều dài của khu vực tắm và đặt tại các hộ kinh doanh\ndịch vụ trong khu vực hồ, suối, thác.\n\n3. Các phương tiện vận tải đường thủy phải chấp hành quy định về đăng ký,\nđăng kiểm, chứng chỉ điều khiển phương tiện; bố trí đủ áo phao tương ứng với số\nlượng khách theo quy định; phao cứu sinh, dụng cụ nổi và thực hiện các biện pháp\nbảo đảm an toàn để phòng ngừa tai nạn đuối nước…\n\n4. Có bảng nội quy đặt ở những vị trí dễ quan sát, kích thước tối thiểu 6m2\nbằng 2 thứ tiếng Tiếng Việt và tiếng Anh, phông chữ rõ ràng không tẩy xóa, đảm\nbảo mỹ quan.",
+        "và độ thoải đảm bảo an toàn cho du khách khi tắm biển.\n\n2. Có ít nhất 01 xuồng cứu sinh (hoặc Ca nô) được đăng ký, đăng kiểm theo\nquy định, đảm bảo chất lượng và đáp ứng công tác cứu hộ cứu nạn khi có sự cố\nxảy  ra,  người  điều  khiển  phương  tiện  phải  có  văn  bằng,  chứng  chỉ  chuyên  môn\ntheo quy định. Trên mỗi xuồng có trang bị tối thiểu 06 áo phao cá nhân, 02 phao\ntròn (01 phao tròn kèm dây ném chiều dài 25-30m) và có bộ đồ lặn kèm theo bình\ndưỡng khí.\n\n3.  Có  thiết  bị  nhận  biết  phạm  vi  ranh  giới,  hệ  thống  phao  tiêu,  cờ  chỉ  giới,\nbiển báo hiệu vùng hành lang an toàn, màu sắc tương phản với màu nước, dễ quan\nsát, đảm bảo yêu cầu cảnh báo.",
+        "sông, hồ, suối, thác phải có đầy đủ các dụng cụ sau:\n\n1. Dây phao:\n\na) Dây phao dọc: Được căng dọc theo khu vực tắm có độ sâu từ 1m40 trở\n\nlên dùng cho các đối tượng đã biết bơi;\n\nb) Dây phao ngang: Được căng ngang để chia khu vực có độ sâu từ 1m trở\n\nxuống dùng cho người chưa biết bơi ngăn với khu vực có độ sâu từ 1m trở lên.\n\n2. Trang bị cứu hộ:\n\na) Sào cứu hộ: Phải có ít nhất 06 sào cứu hộ dài 2,50m, sào cứu hộ sơn màu\nđỏ - trắng, đặt ở các vị trí thuận lợi, dễ nhìn thấy, mỗi sào bố trí cách nhau 15m dọc\ntheo chiều dài của khu vực tắm và tại các cơ sở kinh doanh dịch vụ trong khu vực\nsông, hồ, suối, thác để khách và nhân viên có thể sử dụng khi cần.",
+        "Điều  6.  Điều  kiện,  yêu  cầu  đối  với  người  làm  việc  tại  đơn  vị  khai  thác,\n\nquản lý bãi tắm biển, sông, hồ, suối, thác\n\n1. Có đội ngũ lao động làm nhiệm vụ cứu hộ cứu nạn, cứu đuối nước; an ninh\ntrật tự; người điều khiển phương tiện phải có chứng chỉ chuyên môn theo quy định;\nnhân viên thường xuyên được tập huấn chuyên môn nghiệp vụ.\n\n2. Số lượng nhân viên cứu hộ phải đảm bảo ít nhất 200m2 mặt nước/01 nhân\nviên, trường hợp sông, hồ, suối, thác có nhiều khu vực tắm phải đảm bảo mỗi khu\nvực có 01 nhân viên trong cùng một thời điểm, trường hợp đông người tham gia\nphải đảm bảo ít nhất 50 người bơi/01 nhân viên trong cùng một thời điểm.\n\n3.  Có  ký  kết  hợp  đồng  lao  động  với  cá  nhân  làm  việc  tại  các  bãi  tắm  biển,"
+      ],
+      "source_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-9",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-13",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-8",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-12",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-16"
+      ],
+      "retrieval_methods": [
+        "dense",
+        "dense",
+        "dense",
+        "dense",
+        "dense"
+      ],
+      "latency_seconds": 2.4624307920457795,
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999995
+      }
+    },
+    {
+      "case_id": 6,
+      "configuration": "dense_only",
+      "question": "Quy chế yêu cầu tỷ lệ diện tích mặt nước trên mỗi nhân viên cứu hộ là bao nhiêu?",
+      "reference": "Phải bố trí ít nhất 01 nhân viên cứu hộ cho mỗi 200 m² mặt nước.",
+      "reference_context": "Số lượng nhân viên cứu hộ phải đảm bảo ít nhất 200m2 mặt nước/01 nhân viên.",
+      "response": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+      "retrieved_contexts": [
+        "Điều  6.  Điều  kiện,  yêu  cầu  đối  với  người  làm  việc  tại  đơn  vị  khai  thác,\n\nquản lý bãi tắm biển, sông, hồ, suối, thác\n\n1. Có đội ngũ lao động làm nhiệm vụ cứu hộ cứu nạn, cứu đuối nước; an ninh\ntrật tự; người điều khiển phương tiện phải có chứng chỉ chuyên môn theo quy định;\nnhân viên thường xuyên được tập huấn chuyên môn nghiệp vụ.\n\n2. Số lượng nhân viên cứu hộ phải đảm bảo ít nhất 200m2 mặt nước/01 nhân\nviên, trường hợp sông, hồ, suối, thác có nhiều khu vực tắm phải đảm bảo mỗi khu\nvực có 01 nhân viên trong cùng một thời điểm, trường hợp đông người tham gia\nphải đảm bảo ít nhất 50 người bơi/01 nhân viên trong cùng một thời điểm.\n\n3.  Có  ký  kết  hợp  đồng  lao  động  với  cá  nhân  làm  việc  tại  các  bãi  tắm  biển,",
+        "sông, hồ, suối, thác phải có đầy đủ các dụng cụ sau:\n\n1. Dây phao:\n\na) Dây phao dọc: Được căng dọc theo khu vực tắm có độ sâu từ 1m40 trở\n\nlên dùng cho các đối tượng đã biết bơi;\n\nb) Dây phao ngang: Được căng ngang để chia khu vực có độ sâu từ 1m trở\n\nxuống dùng cho người chưa biết bơi ngăn với khu vực có độ sâu từ 1m trở lên.\n\n2. Trang bị cứu hộ:\n\na) Sào cứu hộ: Phải có ít nhất 06 sào cứu hộ dài 2,50m, sào cứu hộ sơn màu\nđỏ - trắng, đặt ở các vị trí thuận lợi, dễ nhìn thấy, mỗi sào bố trí cách nhau 15m dọc\ntheo chiều dài của khu vực tắm và tại các cơ sở kinh doanh dịch vụ trong khu vực\nsông, hồ, suối, thác để khách và nhân viên có thể sử dụng khi cần.",
+        "b) Phao cứu sinh: Phải có ít nhất 06 chiếc phao cứu sinh (mỗi phao tròn kèm\ndây ném chiều dài 20-30m), được đặt ở vị trí thuận lợi, dễ nhìn thấy, mỗi phao bố\ntrí cách nhau 15m dọc theo chiều dài của khu vực tắm và đặt tại các hộ kinh doanh\ndịch vụ trong khu vực hồ, suối, thác.\n\n3. Các phương tiện vận tải đường thủy phải chấp hành quy định về đăng ký,\nđăng kiểm, chứng chỉ điều khiển phương tiện; bố trí đủ áo phao tương ứng với số\nlượng khách theo quy định; phao cứu sinh, dụng cụ nổi và thực hiện các biện pháp\nbảo đảm an toàn để phòng ngừa tai nạn đuối nước…\n\n4. Có bảng nội quy đặt ở những vị trí dễ quan sát, kích thước tối thiểu 6m2\nbằng 2 thứ tiếng Tiếng Việt và tiếng Anh, phông chữ rõ ràng không tẩy xóa, đảm\nbảo mỹ quan.",
+        "và độ thoải đảm bảo an toàn cho du khách khi tắm biển.\n\n2. Có ít nhất 01 xuồng cứu sinh (hoặc Ca nô) được đăng ký, đăng kiểm theo\nquy định, đảm bảo chất lượng và đáp ứng công tác cứu hộ cứu nạn khi có sự cố\nxảy  ra,  người  điều  khiển  phương  tiện  phải  có  văn  bằng,  chứng  chỉ  chuyên  môn\ntheo quy định. Trên mỗi xuồng có trang bị tối thiểu 06 áo phao cá nhân, 02 phao\ntròn (01 phao tròn kèm dây ném chiều dài 25-30m) và có bộ đồ lặn kèm theo bình\ndưỡng khí.\n\n3.  Có  thiết  bị  nhận  biết  phạm  vi  ranh  giới,  hệ  thống  phao  tiêu,  cờ  chỉ  giới,\nbiển báo hiệu vùng hành lang an toàn, màu sắc tương phản với màu nước, dễ quan\nsát, đảm bảo yêu cầu cảnh báo.",
+        "2. Tổ  chức  các  Lớp  tập  huấn  chuyên  môn  cho  người  hướng  dẫn  tập  luyện,\n\nnhân viên cứu hộ môn bơi, lặn.\n\nĐiều 13. Sở Xây dựng\n\nHướng dẫn các đơn vị và kiểm tra các tiêu chuẩn về an toàn kỹ thuật của các\nphương tiện đường thủy; chuyên môn, nghiệp vụ của người điều khiển phương tiện\nvà công tác đảm bảo trật tự an toàn cho khách.\n\nĐiều 14. Sở Y tế\n\n1. Sở Y tế phối hợp huấn luyện đào tạo về chuyên môn sơ cấp cứu cho các\n\nnhân viên làm nhiệm vụ cứu hộ cứu nạn, cứu đuối nước.\n\n2. Chỉ đạo các cơ sở y tế cung cấp số điện thoại Trạm y tế trên địa bàn có các\nbãi  tắm  biển,  sông,  hồ,  suối,  thác  thuộc  điểm  du  lịch,  khu  du  lịch  đã  được  công\nnhận cho các tổ làm nhiệm vụ cứu hộ cứu nạn, cứu đuối nước và phối hợp y tế khi\ncó yêu cầu."
+      ],
+      "source_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-16",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-12",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-13",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-8",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-27"
+      ],
+      "retrieval_methods": [
+        "dense",
+        "dense",
+        "dense",
+        "dense",
+        "dense"
+      ],
+      "latency_seconds": 1.811682916013524,
+      "scores": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999
+      }
+    },
+    {
+      "case_id": 7,
+      "configuration": "dense_only",
+      "question": "Đơn vị khai thác bãi tắm phải báo cáo kết quả kinh doanh định kỳ vào ngày nào hàng tháng?",
+      "reference": "Đơn vị phải báo cáo định kỳ vào ngày 20 hàng tháng.",
+      "reference_context": "Định kỳ ngày 20 hàng tháng phải thực hiện báo cáo kết quả hoạt động kinh doanh tháng trước liền kề của đơn vị.",
+      "response": "Ngày 20 hàng tháng [S1].",
+      "retrieved_contexts": [
+        "có liên quan.\n\n7. Thực hiện các thủ tục về bảo vệ môi trường theo quy định.\n\n8. Định kỳ ngày 20 hàng tháng phải thực hiện báo cáo kết quả hoạt động kinh\ndoanh tháng trước liền kề của đơn vị trực tiếp trên Hệ thống phần mềm nhận gửi\nbáo  cáo  thống  kê  du  lịch  do  Cục  Du  lịch  quốc  gia  Việt  Nam  quản  lý  tại  địa  chỉ\nhttp://thongke.tourism.vn.\n\n9. Việc sử dụng mặt nước sông, suối để kinh doanh, dịch vụ bảo đảm không\ngây ô nhiễm nguồn nước, cản trở dòng chảy, hư hại lòng, bờ, bãi sông, suối, kênh,\nmương, rạch và ảnh hưởng đến các hoạt động khai thác, sử dụng nước khác.\n\n10. Thực hiện kê khai, cấp phép khai thác tài nguyên nước và đăng ký khai\nthác, sử dụng tài nguyên nước theo quy định của pháp luật về lĩnh vực tài nguyên\nnước (nếu có).",
+        "Quy chế này.\n\n4.  Ủy  ban  nhân  dân  các  phường,  xã,  có  trách  nhiệm  triển  khai,  hướng  dẫn,\nkiểm tra việc thực hiện Quy chế này đối với các bãi tắm biển, sông, hồ, suối, thác\nthuộc địa bàn; định kỳ hàng năm hoặc đột xuất báo cáo kết quả thực hiện Quy chế\nnày về Sở Du lịch để tổng hợp báo cáo Ủy ban nhân dân thành phố.\n\n5. Ban quản lý bãi tắm biển, sông, hồ, suối, thác phối hợp với Ủy ban nhân\ndân các phường, xã thực hiện công tác quản lý nội quy, quy chế của bãi tắm biển,\nsông, hồ, suối, thác và các nội dung tại Quy chế này.\n\n6. Tổ chức, cá nhân hoạt động kinh doanh dịch vụ và khách du lịch tại các bãi\ntắm biển, sông, hồ, suối, thác có trách nhiệm thực hiện các nội dung quy định tại\nQuy chế này./.\n\n10",
+        "Theo đề nghị của Sở Du lịch;\n\nỦy ban nhân dân thành phố ban hành Quyết định ban hành Quy chế quản lý\nbãi  tắm  biển,  sông,  hồ  suối,  thác  thuộc  điểm  du  lịch,  khu  du  lịch  đã  được  công\nnhận trên địa bàn thành phố Huế.\n\n\fĐiều  1. Ban  hành  kèm  theo  Quyết  định  này  Quy  chế  quản  lý  Bãi  tắm  biển,\nsông, hồ, suối, thác thuộc điểm du lịch, khu du lịch đã được công nhận trên địa bàn\nthành phố Huế.\n\nĐiều 2. Hiệu lực thi hành\n\nQuyết định này có hiệu lực thi hành kể từ ngày 29 tháng 4 năm 2026 và thay\nthế Quyết định số 53/2023/QĐ-UBND ngày 27 tháng 9 năm 2023 của Ủy ban nhân\ndân tỉnh Ban hành Quy chế quản lý bãi tắm biển, sông, hồ, suối, thác thuộc điểm\ndu lịch, khu du lịch đã được công nhận trên địa bàn tỉnh Thừa Thiên Huế.\n\nĐiều 3. Tổ chức thực hiện",
+        "Điều 9. Quy định đối với tổ chức, cá nhân quản lý và khai thác\n\n1. Khảo sát và xây dựng biểu đồ hiện trạng, chiều dài, chiều rộng, độ sâu mực\nnước, độ nước xoáy, độ sóng, thủy triều theo mùa; dấu hiệu xảy ra lũ quét, sạt lỡ\nđất; theo dõi chất lượng nguồn nước để đảm bảo an toàn cho du khách khi tắm, kịp\nthời phát hiện các sự cố bất thường.\n\n2. Thành lập lực lượng cứu hộ cứu nạn, quản lý an ninh trật tự và vệ sinh môi\ntrường, phòng chống cháy nổ, vệ sinh an toàn thực phẩm trong phục vụ khai thác\ncó chuyên môn nghiệp vụ theo chức năng nhiệm vụ của từng vị trí công việc.\n\n3. Xây dựng phương án quản lý, khai thác và sử dụng Bãi tắm biển, sông, hồ,\n\nsuối, thác và thực hiện đúng cam kết trong phương án.",
+        "6. Khai thác, sử dụng nước dưới đất tại khu vực bãi tắm biển, sông, hồ, suối,\n\nthác khi chưa được sự đồng ý của cơ quan quản lý nhà nước có thẩm quyền.\n\n7. Sử dụng các vật dụng, thiết bị cũ (lều, bạt, dù che nắng và các loại bàn ghế\nnhựa, dụng cụ...) không đồng bộ, không đảm bảo an toàn sử dụng, mỹ quan cảnh\nquan khu vực bãi tắm biển, suối, thác.\n\n8. Lấn chiếm bãi biển, khe suối, bố trí dù, ghế tại các khu vực tắm.\n\n9.  Điều  khiển  các  phương  tiện  ca  nô  kéo  dù,  ca  nô  lướt  ván,  mô  tô  nước,\nthuyền buồm thể thao và các phương tiện thể thao khác chạy vào khu vực tắm hoặc\nchạy gần hệ thống phao tiêu giới hạn vùng hoạt động khác với tốc độ cao, tạo sóng.\n\nĐiều 9. Quy định đối với tổ chức, cá nhân quản lý và khai thác"
+      ],
+      "source_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-22",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-32",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-2",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-20",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-19"
+      ],
+      "retrieval_methods": [
+        "dense",
+        "dense",
+        "dense",
+        "dense",
+        "dense"
+      ],
+      "latency_seconds": 1.7242797500221059,
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999
+      }
+    },
+    {
+      "case_id": 8,
+      "configuration": "dense_only",
+      "question": "Giấy chứng nhận đạt tiêu chí Du lịch xanh thành phố Huế có giá trị bao lâu?",
+      "reference": "Giấy chứng nhận có giá trị 03 năm kể từ ngày ký.",
+      "reference_context": "Giấy chứng nhận đạt tiêu chí Du lịch xanh cho cơ sở du lịch có giá trị trong thời hạn 03 năm kể từ ngày ký.",
+      "response": "03 năm [S2]",
+      "retrieved_contexts": [
+        "4. Bộ nhận diện Du lịch xanh thành phố Huế (Phụ lục IV )\n\nĐiều 2. Quyết định này có hiệu lực kể từ ngày ký.\n\nĐiều 3. Tổ chức triển khai thực hiện",
+        "3. Công nhận Tiêu chí Du lịch xanh\n\nCăn  cứ  kết  quả  thẩm  định,  Sở  Du  lịch  trình  Ủy  ban  nhân  dân  thành  phố\nHuế  ban  hành  Quyết  định  công  nhận  và  cấp  Giấy  chứng  nhận  đạt  tiêu  chí  Du\nlịch xanh cho cơ sở du lịch, có giá trị trong thời hạn 03 năm kể từ ngày ký.\n\nCơ sở du lịch được công nhận đạt tiêu chí Du lịch xanh thì được sử dụng\nBộ nhận diện du lịch xanh và Giấy chứng nhận tương ứng với mức công nhận\n(Phụ lục IV)\n\nKết quả đánh giá của các cơ sở du lịch đạt tiêu chí Du lịch xanh thông qua\nđiểm số (trên tổng số 170 điểm) theo 03 mức độ: Cơ bản, Nâng cao, Xuất sắc.\nCụ thể như sau:\n\nSTT\n\nLOẠI CƠ SỞ\nDU LỊCH\n\nMỨC ĐỘ ĐẠT TIÊU CHÍ DU LỊCH XANH\n\nCơ bản\n\nNâng cao\n\nXuất sắc\n\n1\n\n2\n\n3\n\nCơ sở lưu trú\ndu lịch\n\nTừ 85 đến dưới\n100 điểm\n\nTừ 100 đến dưới\n140 điểm",
+        "Căn cứ Quyết định số 1749/QĐ-UBND ngày 19 tháng 6 năm 2025 của Uỷ\nban nhân dân thành phố Huế về việc phê duyệt Đề án phát triển du lịch, dịch vụ\ndu lịch thành phố Huế giai đoạn 2025-2030, tầm nhìn đến năm 2045;\n\nTheo đề nghị của Giám đốc Sở Du lịch tại Tờ trình số 880/TTr-SDL ngày\n\n22 tháng 4 năm 2026.\n\nQUYẾT ĐỊNH:\n\n  Điều 1. Ban hành kèm theo Quyết định này Quy định về Bộ tiêu chí Du\nlịch xanh thành phố Huế, Bộ nhận diện du lịch xanh thành phố Huế và các Bộ\ntiêu chí du lịch xanh áp dụng cho các loại hình dịch vụ du lịch, gồm:\n\n\f 1. Bộ tiêu chí Du lịch xanh dành cho Cơ sở lưu trú du lịch (Phụ lục I)\n\n 2. Bộ tiêu chí Du lịch xanh dành cho Điểm tham quan du lịch (Phụ lục II )\n\n         3. Bộ tiêu chí Du lịch xanh dành cho Cơ sở kinh doanh dịch vụ ăn uống (\nPhụ lục III )",
+        "2. Thời hạn áp dụng\n\nBộ  tiêu  chí  Du  lịch  xanh  thành  phố  Huế  có  hiệu  lực  kể  từ  ngày  UBND\n\nthành phố ban hành Quyết định.\n\nTrong  những  trường  hợp  cần  thiết,  căn  cứ  vào  tính  chất,  mức  độ  quan\ntrọng, nhu cầu và xu thế phát triển của các cơ sở lưu trú du lịch, điểm tham quan\ndu lịch và các cơ sở kinh doanh dịch vụ ăn uống, có thể đề xuất Ủy ban nhân\ndân thành phố xem xét, điều chỉnh, bổ sung Bộ Tiêu chí cho phù hợp.\n\nIV. GIẢI THÍCH TỪ NGỮ\n\nDu lịch: Hoạt động có liên quan đến chuyến đi của con người ngoài nơi cư\ntrú thường xuyên trong thời gian không quá một năm liên tục nhằm đáp ứng nhu\ncầu tham quan, nghỉ dưỡng, giải trí, tìm hiểu, khám phá tài nguyên du lịch hoặc\nkết hợp với mục đích hợp pháp khác.",
+        "(3) Để đạt được những điểm chuẩn tương ứng với các chỉ số của tiêu chí,\ncơ sở du lịch cần cung cấp tối thiểu một trong số các loại minh chứng cụ thể (kế\nhoạch,  hình  ảnh,  sổ  ghi  chép,  chương  trình,  biên  bản,  hóa  đơn,  hợp  đồng,  báo\ncáo, biển báo, bản vẽ, chứng nhận, hướng dẫn, quy trình...). Các cơ sở du lịch\nchịu trách nhiệm về tính chính xác của hồ sơ và minh chứng cung cấp\n\n(4)  Việc  thẩm  định,  đánh  giá  do  Sở  Du  lịch  chủ  trì,  phối  hợp  với  các  sở,\nban, ngành, địa phương liên quan và Hiệp hội Du lịch thành phố thành lập Hội\nđồng  thẩm  định  và  tổ  chức  thực  hiện  theo  Quy  chế  đánh  giá  Tiêu  chí  Du  lịch\nxanh thành phố Huế do UBND thành phố ban hành.\n\n3. Công nhận Tiêu chí Du lịch xanh"
+      ],
+      "source_ids": [
+        "legal/1431.md::chunk-3",
+        "legal/1431.md::chunk-20",
+        "legal/1431.md::chunk-2",
+        "legal/1431.md::chunk-11",
+        "legal/1431.md::chunk-19"
+      ],
+      "retrieval_methods": [
+        "dense",
+        "dense",
+        "dense",
+        "dense",
+        "dense"
+      ],
+      "latency_seconds": 2.2546257079811767,
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999995
+      }
+    },
+    {
+      "case_id": 9,
+      "configuration": "dense_only",
+      "question": "Bộ tiêu chí Du lịch xanh thành phố Huế áp dụng cho những loại cơ sở nào?",
+      "reference": "Bộ tiêu chí áp dụng cho cơ sở lưu trú du lịch, điểm tham quan du lịch và cơ sở kinh doanh dịch vụ ăn uống trên địa bàn thành phố Huế.",
+      "reference_context": "Bộ tiêu chí Du lịch xanh thành phố Huế áp dụng cho các cơ sở lưu trú du lịch, điểm tham quan du lịch và các cơ sở kinh doanh dịch vụ ăn uống trên địa bàn thành phố Huế.",
+      "response": "Bộ tiêu chí Du lịch xanh thành phố Huế áp dụng cho các cơ sở lưu trú du lịch, điểm tham quan du lịch và các cơ sở kinh doanh dịch vụ ăn uống. [S2]",
+      "retrieved_contexts": [
+        "Căn cứ Quyết định số 1749/QĐ-UBND ngày 19 tháng 6 năm 2025 của Uỷ\nban nhân dân thành phố Huế về việc phê duyệt Đề án phát triển du lịch, dịch vụ\ndu lịch thành phố Huế giai đoạn 2025-2030, tầm nhìn đến năm 2045;\n\nTheo đề nghị của Giám đốc Sở Du lịch tại Tờ trình số 880/TTr-SDL ngày\n\n22 tháng 4 năm 2026.\n\nQUYẾT ĐỊNH:\n\n  Điều 1. Ban hành kèm theo Quyết định này Quy định về Bộ tiêu chí Du\nlịch xanh thành phố Huế, Bộ nhận diện du lịch xanh thành phố Huế và các Bộ\ntiêu chí du lịch xanh áp dụng cho các loại hình dịch vụ du lịch, gồm:\n\n\f 1. Bộ tiêu chí Du lịch xanh dành cho Cơ sở lưu trú du lịch (Phụ lục I)\n\n 2. Bộ tiêu chí Du lịch xanh dành cho Điểm tham quan du lịch (Phụ lục II )\n\n         3. Bộ tiêu chí Du lịch xanh dành cho Cơ sở kinh doanh dịch vụ ăn uống (\nPhụ lục III )",
+        "Tăng cường vai trò quản lý của nhà nước, tạo công cụ hỗ trợ công tác kiểm\ntra, giám sát, đánh giá và xây dựng chính sách hỗ trợ, khuyến khích các mô hình\ndu lịch xanh.\n\nLàm cơ sở xây dựng cơ chế ưu đãi, hỗ trợ và khen thưởng, thúc đẩy doanh\nnghiệp và các chủ thể tham gia tích cực vào quá trình chuyển đổi sang mô hình\ndu lịch xanh và phát triển bền vững.\n\nIII. ĐỐI TƯỢNG, PHẠM VI, THỜI HẠN ÁP DỤNG\n\n1. Đối tượng, phạm vi áp dụng\n\nBộ tiêu chí Du lịch xanh thành phố Huế quy định các tiêu chí du lịch xanh,\nquy trình đánh giá, công nhận đạt chuẩn du lịch xanh áp dụng cho các cơ sở lưu\ntrú  du  lịch,  điểm  tham  quan  du  lịch  và  các  cơ  sở  kinh  doanh  dịch  vụ  ăn  uống\ntrên địa bàn thành phố Huế.\n\n2. Thời hạn áp dụng",
+        "3. Công nhận Tiêu chí Du lịch xanh\n\nCăn  cứ  kết  quả  thẩm  định,  Sở  Du  lịch  trình  Ủy  ban  nhân  dân  thành  phố\nHuế  ban  hành  Quyết  định  công  nhận  và  cấp  Giấy  chứng  nhận  đạt  tiêu  chí  Du\nlịch xanh cho cơ sở du lịch, có giá trị trong thời hạn 03 năm kể từ ngày ký.\n\nCơ sở du lịch được công nhận đạt tiêu chí Du lịch xanh thì được sử dụng\nBộ nhận diện du lịch xanh và Giấy chứng nhận tương ứng với mức công nhận\n(Phụ lục IV)\n\nKết quả đánh giá của các cơ sở du lịch đạt tiêu chí Du lịch xanh thông qua\nđiểm số (trên tổng số 170 điểm) theo 03 mức độ: Cơ bản, Nâng cao, Xuất sắc.\nCụ thể như sau:\n\nSTT\n\nLOẠI CƠ SỞ\nDU LỊCH\n\nMỨC ĐỘ ĐẠT TIÊU CHÍ DU LỊCH XANH\n\nCơ bản\n\nNâng cao\n\nXuất sắc\n\n1\n\n2\n\n3\n\nCơ sở lưu trú\ndu lịch\n\nTừ 85 đến dưới\n100 điểm\n\nTừ 100 đến dưới\n140 điểm",
+        "V. PHƯƠNG PHÁP THỰC HIỆN\n\n1. Cấu trúc\n\nBộ tiêu chí Du lịch xanh thành phố Huế được chia thành các chủ đề chính,\nmỗi  chủ  đề  bao  gồm  một  số  tiêu  chí  và  các  chỉ  tiêu  cụ  thể,  kèm  theo  số  điểm\ntương ứng để đo lường, đánh giá theo các mức độ có thể thực hiện được.\n\nCác chủ đề chính của Bộ tiêu chí Du lịch xanh thành phố Huế:\n\n\fSTT\n\nTên Bộ Tiêu chí\n\nTên các chủ đề chính\n\n1\n\nBộ tiêu chí Du lịch xanh dành\ncho Cơ sở lưu trú du lịch (Phụ\nlục I)\n\n2\n\nBộ tiêu chí Du lịch xanh dành\ncho  Điểm  tham  quan  du  lịch\n(Phụ lục II)\n\n3\n\nBộ tiêu chí Du lịch xanh dành\ncho Cơ sở kinh doanh dịch vụ\năn uống (Phụ lục III)\n\nBao gồm 05 chủ đề chính:\n\n- Môi trường chung\n\n- Sử dụng thiết bị, vật liệu thân thiện với\nmôi trường\n\n- Quản lý chất thải và tái chế",
+        "Cơ sở kinh doanh dịch vụ ăn uống: Cơ sở chế biến thức ăn bao gồm cửa\nhàng, quầy hàng kinh doanh thức ăn ngay, thực phẩm chín, nhà hàng ăn uống,\ncơ sở chế biến suất ăn sẵn, căn-tin và bếp ăn tập thể.\n\nPhát triển du lịch bền vững: Sự phát triển du lịch đáp ứng đồng thời các\nyêu  cầu  về  kinh  tế,  xã  hội  và  môi  trường  đảm  bảo  hài  hòa  lợi  ích  các  chủ  thể\ntham gia hoạt động du lịch, không làm tổn hại đến khả năng đáp ứng nhu cầu du\nlịch trong tương lai\n\nTiêu chí du lịch xanh: Hệ thống các tiêu chí, tiêu chuẩn dùng để đánh giá,\nđịnh hướng và khuyến khích các cơ sở du lịch phát triển theo hướng bền vững\nvà thân thiện với môi trường."
+      ],
+      "source_ids": [
+        "legal/1431.md::chunk-2",
+        "legal/1431.md::chunk-10",
+        "legal/1431.md::chunk-20",
+        "legal/1431.md::chunk-16",
+        "legal/1431.md::chunk-14"
+      ],
+      "retrieval_methods": [
+        "dense",
+        "dense",
+        "dense",
+        "dense",
+        "dense"
+      ],
+      "latency_seconds": 1.5754421249730512,
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5719009872458152,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999998
+      }
+    },
+    {
+      "case_id": 10,
+      "configuration": "dense_only",
+      "question": "Theo Bộ tiêu chí của Huế, du lịch xanh được hiểu là gì?",
+      "reference": "Du lịch xanh là loại hình du lịch giảm thiểu tác động đến môi trường, đóng góp cho bảo vệ đa dạng sinh học, sử dụng năng lượng tái tạo, phát huy di sản và phát triển sản phẩm thân thiện với môi trường.",
+      "reference_context": "Du lịch xanh: Loại hình du lịch hoạt động theo phương thức giảm thiểu tác động đến môi trường, đóng góp tích cực cho bảo vệ đa dạng sinh học, sử dụng năng lượng tái tạo và phát huy các di sản thiên nhiên và văn hóa, phát triển các sản phẩm thân thiện với môi trường.",
+      "response": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+      "retrieved_contexts": [
+        "Nhằm cụ thể hóa Chiến lược quốc gia về tăng trưởng xanh (ban hành kèm\ntheo Quyết định số 1658/QĐ-TTg ngày 01/10/2021 của Thủ tướng Chính phủ)\nvà Kế hoạch hành động quốc gia về tăng trưởng xanh giai đoạn 2021-2030 (ban\nhành  kèm  theo  Quyết  định  số  3175/QĐ-UBND  ngày  27/12/2022  của  UBND\ntỉnh (nay là UBND thành phố)), việc ban hành Bộ tiêu chí Du lịch xanh thành\nphố Huế là bước đi quan trọng và cần thiết nhằm thể hiện tầm nhìn, chiến lược\nvà  cam  kết  của  chính  quyền  thành  phố  trong  việc  xây  dựng  nền  du  lịch  xanh,\nthân thiện với môi trường và phát triển bền vững, góp phần nâng cao chất lượng\ndịch vụ, bảo vệ môi trường và xây dựng hình ảnh điểm đến Huế an toàn, thân\nthiện và xanh, sạch, đẹp.\n\nII. MỤC TIÊU",
+        "Thành phố Huế là trung tâm văn hóa, du lịch đặc sắc của cả nước, nổi bật\nvới Quần thể di tích Cố đô Huế được UNESCO công nhận là Di sản văn hóa thế\ngiới, cùng hệ thống tài nguyên thiên nhiên phong phú thuận lợi để phát triển các\nloại hình du lịch sinh thái, cộng đồng, du lịch chăm sóc sức khỏe,... Tuy nhiên,\ncùng  với  tốc  độ  tăng  trưởng  và  phát  triển  mạnh  mẽ,  ngành  du  lịch  Thành  phố\nHuế cũng đang đối mặt với nhiều thách thức: sức ép về môi trường, ô nhiễm rác\nthải nhựa, biến đổi khí hậu, khai thác quá mức tài nguyên, suy giảm cảnh quan\ntự nhiên, cùng với yêu cầu nâng cao chất lượng dịch vụ và trách nhiệm xã hội\ncủa doanh nghiệp du lịch.",
+        "3. Công nhận Tiêu chí Du lịch xanh\n\nCăn  cứ  kết  quả  thẩm  định,  Sở  Du  lịch  trình  Ủy  ban  nhân  dân  thành  phố\nHuế  ban  hành  Quyết  định  công  nhận  và  cấp  Giấy  chứng  nhận  đạt  tiêu  chí  Du\nlịch xanh cho cơ sở du lịch, có giá trị trong thời hạn 03 năm kể từ ngày ký.\n\nCơ sở du lịch được công nhận đạt tiêu chí Du lịch xanh thì được sử dụng\nBộ nhận diện du lịch xanh và Giấy chứng nhận tương ứng với mức công nhận\n(Phụ lục IV)\n\nKết quả đánh giá của các cơ sở du lịch đạt tiêu chí Du lịch xanh thông qua\nđiểm số (trên tổng số 170 điểm) theo 03 mức độ: Cơ bản, Nâng cao, Xuất sắc.\nCụ thể như sau:\n\nSTT\n\nLOẠI CƠ SỞ\nDU LỊCH\n\nMỨC ĐỘ ĐẠT TIÊU CHÍ DU LỊCH XANH\n\nCơ bản\n\nNâng cao\n\nXuất sắc\n\n1\n\n2\n\n3\n\nCơ sở lưu trú\ndu lịch\n\nTừ 85 đến dưới\n100 điểm\n\nTừ 100 đến dưới\n140 điểm",
+        "2. Thời hạn áp dụng\n\nBộ  tiêu  chí  Du  lịch  xanh  thành  phố  Huế  có  hiệu  lực  kể  từ  ngày  UBND\n\nthành phố ban hành Quyết định.\n\nTrong  những  trường  hợp  cần  thiết,  căn  cứ  vào  tính  chất,  mức  độ  quan\ntrọng, nhu cầu và xu thế phát triển của các cơ sở lưu trú du lịch, điểm tham quan\ndu lịch và các cơ sở kinh doanh dịch vụ ăn uống, có thể đề xuất Ủy ban nhân\ndân thành phố xem xét, điều chỉnh, bổ sung Bộ Tiêu chí cho phù hợp.\n\nIV. GIẢI THÍCH TỪ NGỮ\n\nDu lịch: Hoạt động có liên quan đến chuyến đi của con người ngoài nơi cư\ntrú thường xuyên trong thời gian không quá một năm liên tục nhằm đáp ứng nhu\ncầu tham quan, nghỉ dưỡng, giải trí, tìm hiểu, khám phá tài nguyên du lịch hoặc\nkết hợp với mục đích hợp pháp khác.",
+        "###### Tour du lịch\n#####  [Khám phá các địa điểm và tour Du lịch tâm lin...](https://visithue.vn/du-lich-tam-linh-o-hue/?pid=MjI2NzN8Y3NkbGRs0 \"Khám phá các địa điểm và tour Du lịch tâm linh nổi bật ở Huế\")\nMảnh đất Thừa Thiên Huế có rất nhiều di sản văn hóa tâm linh độc đáo, nổi tiếng. Huế ...\n###### Sinh thái\n#####  [Những ngày cuối tuần ở Huế](https://visithue.vn/nhung-ngay-cuoi-tuan-o-hue/?pid=MjI0NTB8Y3NkbGRs0 \"Những ngày cuối tuần ở Huế\")\nKhông chỉ đi tham quan những di tích, thắng cảnh nổi tiếng. Bạn có biết Huế còn có nh...\n###### Văn hóa\n#####  [Đêm nghe ca Huế trên dòng Hương](https://visithue.vn/dem-nghe-ca-hue-tren-dong-huong/?pid=MjI0NDJ8Y3NkbGRs0 \"Đêm nghe ca Huế trên dòng Hương\")\nChín thương bến Ngự sang ngang Mười thương, mười thương tà áo Ố tang, ố tang tình t..."
+      ],
+      "source_ids": [
+        "legal/1431.md::chunk-8",
+        "legal/1431.md::chunk-7",
+        "legal/1431.md::chunk-20",
+        "legal/1431.md::chunk-11",
+        "news/article_04.md::chunk-2"
+      ],
+      "retrieval_methods": [
+        "dense",
+        "dense",
+        "dense",
+        "dense",
+        "dense"
+      ],
+      "latency_seconds": 2.308050125022419,
+      "scores": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999666667
+      }
+    },
+    {
+      "case_id": 11,
+      "configuration": "dense_only",
+      "question": "Trong lịch trình 3 ngày 2 đêm ở Huế, giá vé tham quan cung An Định là bao nhiêu?",
+      "reference": "Giá vé tham quan cung An Định là 50.000 đồng/người.",
+      "reference_context": "Cung An Định là địa điểm đáng khám phá tiếp theo khi dừng chân tại đất kinh kỳ. Giá vé: 50.000 đồng/người.",
+      "response": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+      "retrieved_contexts": [
+        "####  3 ngày 2 đêm ở Huế\nXứ Huế hút tín đồ xê dịch bởi sự hài hoài của kiến trúc, thiên nhiên. Việc kết hợp khám phá các điểm du lịch gần nhau sẽ giúp chuyến đi cố đô của bạn thuận lợi hơn.\nCố đô Huế được biết đến là mảnh đất trầm mặc, lưu dấu những công trình lịch sử, các ngôi chùa từ xa xưa. Đại Nội, chùa Thiên Mụ, các khu lăng tẩm vốn đã \"quen mặt\" trong loạt ảnh check-in của giới trẻ. Bạn có thể đổi gió cho chuyến đi đến miền đất di sản bằng những địa điểm mới lạ hơn như khu phố Tây, đầm Lập An, đồi Vọng Cảnh... Dưới đây là gợi ý tham khảo cho chuyến vi vu xứ Huế 3 ngày 2 đêm.\n**Ngày 1: Quốc Học Huế - cung An Định - phố đi bộ**",
+        "# 3 ngày 2 đêm ở Huế\n\n**Source:** https://visithue.vn/3-ngay-2-dem-o-Hue.html/?pid=MTk4NzN8Y3NkbGRs0\n\n**Crawled:** 2026-09-25T11:00:47.221564\n\n---",
+        "###### Du lịch văn hóa\n#####  [3 ngày 2 đêm ở Huế](https://visithue.vn/3-ngay-2-dem-o-Hue.html/?pid=MTk4NzN8Y3NkbGRs0 \"3 ngày 2 đêm ở Huế\")\nXứ Huế hút tín đồ xê dịch bởi sự hài hoài của kiến trúc, thiên nhiên. Việc kết hợp kh...\nXem thêm",
+        "**Ngày 1: Quốc Học Huế - cung An Định - phố đi bộ**\nNgày đầu tiên đặt chân đến Huế, bạn có thể thuê xích lô dạo quanh thành phố, khám phá các địa điểm ngay trung tâm. Tọa lạc bên dòng Hương Giang mộng mơ, với vẻ cổ kính không kém phần lãng mạn, THPT Chuyên Quốc Học là điểm đến đầu tiên để bạn thỏa sức check-in, chụp hình mà không phải tốn phí. Ngôi trường trên 100 năm tuổi gây ấn tượng bởi kiểu kiến trúc Pháp, khoác lên lớp áo đỏ đặc trưng. Vào ngày hè, những hàng phượng đỏ rực là điểm nhấn cho công trình cố đô.\n_\n_\n_\n_\n_Ảnh: Ngocmaii25, misoa._",
+        "**Ngày 2: Lăng Tự Đức - làng hương Thủy Xuân - đồi Vọng Cảnh**\nCách trung tâm Huế chỉ tầm 5 km, lăng Tự Đức, làng hương, đồi Vọng Cảnh là 3 địa điểm lân cận nhau bạn có thể kết hợp khám phá cho chuyến đi ngày thứ 2. Là nơi yên nghỉ của ông vua thi sĩ triều Nguyễn, với gần 50 công trình lớn nhỏ cả trong khu vực tẩm điện và lăng mộ, lăng Tự Đức có sự hòa hợp giữa kiến trúc nhân tạo và thiên nhiên hữu tình. Giá vé: 150.000 đồng/người.\n_\n_\n_Ảnh: Luffosten._"
+      ],
+      "source_ids": [
+        "news/article_01.md::chunk-1",
+        "news/article_01.md::chunk-0",
+        "news/article_04.md::chunk-4",
+        "news/article_01.md::chunk-2",
+        "news/article_01.md::chunk-6"
+      ],
+      "retrieval_methods": [
+        "dense",
+        "dense",
+        "dense",
+        "dense",
+        "dense"
+      ],
+      "latency_seconds": 2.102053749957122,
+      "scores": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 0.0,
+        "context_precision": 0.9999999999
+      }
+    },
+    {
+      "case_id": 12,
+      "configuration": "dense_only",
+      "question": "Lăng Tự Đức cách trung tâm Huế bao xa và giá vé bao nhiêu?",
+      "reference": "Lăng Tự Đức cách trung tâm Huế khoảng 5 km và giá vé là 150.000 đồng/người.",
+      "reference_context": "Cách trung tâm Huế chỉ tầm 5 km, lăng Tự Đức, làng hương, đồi Vọng Cảnh là 3 địa điểm lân cận nhau. Giá vé: 150.000 đồng/người.",
+      "response": "Lăng Tự Đức cách trung tâm Huế tầm 5 km; giá vé 150.000 đồng/người. [S1]",
+      "retrieved_contexts": [
+        "**Ngày 2: Lăng Tự Đức - làng hương Thủy Xuân - đồi Vọng Cảnh**\nCách trung tâm Huế chỉ tầm 5 km, lăng Tự Đức, làng hương, đồi Vọng Cảnh là 3 địa điểm lân cận nhau bạn có thể kết hợp khám phá cho chuyến đi ngày thứ 2. Là nơi yên nghỉ của ông vua thi sĩ triều Nguyễn, với gần 50 công trình lớn nhỏ cả trong khu vực tẩm điện và lăng mộ, lăng Tự Đức có sự hòa hợp giữa kiến trúc nhân tạo và thiên nhiên hữu tình. Giá vé: 150.000 đồng/người.\n_\n_\n_Ảnh: Luffosten._",
+        "Chỉ cách trung tâm thành phố Huế chưa đầy một giờ di chuyển bằng xe máy hoặc ô tô, Bì...\n###### Chùa\n#####  [Chùa Viên Giác khánh tạ Tam bảo sau 3 năm đại...](https://visithue.vn/chua-vien-giac-khanh-ta-tam-bao-sau-3-nam-dai-trung-tu/?pid=MjUwNjF8Y3NkbGRs0 \"Chùa Viên Giác khánh tạ Tam bảo sau 3 năm đại trùng tu \")\nSáng nay, 2-4, Hòa thượng Thích Hải Ấn, Ủy viên Thường trực Hội đồng Trị sự, Viện trư...\n###### Chùa\n#####  [Viên Giác Tự: Ngôi cổ tự 300 năm tuổi mang di...](https://visithue.vn/vien-giac-tu-ngoi-co-tu-300-nam-tuoi-mang-dien-mao-moi-giua-long-co-do/?pid=MjQwMjl8Y3NkbGRs0 \"Viên Giác Tự: Ngôi cổ tự 300 năm tuổi mang diện mạo mới giữa lòng Cố đô\")\nSau gần ba năm thực hiện cuộc đại trùng tu, chùa Viên Giác tại thành phố Huế đã chính...\n###### Chùa",
+        "**Ngày 1: Quốc Học Huế - cung An Định - phố đi bộ**\nNgày đầu tiên đặt chân đến Huế, bạn có thể thuê xích lô dạo quanh thành phố, khám phá các địa điểm ngay trung tâm. Tọa lạc bên dòng Hương Giang mộng mơ, với vẻ cổ kính không kém phần lãng mạn, THPT Chuyên Quốc Học là điểm đến đầu tiên để bạn thỏa sức check-in, chụp hình mà không phải tốn phí. Ngôi trường trên 100 năm tuổi gây ấn tượng bởi kiểu kiến trúc Pháp, khoác lên lớp áo đỏ đặc trưng. Vào ngày hè, những hàng phượng đỏ rực là điểm nhấn cho công trình cố đô.\n_\n_\n_\n_\n_Ảnh: Ngocmaii25, misoa._",
+        "# Cầu Trường Tiền, điểm đến không thể bỏ qua khi đến Huế\n\n**Source:** https://visithue.vn/cau-truong-tien-diem-den-khong-the-bo-qua-khi-den-hue/?pid=MjMyNTJ8Y3NkbGRs0\n\n**Crawled:** 2026-09-25T11:01:47.801156\n\n---",
+        "Điểm du lịch cộng đồng Ngư Mỹ Thạnh, thuộc xã Đan Điền, thành phố Huế (cách trung tâm...\n###### Nông thôn\n#####  [Điểm du lịch làng cổ Phước Tích](https://visithue.vn/diem-du-lich-lang-co-phuoc-tich/?pid=MjM5NTB8Y3NkbGRs0 \"Điểm du lịch làng cổ Phước Tích\")\nLàng Phước Tích thuộc xã Phong Hòa, huyện Phong Điền, tỉnh Thừa Thiên Huế nay là xã P...\nXem thêm"
+      ],
+      "source_ids": [
+        "news/article_01.md::chunk-6",
+        "news/article_02.md::chunk-2",
+        "news/article_01.md::chunk-2",
+        "news/article_05.md::chunk-0",
+        "news/article_02.md::chunk-4"
+      ],
+      "retrieval_methods": [
+        "dense",
+        "dense",
+        "dense",
+        "dense",
+        "dense"
+      ],
+      "latency_seconds": 2.8195114580448717,
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.6817914933391197,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999
+      }
+    },
+    {
+      "case_id": 13,
+      "configuration": "dense_only",
+      "question": "Lịch trình ngày thứ ba trong chuyến 3 ngày 2 đêm ở Huế gợi ý ba địa điểm nào?",
+      "reference": "Ba địa điểm là đầm Lập An, vịnh Lăng Cô và đèo Hải Vân.",
+      "reference_context": "Ngày 3: Đầm Lập An - vịnh Lăng Cô - đèo Hải Vân.",
+      "response": "Đầm Lập An - vịnh Lăng Cô - đèo Hải Vân [S5].",
+      "retrieved_contexts": [
+        "####  3 ngày 2 đêm ở Huế\nXứ Huế hút tín đồ xê dịch bởi sự hài hoài của kiến trúc, thiên nhiên. Việc kết hợp khám phá các điểm du lịch gần nhau sẽ giúp chuyến đi cố đô của bạn thuận lợi hơn.\nCố đô Huế được biết đến là mảnh đất trầm mặc, lưu dấu những công trình lịch sử, các ngôi chùa từ xa xưa. Đại Nội, chùa Thiên Mụ, các khu lăng tẩm vốn đã \"quen mặt\" trong loạt ảnh check-in của giới trẻ. Bạn có thể đổi gió cho chuyến đi đến miền đất di sản bằng những địa điểm mới lạ hơn như khu phố Tây, đầm Lập An, đồi Vọng Cảnh... Dưới đây là gợi ý tham khảo cho chuyến vi vu xứ Huế 3 ngày 2 đêm.\n**Ngày 1: Quốc Học Huế - cung An Định - phố đi bộ**",
+        "# 3 ngày 2 đêm ở Huế\n\n**Source:** https://visithue.vn/3-ngay-2-dem-o-Hue.html/?pid=MTk4NzN8Y3NkbGRs0\n\n**Crawled:** 2026-09-25T11:00:47.221564\n\n---",
+        "###### Du lịch văn hóa\n#####  [3 ngày 2 đêm ở Huế](https://visithue.vn/3-ngay-2-dem-o-Hue.html/?pid=MTk4NzN8Y3NkbGRs0 \"3 ngày 2 đêm ở Huế\")\nXứ Huế hút tín đồ xê dịch bởi sự hài hoài của kiến trúc, thiên nhiên. Việc kết hợp kh...\nXem thêm",
+        "**Ngày 2: Lăng Tự Đức - làng hương Thủy Xuân - đồi Vọng Cảnh**\nCách trung tâm Huế chỉ tầm 5 km, lăng Tự Đức, làng hương, đồi Vọng Cảnh là 3 địa điểm lân cận nhau bạn có thể kết hợp khám phá cho chuyến đi ngày thứ 2. Là nơi yên nghỉ của ông vua thi sĩ triều Nguyễn, với gần 50 công trình lớn nhỏ cả trong khu vực tẩm điện và lăng mộ, lăng Tự Đức có sự hòa hợp giữa kiến trúc nhân tạo và thiên nhiên hữu tình. Giá vé: 150.000 đồng/người.\n_\n_\n_Ảnh: Luffosten._",
+        "**Ngày 3: Đầm Lập An - vịnh Lăng Cô - đèo Hải Vân**\nSau khi check-in các địa điểm loanh quanh thành phố, vào ngày cuối cùng tại Huế, bạn có thể xê dịch ở những chốn thiên nhiên hoang sơ, cách biệt với phố thị tấp nập. Cả 3 địa điểm đầm Lập An - vinh Lăng Cô - đèo Hải Vân đều nằm khá xa trung tâm, cần ít nhất 1,5 h di chuyển, vì thế bạn nên khởi hành sớm để có thể khám phá hết vẻ đẹp của 3 điểm này.\nVới vẻ đẹp tựa bức tranh thủy mặc, đầm Lập An, được ví như \"tuyệt tình cốc cố đô''. Địa điểm nằm xa thành phố, tuy nhiên, khung cảnh đẹp như chốn tiên cảnh, sẽ không khiến bạn thất vọng. Đó là những lớp sương giăng mờ ảo, những chiếc bè bồng bềnh trên làn nước ngọc bích, rặng núi hùng vĩ phía xa, đặc biệt là con đường trắng xóa lộ ra mỗi khi thủy triều rút.\n_\n_\n_\n_"
+      ],
+      "source_ids": [
+        "news/article_01.md::chunk-1",
+        "news/article_01.md::chunk-0",
+        "news/article_04.md::chunk-4",
+        "news/article_01.md::chunk-6",
+        "news/article_01.md::chunk-9"
+      ],
+      "retrieval_methods": [
+        "dense",
+        "dense",
+        "dense",
+        "dense",
+        "dense"
+      ],
+      "latency_seconds": 3.165174207999371,
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.37385904063198866,
+        "context_recall": 1.0,
+        "context_precision": 0.19999999998
+      }
+    },
+    {
+      "case_id": 14,
+      "configuration": "dense_only",
+      "question": "Tiệc cỗ tế lớn trong ẩm thực cung đình Huế có bao nhiêu phẩm vị?",
+      "reference": "Tiệc cỗ tế lớn có 161 phẩm vị.",
+      "reference_context": "Tiệc cỗ tế lớn có 161 phẩm vị (món ăn), tiệc cỗ trân tu có 50 món ăn, tiệc cỗ ngọc soạn có 30 món ăn.",
+      "response": "161 phẩm vị [S2]",
+      "retrieved_contexts": [
+        "_Ẩm thực cung đình Huế. Ảnh: Internet_\nNgoài ra là Ngọc thực: 3 bữa ăn hằng ngày của nhà vua. Điểm tâm gồm 12 món; ăn trưa có 50 món mặn, 16 món ngọt, ăn tối có 50 món mặn, 16 món ngọt. Nhưng để có những mỹ vị đó cũng cần phải có nhiều yếu tố để tạo nên tác phẩm.\nĐầu tiên, nguyên vật liệu sử dụng để chế biến phải là loại thượng hảo hạng, những đặc sản thời trân, từ nhiều địa phương trong nước dâng tiến. Miền Bắc có nhãn Hưng Yên; mía, cam đường Thanh Hoá, vải Hải Dương, chim sâm cầm Hà Nội, sá sùng Quảng Ninh…\nMiền Trung có dâu rừng Quảng Bình, khoai mài Mỹ Lợi, quýt Hương Cần, hạt sen Tịnh Tâm, gạo de An Cựu, cá chình, sò huyết Bình Định, xoài vùng Bạch Thạch, Phú Yên, bòn bon Quảng Nam…",
+        "## **Ẩm thực cung đình là một di sản văn hóa**\nẨm thực cung đình Huế ngày xưa rất phong phú, đa dạng. Các cách thức ăn uống, yến tiệc của triều đình có ghi lại trong sử sách. Như Đại Nam thực lục chính biên viết về nhật ký hàng ngày của nhà vua và Khâm định Đại Nam hội điển sự lệ, ghi lại tất cả các điển lệ, nghi lễ… trong cung đình cũng như ngoài dân gian, bao gồm các loại yến tiệc khác nhau: Tiệc cỗ tế lớn có 161 phẩm vị (món ăn), tiệc cỗ trân tu có 50 món ăn, tiệc cỗ ngọc soạn có 30 món ăn, tiệc cỗ chay hạng nhất có 25 món, tiệc cỗ chay hạng nhì có 20 món.\n_Ẩm thực cung đình Huế. Ảnh: Internet_",
+        "Dưới triều Nguyễn (từ 1802-1945), nghệ thuật ẩm thực vừa được kế thừa truyền thống ẩm thực lâu đời của đất Bắc, vừa được bổ sung những món ăn phong phú của vùng đất mới phương Nam. Tất cả những nét tinh tế về ẩm thực của 3 miền đất nước đã hội tụ ở vùng đất kinh đô để hình thành và phát triển nên nghệ thuật ẩm thực Huế, đặc biệt là ẩm thực cung đình.\n## **Ẩm thực cung đình là một di sản văn hóa**",
+        "# Vị thế đặc biệt của ẩm thực Huế\n\n**Source:** https://visithue.vn/vi-the-dac-biet-cua-am-thuc-hue/?pid=MjI2Njd8Y3NkbGRs0\n\n**Crawled:** 2026-09-25T11:01:28.405623\n\n---",
+        "####  Vị thế đặc biệt của ẩm thực Huế\nẨm thực Huế từ dân gian đến cung đình, từ cung đình trở lại dân gian với những đặc tính, hương vị khó có thể quên, như một đặc trưng chỉ có thể nói là “Ẩm thực Huế”. Ở một khía cạnh, ẩm thực cung đình Huế là một di sản văn hóa cần giữ gìn và phục dựng để trở thành một “đại sứ văn hóa” đặc biệt.\n## Khi mùa xuân đến, hương vị cung đình từ bánh mứt lại thêm một lần khẳng định vị thế “đại sứ văn hóa” của ẩm thực Huế."
+      ],
+      "source_ids": [
+        "news/article_03.md::chunk-4",
+        "news/article_03.md::chunk-3",
+        "news/article_03.md::chunk-2",
+        "news/article_03.md::chunk-0",
+        "news/article_03.md::chunk-1"
+      ],
+      "retrieval_methods": [
+        "dense",
+        "dense",
+        "dense",
+        "dense",
+        "dense"
+      ],
+      "latency_seconds": 1.7767661249963567,
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.49999999995
+      }
+    },
+    {
+      "case_id": 15,
+      "configuration": "dense_only",
+      "question": "Cầu Trường Tiền có bao nhiêu vài và bao nhiêu nhịp?",
+      "reference": "Cầu Trường Tiền có 6 vài và 12 nhịp.",
+      "reference_context": "Cầu Tràng Tiền gồm 6 vài. Cầu có 12 nhịp được thiết kế theo kiểu kiến trúc Gothique; mỗi nhịp có hình bán nguyệt.",
+      "response": "Cầu Trường Tiền có 6 vài và 12 nhịp. [S2]",
+      "retrieved_contexts": [
+        "Kể từ sau Festival Huế năm 2002, Cầu Trường Tiền lại có một thay đổi mới khiến các tín đồ du lịch phải choáng ngợp. Từ thời điểm này, Cầu Trường Tiền được lắp đặt một hệ thống chiếu sáng đổi màu vô cùng hiện đại. Trong ánh sáng rực rỡ ấy, Cầu Trường Tiền ngày càng được nhiều tín đồ du lịch check-in khi đến Huế. Ngoài ra, địa danh này cũng được đưa lên màn ảnh qua bộ phim Gái Già Lắm Chiêu với cảnh quan vô cùng hiện đại, rạng rỡ.\nDẫu qua bao thăng trầm biến cố lịch sử, chiếc cầu qua dòng Hương giang này đã mấy lần \"thay tên, đổi họ\", nhưng dân chúng xứ Huế và khắp nơi trong cả nước đều gọi tên cầu Tràng Tiền. Cái tên thông dụng bao đời nay vẫn thấm sâu trong tâm thức của mọi người. Ngày xưa còn gọi là Trường Tiền vì vị trí cầu nằm gần sát bờ sông Hương, cạnh xưởng đúc tiền xu thời xa xưa.",
+        "Cầu Tràng Tiền gồm 6 vài, mỗi vài dài 66 thước 8 tấc 5 phân (mỗi thước mộc ta bằng 0,425 mét); rộng 6 thước 2 tấc. Tổng chiều dài cây cầu là 401 thước 1 tấc. Cầu có 12 nhịp được thiết kế theo kiểu kiến trúc Gothique; mỗi nhịp có hình bán nguyệt. Các nhịp kế tiếp nhau làm thành một dải sóng đều đặn, mềm mại như làn nước sông Hương. Với kiểu kiến trúc cầu độc đáo lại ở ví trí trung tâm thành phố càng làm cho dòng Hương Giang và thành phố Huế thêm duyên dáng, thơ mộng.",
+        "\"…Cầu cong như chiếc lược ngà\nSông dài mái tóc cung nga buông hờ…\"\n(Vài nét Huế - Nguyễn Bính)\nNhững thăng trầm lịch sử của cầu Trường Tiền cũng được ghi chép lại rất nhiều bằng thi ca, âm nhạc. Năm 1946, cầu bị sập và đã có câu ca mang âm hưởng hò sông thế này:\n\"Cầu Trường Tiền bấy nhiêu niên (năm) qua lại,\nKể tự đời Thành Thái đến nay.\nChạnh lòng biết hỏi ai đây,\nViệc chi nên nỗi đang tay dứt cầu?\"\nCầu Trường Tiền là sự kết nối giữa kinh thành cổ kính, cung điện vàng son, kiến trúc trầm mặc rêu phong… ở bờ Bắc với một thành phố mới phát triển, những nhà cao tầng hiện đại, khu dân cư đông đúc đầy sức sống… ở bờ Nam. Cây cầu mảnh mai ấy là sự kết nối đầy quan trọng và ý nghĩa của lịch sử, của quá khứ - hiện tại, và là khát vọng của tương lai.",
+        "# Cầu Trường Tiền, điểm đến không thể bỏ qua khi đến Huế\n\n**Source:** https://visithue.vn/cau-truong-tien-diem-den-khong-the-bo-qua-khi-den-hue/?pid=MjMyNTJ8Y3NkbGRs0\n\n**Crawled:** 2026-09-25T11:01:47.801156\n\n---",
+        "Theo các nguồn tư liệu được ghi lại, Cầu Trường Tiền ban đầu được Vua Thành Thái ban lệnh xây dựng vào năm 1896. Cầu được khởi công xây dựng vào năm 1887 và hoàn thiện vào năm 1899. Lúc bấy giờ, công trình này đã được đưa vào sử dụng và mang tên vua Thành Thái. Trải qua các biến động lịch sử, Cầu Trường Tiền đã bao phen thay tên. Giai đoạn 1919 đến tháng 3 năm 1945, cầu mang tên Clémenceau, một vị tướng thời Pháp lúc bấy giờ. Sau đó, chính quyền Trần Trọng Kim đã đổi tên cầu thành Nguyễn Hoàng, một vị chúa Nguyễn đã có công khai thác vùng Thuận Hóa. Cuối cùng, cầu chính thức có tên gọi là Trường Tiền từ sau năm 1975."
+      ],
+      "source_ids": [
+        "news/article_05.md::chunk-6",
+        "news/article_05.md::chunk-2",
+        "news/article_05.md::chunk-9",
+        "news/article_05.md::chunk-0",
+        "news/article_05.md::chunk-3"
+      ],
+      "retrieval_methods": [
+        "dense",
+        "dense",
+        "dense",
+        "dense",
+        "dense"
+      ],
+      "latency_seconds": 1.6203344169771299,
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5470307442284901,
+        "context_recall": 1.0,
+        "context_precision": 0.49999999995
+      }
+    },
+    {
+      "case_id": 1,
+      "configuration": "hybrid_rrf",
+      "question": "Nghị quyết 02/2026/NQ-HĐND về hỗ trợ du lịch cộng đồng có hiệu lực trong khoảng thời gian nào?",
+      "reference": "Nghị quyết có hiệu lực từ ngày 10/04/2026 đến hết ngày 31/12/2030.",
+      "reference_context": "Nghị quyết này có hiệu lực từ ngày 10 tháng 4 năm 2026 đến hết ngày 31 tháng 12 năm 2030.",
+      "response": "Từ ngày 10 tháng 4 năm 2026 đến hết ngày 31 tháng 12 năm 2030. [S1]",
+      "retrieved_contexts": [
+        "Điều 1. Ban hành kèm theo Nghị quyết này Quy định chính sách hỗ trợ\n\nphát triển du lịch cộng đồng trên địa bàn thành phố Huế giai đoạn 2026-2030.\n\nĐiều 2. Điều khoản thi hành\n1.  Nghị  quyết  này  có  hiệu  lực  từ  ngày  10  tháng  4  năm  2026  đến  hết\n\nngày 31 tháng 12 năm 2030.\n\n2.  Nghị  quyết  này  thay  thế  Nghị  quyết  số  05/2019/NQ-HĐND  ngày  09\ntháng 7 năm 2019 của Hội đồng nhân dân tỉnh Thừa Thiên Huế quy định một số\nchính  sách  hỗ  trợ  phát  triển  du  lịch  cộng  đồng  tỉnh  Thừa  Thiên  Huế  đến\nnăm 2025.",
+        "quy phạm pháp luật số 87/2025/QH15;\n\nCăn cứ Luật Du lịch số 09/2017/QH14;\nCăn cứ Luật Ngân sách nhà nước số 89/2025/QH15;\nXét Tờ trình số 2581/TTr-UBND ngày 14 tháng 02 năm 2026 của Ủy ban\nnhân  dân  thành  phố  Huế  về  dự  thảo  Nghị  quyết  của  Hội  đồng  nhân  dân\nthành phố quy định chính sách hỗ trợ phát triển du lịch cộng đồng trên địa bàn\nthành  phố  Huế  giai  đoạn  2026-2030;  Báo  cáo  thẩm  tra  của  Ban  Kinh  tế  -\nNgân sách; ý kiến thảo luận của đại biểu Hội đồng nhân dân tại kỳ họp;\n\nHội  đồng  nhân  dân  ban  hành  Nghị  quyết  quy  định  chính  sách  hỗ  trợ\n\nphát triển du lịch cộng đồng trên địa bàn thành phố Huế giai đoạn 2026-2030.\n\nĐiều 1. Ban hành kèm theo Nghị quyết này Quy định chính sách hỗ trợ",
+        "HỘI ĐỒNG NHÂN DÂN\nTHÀNH PHỐ HUẾ\n\nCỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\n\nĐộc lập - Tự do - Hạnh phúc\n\nSố: 02/2026/NQ-HĐND\n\nThành phố Huế, ngày 31 tháng 3 năm 2026\n\nNGHỊ QUYẾT\nQuy định chính sách hỗ trợ phát triển du lịch cộng đồng\ntrên địa bàn thành phố Huế giai đoạn 2026-2030\n\nCăn cứ Luật Tổ chức chính quyền địa phương số 72/2025/QH15;\nCăn cứ Luật Ban hành văn bản quy phạm pháp luật số 64/2025/QH15;\nCăn  cứ  Luật  sửa  đổi,  bổ  sung  một  số  điều  của  Luật  Ban  hành  văn  bản\n\nquy phạm pháp luật số 87/2025/QH15;",
+        "Tăng cường vai trò quản lý của nhà nước, tạo công cụ hỗ trợ công tác kiểm\ntra, giám sát, đánh giá và xây dựng chính sách hỗ trợ, khuyến khích các mô hình\ndu lịch xanh.\n\nLàm cơ sở xây dựng cơ chế ưu đãi, hỗ trợ và khen thưởng, thúc đẩy doanh\nnghiệp và các chủ thể tham gia tích cực vào quá trình chuyển đổi sang mô hình\ndu lịch xanh và phát triển bền vững.\n\nIII. ĐỐI TƯỢNG, PHẠM VI, THỜI HẠN ÁP DỤNG\n\n1. Đối tượng, phạm vi áp dụng\n\nBộ tiêu chí Du lịch xanh thành phố Huế quy định các tiêu chí du lịch xanh,\nquy trình đánh giá, công nhận đạt chuẩn du lịch xanh áp dụng cho các cơ sở lưu\ntrú  du  lịch,  điểm  tham  quan  du  lịch  và  các  cơ  sở  kinh  doanh  dịch  vụ  ăn  uống\ntrên địa bàn thành phố Huế.\n\n2. Thời hạn áp dụng",
+        "Theo đề nghị của Sở Du lịch;\n\nỦy ban nhân dân thành phố ban hành Quyết định ban hành Quy chế quản lý\nbãi  tắm  biển,  sông,  hồ  suối,  thác  thuộc  điểm  du  lịch,  khu  du  lịch  đã  được  công\nnhận trên địa bàn thành phố Huế.\n\n\fĐiều  1. Ban  hành  kèm  theo  Quyết  định  này  Quy  chế  quản  lý  Bãi  tắm  biển,\nsông, hồ, suối, thác thuộc điểm du lịch, khu du lịch đã được công nhận trên địa bàn\nthành phố Huế.\n\nĐiều 2. Hiệu lực thi hành\n\nQuyết định này có hiệu lực thi hành kể từ ngày 29 tháng 4 năm 2026 và thay\nthế Quyết định số 53/2023/QĐ-UBND ngày 27 tháng 9 năm 2023 của Ủy ban nhân\ndân tỉnh Ban hành Quy chế quản lý bãi tắm biển, sông, hồ, suối, thác thuộc điểm\ndu lịch, khu du lịch đã được công nhận trên địa bàn tỉnh Thừa Thiên Huế.\n\nĐiều 3. Tổ chức thực hiện"
+      ],
+      "source_ids": [
+        "legal/000.00.00.K57-02-2026-NQ-HDND-2026-PL3.md::chunk-2",
+        "legal/000.00.00.K57-02-2026-NQ-HDND-2026-PL3.md::chunk-1",
+        "legal/000.00.00.K57-02-2026-NQ-HDND-2026-PL3.md::chunk-0",
+        "legal/1431.md::chunk-10",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-2"
+      ],
+      "retrieval_methods": [
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid"
+      ],
+      "latency_seconds": 2.4924132090527564,
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.19924850069211775,
+        "context_recall": 1.0,
+        "context_precision": 0.8333333332916666
+      }
+    },
+    {
+      "case_id": 2,
+      "configuration": "hybrid_rrf",
+      "question": "Quyết định 29/2026/QĐ-UBND về quản lý bãi tắm có hiệu lực từ ngày nào?",
+      "reference": "Quyết định có hiệu lực từ ngày 29/04/2026.",
+      "reference_context": "Quyết định này có hiệu lực thi hành kể từ ngày 29 tháng 4 năm 2026.",
+      "response": "29 tháng 4 năm 2026 [S1]",
+      "retrieved_contexts": [
+        "Theo đề nghị của Sở Du lịch;\n\nỦy ban nhân dân thành phố ban hành Quyết định ban hành Quy chế quản lý\nbãi  tắm  biển,  sông,  hồ  suối,  thác  thuộc  điểm  du  lịch,  khu  du  lịch  đã  được  công\nnhận trên địa bàn thành phố Huế.\n\n\fĐiều  1. Ban  hành  kèm  theo  Quyết  định  này  Quy  chế  quản  lý  Bãi  tắm  biển,\nsông, hồ, suối, thác thuộc điểm du lịch, khu du lịch đã được công nhận trên địa bàn\nthành phố Huế.\n\nĐiều 2. Hiệu lực thi hành\n\nQuyết định này có hiệu lực thi hành kể từ ngày 29 tháng 4 năm 2026 và thay\nthế Quyết định số 53/2023/QĐ-UBND ngày 27 tháng 9 năm 2023 của Ủy ban nhân\ndân tỉnh Ban hành Quy chế quản lý bãi tắm biển, sông, hồ, suối, thác thuộc điểm\ndu lịch, khu du lịch đã được công nhận trên địa bàn tỉnh Thừa Thiên Huế.\n\nĐiều 3. Tổ chức thực hiện",
+        "ỦY BAN NHÂN DÂN\nTHÀNH PHỐ HUẾ\n\nCỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập - Tự do - Hạnh phúc\n\nSố: 29/2026/QĐ-UBND\n\nHuế, ngày 20 tháng 4 năm 2026\n\nQUYẾT ĐỊNH\nBan hành quy chế quản lý bãi tắm biển, sông, hồ, suối, thác thuộc điểm du\nlịch, khu du lịch đã được công nhận trên địa bàn thành phố Huế\n\nCăn cứ Luật Tổ chức chính quyền địa phương số 72/2025/QH15;\n\nCăn cứ Luật Ban hành văn bản quy phạm pháp luật số 64/2025/QH15 được\n\nsửa đổi, bổ sung bởi Luật số 87/2025/QH15;\n\nCăn cứ Luật Du lịch số 09/2017/QH14;\n\nCăn cứ Luật giao thông đường thủy nội địa số 23/2004/QH11 được sửa đổi,\n\nbổ sung bởi Luật số 48/2014/QH13;\n\nCăn cứ Luật Tài nguyên nước số 28/2023/QH15;\n\nCăn cứ Nghị định số 168/2017/NĐ-CP của Chính phủ quy định chi tiết một số\n\nđiều của Luật Du lịch;",
+        "CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập - Tự do - Hạnh phúc\n\nQUY CHẾ\n\nQuản lý bãi tắm biển, sông, hồ, suối, thác thuộc điểm du lịch, khu du lịch đã\nđược công nhận trên địa bàn thành phố Huế\n (Ban hành kèm theo Quyết định số 29/2026/QĐ-UBND).\n\nChương I\n\nQUY ĐỊNH CHUNG\n\nĐiều 1. Phạm vi điều chỉnh và đối tượng áp dụng\n\n1. Phạm vi điều chỉnh: Quy chế này quy định về công tác quản lý nhà nước;\nđiều kiện, tiêu chuẩn và trách nhiệm của các cơ quan, tổ chức, cá nhân có liên quan\ntrong  quản  lý,  khai  thác  và  sử  dụng  các  bãi  tắm  biển,  sông,  hồ,  suối,  thác  thuộc\nđiểm du lịch, khu du lịch đã được công nhận trên địa bàn thành phố Huế.\n\n2. Đối tượng áp dụng\n\na) Cơ quan quản lý nhà nước theo thẩm quyền.",
+        "Điều 9. Quy định đối với tổ chức, cá nhân quản lý và khai thác\n\n1. Khảo sát và xây dựng biểu đồ hiện trạng, chiều dài, chiều rộng, độ sâu mực\nnước, độ nước xoáy, độ sóng, thủy triều theo mùa; dấu hiệu xảy ra lũ quét, sạt lỡ\nđất; theo dõi chất lượng nguồn nước để đảm bảo an toàn cho du khách khi tắm, kịp\nthời phát hiện các sự cố bất thường.\n\n2. Thành lập lực lượng cứu hộ cứu nạn, quản lý an ninh trật tự và vệ sinh môi\ntrường, phòng chống cháy nổ, vệ sinh an toàn thực phẩm trong phục vụ khai thác\ncó chuyên môn nghiệp vụ theo chức năng nhiệm vụ của từng vị trí công việc.\n\n3. Xây dựng phương án quản lý, khai thác và sử dụng Bãi tắm biển, sông, hồ,\n\nsuối, thác và thực hiện đúng cam kết trong phương án.",
+        "luật liên quan đến hoạt động tại bãi tắm biển, sông, hồ, suối, thác.\n\n3.  Chủ  trì,  phối  hợp  với  Sở  Du  lịch,  Sở  Văn  hóa  và  Thể  thao  và  các  ngành\nchức năng trong quản lý, sử dụng, xây dựng tiêu chuẩn như hạ tầng, quy chế …. tại\ncác bãi tắm biển, sông, hồ, suối, thác thuộc điểm du lịch, khu du lịch đã được công\nnhận trên địa bàn quản lý.\n\n4. Qua thực hiện kiểm tra các đơn vị quản lý và khai thác bãi tắm biển, sông,\nhồ, suối, thác thuộc điểm du lịch, khu du lịch đã được công nhận trên địa bàn thành\nphố phát hiện vụ việc có nội dung phức tạp, liên quan đến trách nhiệm quản lý của\nnhiều cấp, nhiều ngành, nhiều lĩnh vực, chưa đủ thẩm quyền để xem xét, đánh giá\nthì UBND các phường, xã có văn bản đề nghị Thanh tra thành phố thực hiện thanh\ntra làm rõ dấu hiệu vi phạm pháp luật."
+      ],
+      "source_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-2",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-0",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-4",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-20",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-30"
+      ],
+      "retrieval_methods": [
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid"
+      ],
+      "latency_seconds": 1.7671447088941932,
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.25655967336948077,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999
+      }
+    },
+    {
+      "case_id": 3,
+      "configuration": "hybrid_rrf",
+      "question": "Theo quy chế, độ dày cát trung bình tối thiểu của bãi tắm biển là bao nhiêu?",
+      "reference": "Độ dày cát trung bình phải từ 30 cm trở lên.",
+      "reference_context": "Có bãi cát mịn, bề mặt được san phẳng, độ dày cát trung bình 30cm trở lên và độ thoải đảm bảo an toàn cho du khách khi tắm biển.",
+      "response": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+      "retrieved_contexts": [
+        "4. Có bảng nội quy đặt ở những vị trí dễ quan sát, kích thước tối thiểu 6m2\nbằng 2 thứ tiếng Tiếng Việt và tiếng Anh, phông chữ rõ ràng không tẩy xóa, đảm\nbảo mỹ quan.\n\n5. Có hệ thống biển báo, biển chỉ dẫn đến các điểm dịch vụ và hệ thống giao\nthông nội bộ. Có bãi trông giữ xe phù hợp quy mô kinh doanh, niêm yết giá các\ndịch vụ.\n\n6. Có trạm quan sát cứu hộ cứu nạn, khoảng cách giữa các trạm quan sát tối\nđa là 300m, được xây dựng phù hợp với không gian biển và đảm bảo bao quát toàn\nbộ bãi tắm.\n\n7. Mỗi bãi tắm biển có ít nhất 02 khu nhà tráng nước ngọt (nam, nữ riêng biệt)\n\ncó bố trí mắc treo hoặc giá đựng quần áo, mỗi khu tối thiểu có diện tích đạt 25m2.\n\n8. Nhà vệ sinh công cộng đảm bảo sạch sẽ, được thông gió và đủ ánh sáng,",
+        "Điều 3. Điều kiện về cơ sở hạ tầng\n\n1.  Có  hệ  thống  giao  thông  thuận  lợi,  an  toàn  và  dịch  vụ  cần  thiết  đảm  bảo\n\nphục vụ khách du lịch.\n\n2. Có hệ thống thông tin liên lạc đảm bảo yêu cầu phục vụ công tác cảnh báo,\n\ncứu hộ, cứu nạn.\n\n3. Có hệ thống điện, nước sạch đảm bảo yêu cầu, hệ thống thu gom rác thải và\n\nxử lý nước thải đảm bảo vệ sinh môi trường.\n\nĐiều 4. Điều kiện về cơ sở vật chất trang bị kỹ thuật đối với bãi tắm biển\n\n1. Có bãi cát mịn, bề mặt được san phẳng, độ dày cát trung bình 30cm trở lên\n\nvà độ thoải đảm bảo an toàn cho du khách khi tắm biển.",
+        "và độ thoải đảm bảo an toàn cho du khách khi tắm biển.\n\n2. Có ít nhất 01 xuồng cứu sinh (hoặc Ca nô) được đăng ký, đăng kiểm theo\nquy định, đảm bảo chất lượng và đáp ứng công tác cứu hộ cứu nạn khi có sự cố\nxảy  ra,  người  điều  khiển  phương  tiện  phải  có  văn  bằng,  chứng  chỉ  chuyên  môn\ntheo quy định. Trên mỗi xuồng có trang bị tối thiểu 06 áo phao cá nhân, 02 phao\ntròn (01 phao tròn kèm dây ném chiều dài 25-30m) và có bộ đồ lặn kèm theo bình\ndưỡng khí.\n\n3.  Có  thiết  bị  nhận  biết  phạm  vi  ranh  giới,  hệ  thống  phao  tiêu,  cờ  chỉ  giới,\nbiển báo hiệu vùng hành lang an toàn, màu sắc tương phản với màu nước, dễ quan\nsát, đảm bảo yêu cầu cảnh báo.",
+        "Quy chế này.\n\n4.  Ủy  ban  nhân  dân  các  phường,  xã,  có  trách  nhiệm  triển  khai,  hướng  dẫn,\nkiểm tra việc thực hiện Quy chế này đối với các bãi tắm biển, sông, hồ, suối, thác\nthuộc địa bàn; định kỳ hàng năm hoặc đột xuất báo cáo kết quả thực hiện Quy chế\nnày về Sở Du lịch để tổng hợp báo cáo Ủy ban nhân dân thành phố.\n\n5. Ban quản lý bãi tắm biển, sông, hồ, suối, thác phối hợp với Ủy ban nhân\ndân các phường, xã thực hiện công tác quản lý nội quy, quy chế của bãi tắm biển,\nsông, hồ, suối, thác và các nội dung tại Quy chế này.\n\n6. Tổ chức, cá nhân hoạt động kinh doanh dịch vụ và khách du lịch tại các bãi\ntắm biển, sông, hồ, suối, thác có trách nhiệm thực hiện các nội dung quy định tại\nQuy chế này./.\n\n10",
+        "2. Đối tượng áp dụng\n\na) Cơ quan quản lý nhà nước theo thẩm quyền.\n\nb)  Tổ  chức,  cá  nhân  sử  dụng  dịch  vụ  tại  bãi  tắm  biển,  sông,  hồ,  suối,  thác\n\nthuộc điểm du lịch, khu du lịch đã được công nhận.\n\nc)  Tổ  chức,  cá  nhân  được  giao  quản  lý  và  khai  thác  bãi  tắm  biển,  sông,  hồ,\n\nsuối, thác thuộc điểm du lịch, khu du lịch đã được công nhận.\n\nĐiều 2. Giải thích từ ngữ\n\nTrong Quy chế này, các từ ngữ dưới đây được hiểu như sau:\n\n1. Bãi tắm biển, sông, hồ, suối, thác là bãi cát, khe suối tự nhiên hoặc tôn tạo,\nđủ  điều  kiện,  tiêu  chuẩn  quy  định  trong  quy  chế  này  thuộc  điểm  du  lịch,  khu  du\nlịch đã được Ủy ban nhân dân thành phố ban hành Quyết định công nhận."
+      ],
+      "source_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-9",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-7",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-8",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-32",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-5"
+      ],
+      "retrieval_methods": [
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid"
+      ],
+      "latency_seconds": 1.4677625830518082,
+      "scores": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.49999999995
+      }
+    },
+    {
+      "case_id": 4,
+      "configuration": "hybrid_rrf",
+      "question": "Mỗi xuồng cứu sinh tại bãi tắm biển phải có tối thiểu bao nhiêu áo phao cá nhân?",
+      "reference": "Mỗi xuồng phải có tối thiểu 06 áo phao cá nhân.",
+      "reference_context": "Trên mỗi xuồng có trang bị tối thiểu 06 áo phao cá nhân, 02 phao tròn và có bộ đồ lặn kèm theo bình dưỡng khí.",
+      "response": "06 áo phao cá nhân [S1]",
+      "retrieved_contexts": [
+        "và độ thoải đảm bảo an toàn cho du khách khi tắm biển.\n\n2. Có ít nhất 01 xuồng cứu sinh (hoặc Ca nô) được đăng ký, đăng kiểm theo\nquy định, đảm bảo chất lượng và đáp ứng công tác cứu hộ cứu nạn khi có sự cố\nxảy  ra,  người  điều  khiển  phương  tiện  phải  có  văn  bằng,  chứng  chỉ  chuyên  môn\ntheo quy định. Trên mỗi xuồng có trang bị tối thiểu 06 áo phao cá nhân, 02 phao\ntròn (01 phao tròn kèm dây ném chiều dài 25-30m) và có bộ đồ lặn kèm theo bình\ndưỡng khí.\n\n3.  Có  thiết  bị  nhận  biết  phạm  vi  ranh  giới,  hệ  thống  phao  tiêu,  cờ  chỉ  giới,\nbiển báo hiệu vùng hành lang an toàn, màu sắc tương phản với màu nước, dễ quan\nsát, đảm bảo yêu cầu cảnh báo.",
+        "b) Phao cứu sinh: Phải có ít nhất 06 chiếc phao cứu sinh (mỗi phao tròn kèm\ndây ném chiều dài 20-30m), được đặt ở vị trí thuận lợi, dễ nhìn thấy, mỗi phao bố\ntrí cách nhau 15m dọc theo chiều dài của khu vực tắm và đặt tại các hộ kinh doanh\ndịch vụ trong khu vực hồ, suối, thác.\n\n3. Các phương tiện vận tải đường thủy phải chấp hành quy định về đăng ký,\nđăng kiểm, chứng chỉ điều khiển phương tiện; bố trí đủ áo phao tương ứng với số\nlượng khách theo quy định; phao cứu sinh, dụng cụ nổi và thực hiện các biện pháp\nbảo đảm an toàn để phòng ngừa tai nạn đuối nước…\n\n4. Có bảng nội quy đặt ở những vị trí dễ quan sát, kích thước tối thiểu 6m2\nbằng 2 thứ tiếng Tiếng Việt và tiếng Anh, phông chữ rõ ràng không tẩy xóa, đảm\nbảo mỹ quan.",
+        "sông, hồ, suối, thác phải có đầy đủ các dụng cụ sau:\n\n1. Dây phao:\n\na) Dây phao dọc: Được căng dọc theo khu vực tắm có độ sâu từ 1m40 trở\n\nlên dùng cho các đối tượng đã biết bơi;\n\nb) Dây phao ngang: Được căng ngang để chia khu vực có độ sâu từ 1m trở\n\nxuống dùng cho người chưa biết bơi ngăn với khu vực có độ sâu từ 1m trở lên.\n\n2. Trang bị cứu hộ:\n\na) Sào cứu hộ: Phải có ít nhất 06 sào cứu hộ dài 2,50m, sào cứu hộ sơn màu\nđỏ - trắng, đặt ở các vị trí thuận lợi, dễ nhìn thấy, mỗi sào bố trí cách nhau 15m dọc\ntheo chiều dài của khu vực tắm và tại các cơ sở kinh doanh dịch vụ trong khu vực\nsông, hồ, suối, thác để khách và nhân viên có thể sử dụng khi cần.",
+        "Điều  6.  Điều  kiện,  yêu  cầu  đối  với  người  làm  việc  tại  đơn  vị  khai  thác,\n\nquản lý bãi tắm biển, sông, hồ, suối, thác\n\n1. Có đội ngũ lao động làm nhiệm vụ cứu hộ cứu nạn, cứu đuối nước; an ninh\ntrật tự; người điều khiển phương tiện phải có chứng chỉ chuyên môn theo quy định;\nnhân viên thường xuyên được tập huấn chuyên môn nghiệp vụ.\n\n2. Số lượng nhân viên cứu hộ phải đảm bảo ít nhất 200m2 mặt nước/01 nhân\nviên, trường hợp sông, hồ, suối, thác có nhiều khu vực tắm phải đảm bảo mỗi khu\nvực có 01 nhân viên trong cùng một thời điểm, trường hợp đông người tham gia\nphải đảm bảo ít nhất 50 người bơi/01 nhân viên trong cùng một thời điểm.\n\n3.  Có  ký  kết  hợp  đồng  lao  động  với  cá  nhân  làm  việc  tại  các  bãi  tắm  biển,",
+        "4. Có bảng nội quy đặt ở những vị trí dễ quan sát, kích thước tối thiểu 6m2\nbằng 2 thứ tiếng Tiếng Việt và tiếng Anh, phông chữ rõ ràng không tẩy xóa, đảm\nbảo mỹ quan.\n\n5. Có hệ thống biển báo, biển chỉ dẫn đến các điểm dịch vụ và hệ thống giao\nthông nội bộ. Có bãi trông giữ xe phù hợp quy mô kinh doanh, niêm yết giá các\ndịch vụ.\n\n6. Có trạm quan sát cứu hộ cứu nạn, khoảng cách giữa các trạm quan sát tối\nđa là 300m, được xây dựng phù hợp với không gian biển và đảm bảo bao quát toàn\nbộ bãi tắm.\n\n7. Mỗi bãi tắm biển có ít nhất 02 khu nhà tráng nước ngọt (nam, nữ riêng biệt)\n\ncó bố trí mắc treo hoặc giá đựng quần áo, mỗi khu tối thiểu có diện tích đạt 25m2.\n\n8. Nhà vệ sinh công cộng đảm bảo sạch sẽ, được thông gió và đủ ánh sáng,"
+      ],
+      "source_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-8",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-13",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-12",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-16",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-9"
+      ],
+      "retrieval_methods": [
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid"
+      ],
+      "latency_seconds": 2.6507754160556942,
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999995
+      }
+    },
+    {
+      "case_id": 5,
+      "configuration": "hybrid_rrf",
+      "question": "Khoảng cách tối đa giữa các trạm quan sát cứu hộ ở bãi tắm biển là bao nhiêu?",
+      "reference": "Khoảng cách tối đa là 300 m.",
+      "reference_context": "Có trạm quan sát cứu hộ cứu nạn, khoảng cách giữa các trạm quan sát tối đa là 300m.",
+      "response": "300m [S1]",
+      "retrieved_contexts": [
+        "4. Có bảng nội quy đặt ở những vị trí dễ quan sát, kích thước tối thiểu 6m2\nbằng 2 thứ tiếng Tiếng Việt và tiếng Anh, phông chữ rõ ràng không tẩy xóa, đảm\nbảo mỹ quan.\n\n5. Có hệ thống biển báo, biển chỉ dẫn đến các điểm dịch vụ và hệ thống giao\nthông nội bộ. Có bãi trông giữ xe phù hợp quy mô kinh doanh, niêm yết giá các\ndịch vụ.\n\n6. Có trạm quan sát cứu hộ cứu nạn, khoảng cách giữa các trạm quan sát tối\nđa là 300m, được xây dựng phù hợp với không gian biển và đảm bảo bao quát toàn\nbộ bãi tắm.\n\n7. Mỗi bãi tắm biển có ít nhất 02 khu nhà tráng nước ngọt (nam, nữ riêng biệt)\n\ncó bố trí mắc treo hoặc giá đựng quần áo, mỗi khu tối thiểu có diện tích đạt 25m2.\n\n8. Nhà vệ sinh công cộng đảm bảo sạch sẽ, được thông gió và đủ ánh sáng,",
+        "b) Phao cứu sinh: Phải có ít nhất 06 chiếc phao cứu sinh (mỗi phao tròn kèm\ndây ném chiều dài 20-30m), được đặt ở vị trí thuận lợi, dễ nhìn thấy, mỗi phao bố\ntrí cách nhau 15m dọc theo chiều dài của khu vực tắm và đặt tại các hộ kinh doanh\ndịch vụ trong khu vực hồ, suối, thác.\n\n3. Các phương tiện vận tải đường thủy phải chấp hành quy định về đăng ký,\nđăng kiểm, chứng chỉ điều khiển phương tiện; bố trí đủ áo phao tương ứng với số\nlượng khách theo quy định; phao cứu sinh, dụng cụ nổi và thực hiện các biện pháp\nbảo đảm an toàn để phòng ngừa tai nạn đuối nước…\n\n4. Có bảng nội quy đặt ở những vị trí dễ quan sát, kích thước tối thiểu 6m2\nbằng 2 thứ tiếng Tiếng Việt và tiếng Anh, phông chữ rõ ràng không tẩy xóa, đảm\nbảo mỹ quan.",
+        "và độ thoải đảm bảo an toàn cho du khách khi tắm biển.\n\n2. Có ít nhất 01 xuồng cứu sinh (hoặc Ca nô) được đăng ký, đăng kiểm theo\nquy định, đảm bảo chất lượng và đáp ứng công tác cứu hộ cứu nạn khi có sự cố\nxảy  ra,  người  điều  khiển  phương  tiện  phải  có  văn  bằng,  chứng  chỉ  chuyên  môn\ntheo quy định. Trên mỗi xuồng có trang bị tối thiểu 06 áo phao cá nhân, 02 phao\ntròn (01 phao tròn kèm dây ném chiều dài 25-30m) và có bộ đồ lặn kèm theo bình\ndưỡng khí.\n\n3.  Có  thiết  bị  nhận  biết  phạm  vi  ranh  giới,  hệ  thống  phao  tiêu,  cờ  chỉ  giới,\nbiển báo hiệu vùng hành lang an toàn, màu sắc tương phản với màu nước, dễ quan\nsát, đảm bảo yêu cầu cảnh báo.",
+        "sông, hồ, suối, thác phải có đầy đủ các dụng cụ sau:\n\n1. Dây phao:\n\na) Dây phao dọc: Được căng dọc theo khu vực tắm có độ sâu từ 1m40 trở\n\nlên dùng cho các đối tượng đã biết bơi;\n\nb) Dây phao ngang: Được căng ngang để chia khu vực có độ sâu từ 1m trở\n\nxuống dùng cho người chưa biết bơi ngăn với khu vực có độ sâu từ 1m trở lên.\n\n2. Trang bị cứu hộ:\n\na) Sào cứu hộ: Phải có ít nhất 06 sào cứu hộ dài 2,50m, sào cứu hộ sơn màu\nđỏ - trắng, đặt ở các vị trí thuận lợi, dễ nhìn thấy, mỗi sào bố trí cách nhau 15m dọc\ntheo chiều dài của khu vực tắm và tại các cơ sở kinh doanh dịch vụ trong khu vực\nsông, hồ, suối, thác để khách và nhân viên có thể sử dụng khi cần.",
+        "Điều  6.  Điều  kiện,  yêu  cầu  đối  với  người  làm  việc  tại  đơn  vị  khai  thác,\n\nquản lý bãi tắm biển, sông, hồ, suối, thác\n\n1. Có đội ngũ lao động làm nhiệm vụ cứu hộ cứu nạn, cứu đuối nước; an ninh\ntrật tự; người điều khiển phương tiện phải có chứng chỉ chuyên môn theo quy định;\nnhân viên thường xuyên được tập huấn chuyên môn nghiệp vụ.\n\n2. Số lượng nhân viên cứu hộ phải đảm bảo ít nhất 200m2 mặt nước/01 nhân\nviên, trường hợp sông, hồ, suối, thác có nhiều khu vực tắm phải đảm bảo mỗi khu\nvực có 01 nhân viên trong cùng một thời điểm, trường hợp đông người tham gia\nphải đảm bảo ít nhất 50 người bơi/01 nhân viên trong cùng một thời điểm.\n\n3.  Có  ký  kết  hợp  đồng  lao  động  với  cá  nhân  làm  việc  tại  các  bãi  tắm  biển,"
+      ],
+      "source_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-9",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-13",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-8",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-12",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-16"
+      ],
+      "retrieval_methods": [
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid"
+      ],
+      "latency_seconds": 2.4859978340100497,
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999
+      }
+    },
+    {
+      "case_id": 6,
+      "configuration": "hybrid_rrf",
+      "question": "Quy chế yêu cầu tỷ lệ diện tích mặt nước trên mỗi nhân viên cứu hộ là bao nhiêu?",
+      "reference": "Phải bố trí ít nhất 01 nhân viên cứu hộ cho mỗi 200 m² mặt nước.",
+      "reference_context": "Số lượng nhân viên cứu hộ phải đảm bảo ít nhất 200m2 mặt nước/01 nhân viên.",
+      "response": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+      "retrieved_contexts": [
+        "Điều  6.  Điều  kiện,  yêu  cầu  đối  với  người  làm  việc  tại  đơn  vị  khai  thác,\n\nquản lý bãi tắm biển, sông, hồ, suối, thác\n\n1. Có đội ngũ lao động làm nhiệm vụ cứu hộ cứu nạn, cứu đuối nước; an ninh\ntrật tự; người điều khiển phương tiện phải có chứng chỉ chuyên môn theo quy định;\nnhân viên thường xuyên được tập huấn chuyên môn nghiệp vụ.\n\n2. Số lượng nhân viên cứu hộ phải đảm bảo ít nhất 200m2 mặt nước/01 nhân\nviên, trường hợp sông, hồ, suối, thác có nhiều khu vực tắm phải đảm bảo mỗi khu\nvực có 01 nhân viên trong cùng một thời điểm, trường hợp đông người tham gia\nphải đảm bảo ít nhất 50 người bơi/01 nhân viên trong cùng một thời điểm.\n\n3.  Có  ký  kết  hợp  đồng  lao  động  với  cá  nhân  làm  việc  tại  các  bãi  tắm  biển,",
+        "2. Tổ  chức  các  Lớp  tập  huấn  chuyên  môn  cho  người  hướng  dẫn  tập  luyện,\n\nnhân viên cứu hộ môn bơi, lặn.\n\nĐiều 13. Sở Xây dựng\n\nHướng dẫn các đơn vị và kiểm tra các tiêu chuẩn về an toàn kỹ thuật của các\nphương tiện đường thủy; chuyên môn, nghiệp vụ của người điều khiển phương tiện\nvà công tác đảm bảo trật tự an toàn cho khách.\n\nĐiều 14. Sở Y tế\n\n1. Sở Y tế phối hợp huấn luyện đào tạo về chuyên môn sơ cấp cứu cho các\n\nnhân viên làm nhiệm vụ cứu hộ cứu nạn, cứu đuối nước.\n\n2. Chỉ đạo các cơ sở y tế cung cấp số điện thoại Trạm y tế trên địa bàn có các\nbãi  tắm  biển,  sông,  hồ,  suối,  thác  thuộc  điểm  du  lịch,  khu  du  lịch  đã  được  công\nnhận cho các tổ làm nhiệm vụ cứu hộ cứu nạn, cứu đuối nước và phối hợp y tế khi\ncó yêu cầu.",
+        "sông, hồ, suối, thác phải có đầy đủ các dụng cụ sau:\n\n1. Dây phao:\n\na) Dây phao dọc: Được căng dọc theo khu vực tắm có độ sâu từ 1m40 trở\n\nlên dùng cho các đối tượng đã biết bơi;\n\nb) Dây phao ngang: Được căng ngang để chia khu vực có độ sâu từ 1m trở\n\nxuống dùng cho người chưa biết bơi ngăn với khu vực có độ sâu từ 1m trở lên.\n\n2. Trang bị cứu hộ:\n\na) Sào cứu hộ: Phải có ít nhất 06 sào cứu hộ dài 2,50m, sào cứu hộ sơn màu\nđỏ - trắng, đặt ở các vị trí thuận lợi, dễ nhìn thấy, mỗi sào bố trí cách nhau 15m dọc\ntheo chiều dài của khu vực tắm và tại các cơ sở kinh doanh dịch vụ trong khu vực\nsông, hồ, suối, thác để khách và nhân viên có thể sử dụng khi cần.",
+        "và độ thoải đảm bảo an toàn cho du khách khi tắm biển.\n\n2. Có ít nhất 01 xuồng cứu sinh (hoặc Ca nô) được đăng ký, đăng kiểm theo\nquy định, đảm bảo chất lượng và đáp ứng công tác cứu hộ cứu nạn khi có sự cố\nxảy  ra,  người  điều  khiển  phương  tiện  phải  có  văn  bằng,  chứng  chỉ  chuyên  môn\ntheo quy định. Trên mỗi xuồng có trang bị tối thiểu 06 áo phao cá nhân, 02 phao\ntròn (01 phao tròn kèm dây ném chiều dài 25-30m) và có bộ đồ lặn kèm theo bình\ndưỡng khí.\n\n3.  Có  thiết  bị  nhận  biết  phạm  vi  ranh  giới,  hệ  thống  phao  tiêu,  cờ  chỉ  giới,\nbiển báo hiệu vùng hành lang an toàn, màu sắc tương phản với màu nước, dễ quan\nsát, đảm bảo yêu cầu cảnh báo.",
+        "4. Có bảng nội quy đặt ở những vị trí dễ quan sát, kích thước tối thiểu 6m2\nbằng 2 thứ tiếng Tiếng Việt và tiếng Anh, phông chữ rõ ràng không tẩy xóa, đảm\nbảo mỹ quan.\n\n5. Có hệ thống biển báo, biển chỉ dẫn đến các điểm dịch vụ và hệ thống giao\nthông nội bộ. Có bãi trông giữ xe phù hợp quy mô kinh doanh, niêm yết giá các\ndịch vụ.\n\n6. Có trạm quan sát cứu hộ cứu nạn, khoảng cách giữa các trạm quan sát tối\nđa là 300m, được xây dựng phù hợp với không gian biển và đảm bảo bao quát toàn\nbộ bãi tắm.\n\n7. Mỗi bãi tắm biển có ít nhất 02 khu nhà tráng nước ngọt (nam, nữ riêng biệt)\n\ncó bố trí mắc treo hoặc giá đựng quần áo, mỗi khu tối thiểu có diện tích đạt 25m2.\n\n8. Nhà vệ sinh công cộng đảm bảo sạch sẽ, được thông gió và đủ ánh sáng,"
+      ],
+      "source_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-16",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-27",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-12",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-8",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-9"
+      ],
+      "retrieval_methods": [
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid"
+      ],
+      "latency_seconds": 1.5648677089484408,
+      "scores": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.7499999999625
+      }
+    },
+    {
+      "case_id": 7,
+      "configuration": "hybrid_rrf",
+      "question": "Đơn vị khai thác bãi tắm phải báo cáo kết quả kinh doanh định kỳ vào ngày nào hàng tháng?",
+      "reference": "Đơn vị phải báo cáo định kỳ vào ngày 20 hàng tháng.",
+      "reference_context": "Định kỳ ngày 20 hàng tháng phải thực hiện báo cáo kết quả hoạt động kinh doanh tháng trước liền kề của đơn vị.",
+      "response": "Ngày 20 hàng tháng [S1].",
+      "retrieved_contexts": [
+        "có liên quan.\n\n7. Thực hiện các thủ tục về bảo vệ môi trường theo quy định.\n\n8. Định kỳ ngày 20 hàng tháng phải thực hiện báo cáo kết quả hoạt động kinh\ndoanh tháng trước liền kề của đơn vị trực tiếp trên Hệ thống phần mềm nhận gửi\nbáo  cáo  thống  kê  du  lịch  do  Cục  Du  lịch  quốc  gia  Việt  Nam  quản  lý  tại  địa  chỉ\nhttp://thongke.tourism.vn.\n\n9. Việc sử dụng mặt nước sông, suối để kinh doanh, dịch vụ bảo đảm không\ngây ô nhiễm nguồn nước, cản trở dòng chảy, hư hại lòng, bờ, bãi sông, suối, kênh,\nmương, rạch và ảnh hưởng đến các hoạt động khai thác, sử dụng nước khác.\n\n10. Thực hiện kê khai, cấp phép khai thác tài nguyên nước và đăng ký khai\nthác, sử dụng tài nguyên nước theo quy định của pháp luật về lĩnh vực tài nguyên\nnước (nếu có).",
+        "Quy chế này.\n\n4.  Ủy  ban  nhân  dân  các  phường,  xã,  có  trách  nhiệm  triển  khai,  hướng  dẫn,\nkiểm tra việc thực hiện Quy chế này đối với các bãi tắm biển, sông, hồ, suối, thác\nthuộc địa bàn; định kỳ hàng năm hoặc đột xuất báo cáo kết quả thực hiện Quy chế\nnày về Sở Du lịch để tổng hợp báo cáo Ủy ban nhân dân thành phố.\n\n5. Ban quản lý bãi tắm biển, sông, hồ, suối, thác phối hợp với Ủy ban nhân\ndân các phường, xã thực hiện công tác quản lý nội quy, quy chế của bãi tắm biển,\nsông, hồ, suối, thác và các nội dung tại Quy chế này.\n\n6. Tổ chức, cá nhân hoạt động kinh doanh dịch vụ và khách du lịch tại các bãi\ntắm biển, sông, hồ, suối, thác có trách nhiệm thực hiện các nội dung quy định tại\nQuy chế này./.\n\n10",
+        "2.  Khu  vực  hoạt  động  của  bãi  tắm  biển,  sông,  hồ,  suối,  thác  là  phần  diện  tích\nthuộc điểm du lịch, khu du lịch đã được công nhận và được kinh doanh hoạt động\ndịch vụ.\n\n3. Đơn vị khai thác bãi tắm biển, sông, hồ, suối, thác là các tổ chức, cá nhân\nquản lý, kinh doanh tại các bãi tắm biển, sông, hồ, suối, thác thuộc điểm du lịch,\nkhu du lịch đã được công nhận.\n\n4. Hoạt động tại bãi tắm biển, sông, hồ, suối, thác bao gồm: Hoạt động bơi,\nlặn, cung cấp dịch vụ, sử dụng dịch vụ trong phạm vi thuộc điểm du lịch, khu du\nlịch đã được công nhận.\n\n3\n\n\fChương II\n\nĐIỀU KIỆN, TIÊU CHUẨN CỦA BÃI TẮM BIỂN, SÔNG, HỒ, SUỐI,\nTHÁC THUỘC ĐIỂM DU LỊCH, KHU DU LỊCH ĐÃ ĐƯỢC CÔNG NHẬN\n\nĐiều 3. Điều kiện về cơ sở hạ tầng",
+        "5. Có hệ thống biển báo, biển chỉ dẫn đến các điểm dịch vụ và hệ thống giao\nthông nội bộ. Có bãi trông giữ xe phù hợp quy mô kinh doanh, niêm yết giá dịch\nvụ.\n\n5\n\n\f6. Có thiết bị nhận biết phạm vi ranh giới, hệ thống biển báo độ nông sâu, các\nbiển cảnh báo nguy hiểm tại khu vực nước sâu nguy hiểm, khu vực trơn trượt, khu\nvực dành cho người không biết bơi, khu vực dành cho những người biết bơi, khu\nvực cấm nhảy cắm đầu (có độ sâu ít hơn 1,4m).\n\n7. Nhà vệ sinh công cộng đảm bảo sạch sẽ, được thông gió và đủ ánh sáng,\n\nđược bố trí đủ, tương ứng với số lượng khách du lịch vào thời kỳ cao điểm.",
+        "Theo đề nghị của Sở Du lịch;\n\nỦy ban nhân dân thành phố ban hành Quyết định ban hành Quy chế quản lý\nbãi  tắm  biển,  sông,  hồ  suối,  thác  thuộc  điểm  du  lịch,  khu  du  lịch  đã  được  công\nnhận trên địa bàn thành phố Huế.\n\n\fĐiều  1. Ban  hành  kèm  theo  Quyết  định  này  Quy  chế  quản  lý  Bãi  tắm  biển,\nsông, hồ, suối, thác thuộc điểm du lịch, khu du lịch đã được công nhận trên địa bàn\nthành phố Huế.\n\nĐiều 2. Hiệu lực thi hành\n\nQuyết định này có hiệu lực thi hành kể từ ngày 29 tháng 4 năm 2026 và thay\nthế Quyết định số 53/2023/QĐ-UBND ngày 27 tháng 9 năm 2023 của Ủy ban nhân\ndân tỉnh Ban hành Quy chế quản lý bãi tắm biển, sông, hồ, suối, thác thuộc điểm\ndu lịch, khu du lịch đã được công nhận trên địa bàn tỉnh Thừa Thiên Huế.\n\nĐiều 3. Tổ chức thực hiện"
+      ],
+      "source_ids": [
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-22",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-32",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-6",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-14",
+        "legal/00.00.H57-29-2026-QD-UBND-2026-PL1_signed (1).md::chunk-2"
+      ],
+      "retrieval_methods": [
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid"
+      ],
+      "latency_seconds": 2.3311206660000607,
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999
+      }
+    },
+    {
+      "case_id": 8,
+      "configuration": "hybrid_rrf",
+      "question": "Giấy chứng nhận đạt tiêu chí Du lịch xanh thành phố Huế có giá trị bao lâu?",
+      "reference": "Giấy chứng nhận có giá trị 03 năm kể từ ngày ký.",
+      "reference_context": "Giấy chứng nhận đạt tiêu chí Du lịch xanh cho cơ sở du lịch có giá trị trong thời hạn 03 năm kể từ ngày ký.",
+      "response": "03 năm [S1]",
+      "retrieved_contexts": [
+        "3. Công nhận Tiêu chí Du lịch xanh\n\nCăn  cứ  kết  quả  thẩm  định,  Sở  Du  lịch  trình  Ủy  ban  nhân  dân  thành  phố\nHuế  ban  hành  Quyết  định  công  nhận  và  cấp  Giấy  chứng  nhận  đạt  tiêu  chí  Du\nlịch xanh cho cơ sở du lịch, có giá trị trong thời hạn 03 năm kể từ ngày ký.\n\nCơ sở du lịch được công nhận đạt tiêu chí Du lịch xanh thì được sử dụng\nBộ nhận diện du lịch xanh và Giấy chứng nhận tương ứng với mức công nhận\n(Phụ lục IV)\n\nKết quả đánh giá của các cơ sở du lịch đạt tiêu chí Du lịch xanh thông qua\nđiểm số (trên tổng số 170 điểm) theo 03 mức độ: Cơ bản, Nâng cao, Xuất sắc.\nCụ thể như sau:\n\nSTT\n\nLOẠI CƠ SỞ\nDU LỊCH\n\nMỨC ĐỘ ĐẠT TIÊU CHÍ DU LỊCH XANH\n\nCơ bản\n\nNâng cao\n\nXuất sắc\n\n1\n\n2\n\n3\n\nCơ sở lưu trú\ndu lịch\n\nTừ 85 đến dưới\n100 điểm\n\nTừ 100 đến dưới\n140 điểm",
+        "(3) Để đạt được những điểm chuẩn tương ứng với các chỉ số của tiêu chí,\ncơ sở du lịch cần cung cấp tối thiểu một trong số các loại minh chứng cụ thể (kế\nhoạch,  hình  ảnh,  sổ  ghi  chép,  chương  trình,  biên  bản,  hóa  đơn,  hợp  đồng,  báo\ncáo, biển báo, bản vẽ, chứng nhận, hướng dẫn, quy trình...). Các cơ sở du lịch\nchịu trách nhiệm về tính chính xác của hồ sơ và minh chứng cung cấp\n\n(4)  Việc  thẩm  định,  đánh  giá  do  Sở  Du  lịch  chủ  trì,  phối  hợp  với  các  sở,\nban, ngành, địa phương liên quan và Hiệp hội Du lịch thành phố thành lập Hội\nđồng  thẩm  định  và  tổ  chức  thực  hiện  theo  Quy  chế  đánh  giá  Tiêu  chí  Du  lịch\nxanh thành phố Huế do UBND thành phố ban hành.\n\n3. Công nhận Tiêu chí Du lịch xanh",
+        "Căn cứ Quyết định số 1749/QĐ-UBND ngày 19 tháng 6 năm 2025 của Uỷ\nban nhân dân thành phố Huế về việc phê duyệt Đề án phát triển du lịch, dịch vụ\ndu lịch thành phố Huế giai đoạn 2025-2030, tầm nhìn đến năm 2045;\n\nTheo đề nghị của Giám đốc Sở Du lịch tại Tờ trình số 880/TTr-SDL ngày\n\n22 tháng 4 năm 2026.\n\nQUYẾT ĐỊNH:\n\n  Điều 1. Ban hành kèm theo Quyết định này Quy định về Bộ tiêu chí Du\nlịch xanh thành phố Huế, Bộ nhận diện du lịch xanh thành phố Huế và các Bộ\ntiêu chí du lịch xanh áp dụng cho các loại hình dịch vụ du lịch, gồm:\n\n\f 1. Bộ tiêu chí Du lịch xanh dành cho Cơ sở lưu trú du lịch (Phụ lục I)\n\n 2. Bộ tiêu chí Du lịch xanh dành cho Điểm tham quan du lịch (Phụ lục II )\n\n         3. Bộ tiêu chí Du lịch xanh dành cho Cơ sở kinh doanh dịch vụ ăn uống (\nPhụ lục III )",
+        "Tăng cường vai trò quản lý của nhà nước, tạo công cụ hỗ trợ công tác kiểm\ntra, giám sát, đánh giá và xây dựng chính sách hỗ trợ, khuyến khích các mô hình\ndu lịch xanh.\n\nLàm cơ sở xây dựng cơ chế ưu đãi, hỗ trợ và khen thưởng, thúc đẩy doanh\nnghiệp và các chủ thể tham gia tích cực vào quá trình chuyển đổi sang mô hình\ndu lịch xanh và phát triển bền vững.\n\nIII. ĐỐI TƯỢNG, PHẠM VI, THỜI HẠN ÁP DỤNG\n\n1. Đối tượng, phạm vi áp dụng\n\nBộ tiêu chí Du lịch xanh thành phố Huế quy định các tiêu chí du lịch xanh,\nquy trình đánh giá, công nhận đạt chuẩn du lịch xanh áp dụng cho các cơ sở lưu\ntrú  du  lịch,  điểm  tham  quan  du  lịch  và  các  cơ  sở  kinh  doanh  dịch  vụ  ăn  uống\ntrên địa bàn thành phố Huế.\n\n2. Thời hạn áp dụng",
+        "2. Thời hạn áp dụng\n\nBộ  tiêu  chí  Du  lịch  xanh  thành  phố  Huế  có  hiệu  lực  kể  từ  ngày  UBND\n\nthành phố ban hành Quyết định.\n\nTrong  những  trường  hợp  cần  thiết,  căn  cứ  vào  tính  chất,  mức  độ  quan\ntrọng, nhu cầu và xu thế phát triển của các cơ sở lưu trú du lịch, điểm tham quan\ndu lịch và các cơ sở kinh doanh dịch vụ ăn uống, có thể đề xuất Ủy ban nhân\ndân thành phố xem xét, điều chỉnh, bổ sung Bộ Tiêu chí cho phù hợp.\n\nIV. GIẢI THÍCH TỪ NGỮ\n\nDu lịch: Hoạt động có liên quan đến chuyến đi của con người ngoài nơi cư\ntrú thường xuyên trong thời gian không quá một năm liên tục nhằm đáp ứng nhu\ncầu tham quan, nghỉ dưỡng, giải trí, tìm hiểu, khám phá tài nguyên du lịch hoặc\nkết hợp với mục đích hợp pháp khác."
+      ],
+      "source_ids": [
+        "legal/1431.md::chunk-20",
+        "legal/1431.md::chunk-19",
+        "legal/1431.md::chunk-2",
+        "legal/1431.md::chunk-10",
+        "legal/1431.md::chunk-11"
+      ],
+      "retrieval_methods": [
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid"
+      ],
+      "latency_seconds": 1.587204375071451,
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.699999999965
+      }
+    },
+    {
+      "case_id": 9,
+      "configuration": "hybrid_rrf",
+      "question": "Bộ tiêu chí Du lịch xanh thành phố Huế áp dụng cho những loại cơ sở nào?",
+      "reference": "Bộ tiêu chí áp dụng cho cơ sở lưu trú du lịch, điểm tham quan du lịch và cơ sở kinh doanh dịch vụ ăn uống trên địa bàn thành phố Huế.",
+      "reference_context": "Bộ tiêu chí Du lịch xanh thành phố Huế áp dụng cho các cơ sở lưu trú du lịch, điểm tham quan du lịch và các cơ sở kinh doanh dịch vụ ăn uống trên địa bàn thành phố Huế.",
+      "response": "Bộ tiêu chí Du lịch xanh thành phố Huế áp dụng cho các cơ sở lưu trú du lịch, điểm tham quan du lịch và các cơ sở kinh doanh dịch vụ ăn uống. [S2]",
+      "retrieved_contexts": [
+        "Căn cứ Quyết định số 1749/QĐ-UBND ngày 19 tháng 6 năm 2025 của Uỷ\nban nhân dân thành phố Huế về việc phê duyệt Đề án phát triển du lịch, dịch vụ\ndu lịch thành phố Huế giai đoạn 2025-2030, tầm nhìn đến năm 2045;\n\nTheo đề nghị của Giám đốc Sở Du lịch tại Tờ trình số 880/TTr-SDL ngày\n\n22 tháng 4 năm 2026.\n\nQUYẾT ĐỊNH:\n\n  Điều 1. Ban hành kèm theo Quyết định này Quy định về Bộ tiêu chí Du\nlịch xanh thành phố Huế, Bộ nhận diện du lịch xanh thành phố Huế và các Bộ\ntiêu chí du lịch xanh áp dụng cho các loại hình dịch vụ du lịch, gồm:\n\n\f 1. Bộ tiêu chí Du lịch xanh dành cho Cơ sở lưu trú du lịch (Phụ lục I)\n\n 2. Bộ tiêu chí Du lịch xanh dành cho Điểm tham quan du lịch (Phụ lục II )\n\n         3. Bộ tiêu chí Du lịch xanh dành cho Cơ sở kinh doanh dịch vụ ăn uống (\nPhụ lục III )",
+        "Tăng cường vai trò quản lý của nhà nước, tạo công cụ hỗ trợ công tác kiểm\ntra, giám sát, đánh giá và xây dựng chính sách hỗ trợ, khuyến khích các mô hình\ndu lịch xanh.\n\nLàm cơ sở xây dựng cơ chế ưu đãi, hỗ trợ và khen thưởng, thúc đẩy doanh\nnghiệp và các chủ thể tham gia tích cực vào quá trình chuyển đổi sang mô hình\ndu lịch xanh và phát triển bền vững.\n\nIII. ĐỐI TƯỢNG, PHẠM VI, THỜI HẠN ÁP DỤNG\n\n1. Đối tượng, phạm vi áp dụng\n\nBộ tiêu chí Du lịch xanh thành phố Huế quy định các tiêu chí du lịch xanh,\nquy trình đánh giá, công nhận đạt chuẩn du lịch xanh áp dụng cho các cơ sở lưu\ntrú  du  lịch,  điểm  tham  quan  du  lịch  và  các  cơ  sở  kinh  doanh  dịch  vụ  ăn  uống\ntrên địa bàn thành phố Huế.\n\n2. Thời hạn áp dụng",
+        "3. Công nhận Tiêu chí Du lịch xanh\n\nCăn  cứ  kết  quả  thẩm  định,  Sở  Du  lịch  trình  Ủy  ban  nhân  dân  thành  phố\nHuế  ban  hành  Quyết  định  công  nhận  và  cấp  Giấy  chứng  nhận  đạt  tiêu  chí  Du\nlịch xanh cho cơ sở du lịch, có giá trị trong thời hạn 03 năm kể từ ngày ký.\n\nCơ sở du lịch được công nhận đạt tiêu chí Du lịch xanh thì được sử dụng\nBộ nhận diện du lịch xanh và Giấy chứng nhận tương ứng với mức công nhận\n(Phụ lục IV)\n\nKết quả đánh giá của các cơ sở du lịch đạt tiêu chí Du lịch xanh thông qua\nđiểm số (trên tổng số 170 điểm) theo 03 mức độ: Cơ bản, Nâng cao, Xuất sắc.\nCụ thể như sau:\n\nSTT\n\nLOẠI CƠ SỞ\nDU LỊCH\n\nMỨC ĐỘ ĐẠT TIÊU CHÍ DU LỊCH XANH\n\nCơ bản\n\nNâng cao\n\nXuất sắc\n\n1\n\n2\n\n3\n\nCơ sở lưu trú\ndu lịch\n\nTừ 85 đến dưới\n100 điểm\n\nTừ 100 đến dưới\n140 điểm",
+        "V. PHƯƠNG PHÁP THỰC HIỆN\n\n1. Cấu trúc\n\nBộ tiêu chí Du lịch xanh thành phố Huế được chia thành các chủ đề chính,\nmỗi  chủ  đề  bao  gồm  một  số  tiêu  chí  và  các  chỉ  tiêu  cụ  thể,  kèm  theo  số  điểm\ntương ứng để đo lường, đánh giá theo các mức độ có thể thực hiện được.\n\nCác chủ đề chính của Bộ tiêu chí Du lịch xanh thành phố Huế:\n\n\fSTT\n\nTên Bộ Tiêu chí\n\nTên các chủ đề chính\n\n1\n\nBộ tiêu chí Du lịch xanh dành\ncho Cơ sở lưu trú du lịch (Phụ\nlục I)\n\n2\n\nBộ tiêu chí Du lịch xanh dành\ncho  Điểm  tham  quan  du  lịch\n(Phụ lục II)\n\n3\n\nBộ tiêu chí Du lịch xanh dành\ncho Cơ sở kinh doanh dịch vụ\năn uống (Phụ lục III)\n\nBao gồm 05 chủ đề chính:\n\n- Môi trường chung\n\n- Sử dụng thiết bị, vật liệu thân thiện với\nmôi trường\n\n- Quản lý chất thải và tái chế",
+        "(3) Để đạt được những điểm chuẩn tương ứng với các chỉ số của tiêu chí,\ncơ sở du lịch cần cung cấp tối thiểu một trong số các loại minh chứng cụ thể (kế\nhoạch,  hình  ảnh,  sổ  ghi  chép,  chương  trình,  biên  bản,  hóa  đơn,  hợp  đồng,  báo\ncáo, biển báo, bản vẽ, chứng nhận, hướng dẫn, quy trình...). Các cơ sở du lịch\nchịu trách nhiệm về tính chính xác của hồ sơ và minh chứng cung cấp\n\n(4)  Việc  thẩm  định,  đánh  giá  do  Sở  Du  lịch  chủ  trì,  phối  hợp  với  các  sở,\nban, ngành, địa phương liên quan và Hiệp hội Du lịch thành phố thành lập Hội\nđồng  thẩm  định  và  tổ  chức  thực  hiện  theo  Quy  chế  đánh  giá  Tiêu  chí  Du  lịch\nxanh thành phố Huế do UBND thành phố ban hành.\n\n3. Công nhận Tiêu chí Du lịch xanh"
+      ],
+      "source_ids": [
+        "legal/1431.md::chunk-2",
+        "legal/1431.md::chunk-10",
+        "legal/1431.md::chunk-20",
+        "legal/1431.md::chunk-16",
+        "legal/1431.md::chunk-19"
+      ],
+      "retrieval_methods": [
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid"
+      ],
+      "latency_seconds": 1.9641232918947935,
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5719143378960295,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999998
+      }
+    },
+    {
+      "case_id": 10,
+      "configuration": "hybrid_rrf",
+      "question": "Theo Bộ tiêu chí của Huế, du lịch xanh được hiểu là gì?",
+      "reference": "Du lịch xanh là loại hình du lịch giảm thiểu tác động đến môi trường, đóng góp cho bảo vệ đa dạng sinh học, sử dụng năng lượng tái tạo, phát huy di sản và phát triển sản phẩm thân thiện với môi trường.",
+      "reference_context": "Du lịch xanh: Loại hình du lịch hoạt động theo phương thức giảm thiểu tác động đến môi trường, đóng góp tích cực cho bảo vệ đa dạng sinh học, sử dụng năng lượng tái tạo và phát huy các di sản thiên nhiên và văn hóa, phát triển các sản phẩm thân thiện với môi trường.",
+      "response": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+      "retrieved_contexts": [
+        "3. Công nhận Tiêu chí Du lịch xanh\n\nCăn  cứ  kết  quả  thẩm  định,  Sở  Du  lịch  trình  Ủy  ban  nhân  dân  thành  phố\nHuế  ban  hành  Quyết  định  công  nhận  và  cấp  Giấy  chứng  nhận  đạt  tiêu  chí  Du\nlịch xanh cho cơ sở du lịch, có giá trị trong thời hạn 03 năm kể từ ngày ký.\n\nCơ sở du lịch được công nhận đạt tiêu chí Du lịch xanh thì được sử dụng\nBộ nhận diện du lịch xanh và Giấy chứng nhận tương ứng với mức công nhận\n(Phụ lục IV)\n\nKết quả đánh giá của các cơ sở du lịch đạt tiêu chí Du lịch xanh thông qua\nđiểm số (trên tổng số 170 điểm) theo 03 mức độ: Cơ bản, Nâng cao, Xuất sắc.\nCụ thể như sau:\n\nSTT\n\nLOẠI CƠ SỞ\nDU LỊCH\n\nMỨC ĐỘ ĐẠT TIÊU CHÍ DU LỊCH XANH\n\nCơ bản\n\nNâng cao\n\nXuất sắc\n\n1\n\n2\n\n3\n\nCơ sở lưu trú\ndu lịch\n\nTừ 85 đến dưới\n100 điểm\n\nTừ 100 đến dưới\n140 điểm",
+        "2. Thời hạn áp dụng\n\nBộ  tiêu  chí  Du  lịch  xanh  thành  phố  Huế  có  hiệu  lực  kể  từ  ngày  UBND\n\nthành phố ban hành Quyết định.\n\nTrong  những  trường  hợp  cần  thiết,  căn  cứ  vào  tính  chất,  mức  độ  quan\ntrọng, nhu cầu và xu thế phát triển của các cơ sở lưu trú du lịch, điểm tham quan\ndu lịch và các cơ sở kinh doanh dịch vụ ăn uống, có thể đề xuất Ủy ban nhân\ndân thành phố xem xét, điều chỉnh, bổ sung Bộ Tiêu chí cho phù hợp.\n\nIV. GIẢI THÍCH TỪ NGỮ\n\nDu lịch: Hoạt động có liên quan đến chuyến đi của con người ngoài nơi cư\ntrú thường xuyên trong thời gian không quá một năm liên tục nhằm đáp ứng nhu\ncầu tham quan, nghỉ dưỡng, giải trí, tìm hiểu, khám phá tài nguyên du lịch hoặc\nkết hợp với mục đích hợp pháp khác.",
+        "Nhằm cụ thể hóa Chiến lược quốc gia về tăng trưởng xanh (ban hành kèm\ntheo Quyết định số 1658/QĐ-TTg ngày 01/10/2021 của Thủ tướng Chính phủ)\nvà Kế hoạch hành động quốc gia về tăng trưởng xanh giai đoạn 2021-2030 (ban\nhành  kèm  theo  Quyết  định  số  3175/QĐ-UBND  ngày  27/12/2022  của  UBND\ntỉnh (nay là UBND thành phố)), việc ban hành Bộ tiêu chí Du lịch xanh thành\nphố Huế là bước đi quan trọng và cần thiết nhằm thể hiện tầm nhìn, chiến lược\nvà  cam  kết  của  chính  quyền  thành  phố  trong  việc  xây  dựng  nền  du  lịch  xanh,\nthân thiện với môi trường và phát triển bền vững, góp phần nâng cao chất lượng\ndịch vụ, bảo vệ môi trường và xây dựng hình ảnh điểm đến Huế an toàn, thân\nthiện và xanh, sạch, đẹp.\n\nII. MỤC TIÊU",
+        "Căn cứ Quyết định số 1749/QĐ-UBND ngày 19 tháng 6 năm 2025 của Uỷ\nban nhân dân thành phố Huế về việc phê duyệt Đề án phát triển du lịch, dịch vụ\ndu lịch thành phố Huế giai đoạn 2025-2030, tầm nhìn đến năm 2045;\n\nTheo đề nghị của Giám đốc Sở Du lịch tại Tờ trình số 880/TTr-SDL ngày\n\n22 tháng 4 năm 2026.\n\nQUYẾT ĐỊNH:\n\n  Điều 1. Ban hành kèm theo Quyết định này Quy định về Bộ tiêu chí Du\nlịch xanh thành phố Huế, Bộ nhận diện du lịch xanh thành phố Huế và các Bộ\ntiêu chí du lịch xanh áp dụng cho các loại hình dịch vụ du lịch, gồm:\n\n\f 1. Bộ tiêu chí Du lịch xanh dành cho Cơ sở lưu trú du lịch (Phụ lục I)\n\n 2. Bộ tiêu chí Du lịch xanh dành cho Điểm tham quan du lịch (Phụ lục II )\n\n         3. Bộ tiêu chí Du lịch xanh dành cho Cơ sở kinh doanh dịch vụ ăn uống (\nPhụ lục III )",
+        "V. PHƯƠNG PHÁP THỰC HIỆN\n\n1. Cấu trúc\n\nBộ tiêu chí Du lịch xanh thành phố Huế được chia thành các chủ đề chính,\nmỗi  chủ  đề  bao  gồm  một  số  tiêu  chí  và  các  chỉ  tiêu  cụ  thể,  kèm  theo  số  điểm\ntương ứng để đo lường, đánh giá theo các mức độ có thể thực hiện được.\n\nCác chủ đề chính của Bộ tiêu chí Du lịch xanh thành phố Huế:\n\n\fSTT\n\nTên Bộ Tiêu chí\n\nTên các chủ đề chính\n\n1\n\nBộ tiêu chí Du lịch xanh dành\ncho Cơ sở lưu trú du lịch (Phụ\nlục I)\n\n2\n\nBộ tiêu chí Du lịch xanh dành\ncho  Điểm  tham  quan  du  lịch\n(Phụ lục II)\n\n3\n\nBộ tiêu chí Du lịch xanh dành\ncho Cơ sở kinh doanh dịch vụ\năn uống (Phụ lục III)\n\nBao gồm 05 chủ đề chính:\n\n- Môi trường chung\n\n- Sử dụng thiết bị, vật liệu thân thiện với\nmôi trường\n\n- Quản lý chất thải và tái chế"
+      ],
+      "source_ids": [
+        "legal/1431.md::chunk-20",
+        "legal/1431.md::chunk-11",
+        "legal/1431.md::chunk-8",
+        "legal/1431.md::chunk-2",
+        "legal/1431.md::chunk-16"
+      ],
+      "retrieval_methods": [
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid"
+      ],
+      "latency_seconds": 1.448175415978767,
+      "scores": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.8055555555287036
+      }
+    },
+    {
+      "case_id": 11,
+      "configuration": "hybrid_rrf",
+      "question": "Trong lịch trình 3 ngày 2 đêm ở Huế, giá vé tham quan cung An Định là bao nhiêu?",
+      "reference": "Giá vé tham quan cung An Định là 50.000 đồng/người.",
+      "reference_context": "Cung An Định là địa điểm đáng khám phá tiếp theo khi dừng chân tại đất kinh kỳ. Giá vé: 50.000 đồng/người.",
+      "response": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+      "retrieved_contexts": [
+        "####  3 ngày 2 đêm ở Huế\nXứ Huế hút tín đồ xê dịch bởi sự hài hoài của kiến trúc, thiên nhiên. Việc kết hợp khám phá các điểm du lịch gần nhau sẽ giúp chuyến đi cố đô của bạn thuận lợi hơn.\nCố đô Huế được biết đến là mảnh đất trầm mặc, lưu dấu những công trình lịch sử, các ngôi chùa từ xa xưa. Đại Nội, chùa Thiên Mụ, các khu lăng tẩm vốn đã \"quen mặt\" trong loạt ảnh check-in của giới trẻ. Bạn có thể đổi gió cho chuyến đi đến miền đất di sản bằng những địa điểm mới lạ hơn như khu phố Tây, đầm Lập An, đồi Vọng Cảnh... Dưới đây là gợi ý tham khảo cho chuyến vi vu xứ Huế 3 ngày 2 đêm.\n**Ngày 1: Quốc Học Huế - cung An Định - phố đi bộ**",
+        "###### Du lịch văn hóa\n#####  [3 ngày 2 đêm ở Huế](https://visithue.vn/3-ngay-2-dem-o-Hue.html/?pid=MTk4NzN8Y3NkbGRs0 \"3 ngày 2 đêm ở Huế\")\nXứ Huế hút tín đồ xê dịch bởi sự hài hoài của kiến trúc, thiên nhiên. Việc kết hợp kh...\nXem thêm",
+        "**Ngày 2: Lăng Tự Đức - làng hương Thủy Xuân - đồi Vọng Cảnh**\nCách trung tâm Huế chỉ tầm 5 km, lăng Tự Đức, làng hương, đồi Vọng Cảnh là 3 địa điểm lân cận nhau bạn có thể kết hợp khám phá cho chuyến đi ngày thứ 2. Là nơi yên nghỉ của ông vua thi sĩ triều Nguyễn, với gần 50 công trình lớn nhỏ cả trong khu vực tẩm điện và lăng mộ, lăng Tự Đức có sự hòa hợp giữa kiến trúc nhân tạo và thiên nhiên hữu tình. Giá vé: 150.000 đồng/người.\n_\n_\n_Ảnh: Luffosten._",
+        "# 3 ngày 2 đêm ở Huế\n\n**Source:** https://visithue.vn/3-ngay-2-dem-o-Hue.html/?pid=MTk4NzN8Y3NkbGRs0\n\n**Crawled:** 2026-09-25T11:00:47.221564\n\n---",
+        "###### Tour du lịch\n#####  [Khám phá các địa điểm và tour Du lịch tâm lin...](https://visithue.vn/du-lich-tam-linh-o-hue/?pid=MjI2NzN8Y3NkbGRs0 \"Khám phá các địa điểm và tour Du lịch tâm linh nổi bật ở Huế\")\nMảnh đất Thừa Thiên Huế có rất nhiều di sản văn hóa tâm linh độc đáo, nổi tiếng. Huế ...\n###### Sinh thái\n#####  [Những ngày cuối tuần ở Huế](https://visithue.vn/nhung-ngay-cuoi-tuan-o-hue/?pid=MjI0NTB8Y3NkbGRs0 \"Những ngày cuối tuần ở Huế\")\nKhông chỉ đi tham quan những di tích, thắng cảnh nổi tiếng. Bạn có biết Huế còn có nh...\n###### Văn hóa\n#####  [Đêm nghe ca Huế trên dòng Hương](https://visithue.vn/dem-nghe-ca-hue-tren-dong-huong/?pid=MjI0NDJ8Y3NkbGRs0 \"Đêm nghe ca Huế trên dòng Hương\")\nChín thương bến Ngự sang ngang Mười thương, mười thương tà áo Ố tang, ố tang tình t..."
+      ],
+      "source_ids": [
+        "news/article_01.md::chunk-1",
+        "news/article_04.md::chunk-4",
+        "news/article_01.md::chunk-6",
+        "news/article_01.md::chunk-0",
+        "news/article_04.md::chunk-2"
+      ],
+      "retrieval_methods": [
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid"
+      ],
+      "latency_seconds": 2.101003709016368,
+      "scores": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 0.0,
+        "context_precision": 0.9999999999
+      }
+    },
+    {
+      "case_id": 12,
+      "configuration": "hybrid_rrf",
+      "question": "Lăng Tự Đức cách trung tâm Huế bao xa và giá vé bao nhiêu?",
+      "reference": "Lăng Tự Đức cách trung tâm Huế khoảng 5 km và giá vé là 150.000 đồng/người.",
+      "reference_context": "Cách trung tâm Huế chỉ tầm 5 km, lăng Tự Đức, làng hương, đồi Vọng Cảnh là 3 địa điểm lân cận nhau. Giá vé: 150.000 đồng/người.",
+      "response": "Lăng Tự Đức cách trung tâm Huế 5 km và giá vé 150.000 đồng/người. [S1]",
+      "retrieved_contexts": [
+        "**Ngày 2: Lăng Tự Đức - làng hương Thủy Xuân - đồi Vọng Cảnh**\nCách trung tâm Huế chỉ tầm 5 km, lăng Tự Đức, làng hương, đồi Vọng Cảnh là 3 địa điểm lân cận nhau bạn có thể kết hợp khám phá cho chuyến đi ngày thứ 2. Là nơi yên nghỉ của ông vua thi sĩ triều Nguyễn, với gần 50 công trình lớn nhỏ cả trong khu vực tẩm điện và lăng mộ, lăng Tự Đức có sự hòa hợp giữa kiến trúc nhân tạo và thiên nhiên hữu tình. Giá vé: 150.000 đồng/người.\n_\n_\n_Ảnh: Luffosten._",
+        "Chỉ cách trung tâm thành phố Huế chưa đầy một giờ di chuyển bằng xe máy hoặc ô tô, Bì...\n###### Chùa\n#####  [Chùa Viên Giác khánh tạ Tam bảo sau 3 năm đại...](https://visithue.vn/chua-vien-giac-khanh-ta-tam-bao-sau-3-nam-dai-trung-tu/?pid=MjUwNjF8Y3NkbGRs0 \"Chùa Viên Giác khánh tạ Tam bảo sau 3 năm đại trùng tu \")\nSáng nay, 2-4, Hòa thượng Thích Hải Ấn, Ủy viên Thường trực Hội đồng Trị sự, Viện trư...\n###### Chùa\n#####  [Viên Giác Tự: Ngôi cổ tự 300 năm tuổi mang di...](https://visithue.vn/vien-giac-tu-ngoi-co-tu-300-nam-tuoi-mang-dien-mao-moi-giua-long-co-do/?pid=MjQwMjl8Y3NkbGRs0 \"Viên Giác Tự: Ngôi cổ tự 300 năm tuổi mang diện mạo mới giữa lòng Cố đô\")\nSau gần ba năm thực hiện cuộc đại trùng tu, chùa Viên Giác tại thành phố Huế đã chính...\n###### Chùa",
+        "Có một người con xứ Huế ở phương trời xa đã nói rằng: \"Trường Tiền là chiếc cầu định mệnh của Huế. Đến Huế mà chưa đứng trên cầu là chưa vô tới Huế, chỉ mới tạt qua Huế mà thôi...\". Quả vậy, cố đô Huế dù có bao công trình được xếp hạng di sản văn hóa thế giới thì cầu Trường Tiền vẫn là một hình ảnh rạng ngời, tiêu biểu. Cây cầu mang dáng vóc nhẹ nhàng, mềm mại, uyển chuyển… như tâm hồn và tính cách dịu dàng, trầm lắng của người dân xứ Huế; như nét hiền hòa thơ mộng, trong trẻo của dòng Hương Giang.\n**Lê Huy Hoàng Hải**",
+        "_\n_\n_Ảnh: Luffosten._\nTừ lăng Tự Đức, di chuyển khoảng 100 m, bạn đến với làng hương Thủy Xuân, một trong những làng nghề truyền thống lâu đời tại cố đô. Những bó hương được trưng bày công phu và khéo léo hai bên đường sẽ cho những bức hình sống ảo đầy màu sắc. Nón lá, quạt giấy là những phụ kiến sống ảo không thể thiếu khi check-in tại đây. Không chỉ tham quan, chụp ảnh, đến đây bạn còn được lắng nghe những câu chuyện thú vị từ các nghệ nhân, người lưu truyền nét đẹp văn hóa của mảnh đất Thần Kinh.\n_\n_\n_\n_\n_Ảnh: H.bichphuong1601, Bùi Huy Khang._",
+        "Điểm du lịch cộng đồng Ngư Mỹ Thạnh, thuộc xã Đan Điền, thành phố Huế (cách trung tâm...\n###### Nông thôn\n#####  [Điểm du lịch làng cổ Phước Tích](https://visithue.vn/diem-du-lich-lang-co-phuoc-tich/?pid=MjM5NTB8Y3NkbGRs0 \"Điểm du lịch làng cổ Phước Tích\")\nLàng Phước Tích thuộc xã Phong Hòa, huyện Phong Điền, tỉnh Thừa Thiên Huế nay là xã P...\nXem thêm"
+      ],
+      "source_ids": [
+        "news/article_01.md::chunk-6",
+        "news/article_02.md::chunk-2",
+        "news/article_05.md::chunk-11",
+        "news/article_01.md::chunk-7",
+        "news/article_02.md::chunk-4"
+      ],
+      "retrieval_methods": [
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid"
+      ],
+      "latency_seconds": 1.5753486660541967,
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.6817914933391197,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999
+      }
+    },
+    {
+      "case_id": 13,
+      "configuration": "hybrid_rrf",
+      "question": "Lịch trình ngày thứ ba trong chuyến 3 ngày 2 đêm ở Huế gợi ý ba địa điểm nào?",
+      "reference": "Ba địa điểm là đầm Lập An, vịnh Lăng Cô và đèo Hải Vân.",
+      "reference_context": "Ngày 3: Đầm Lập An - vịnh Lăng Cô - đèo Hải Vân.",
+      "response": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+      "retrieved_contexts": [
+        "####  3 ngày 2 đêm ở Huế\nXứ Huế hút tín đồ xê dịch bởi sự hài hoài của kiến trúc, thiên nhiên. Việc kết hợp khám phá các điểm du lịch gần nhau sẽ giúp chuyến đi cố đô của bạn thuận lợi hơn.\nCố đô Huế được biết đến là mảnh đất trầm mặc, lưu dấu những công trình lịch sử, các ngôi chùa từ xa xưa. Đại Nội, chùa Thiên Mụ, các khu lăng tẩm vốn đã \"quen mặt\" trong loạt ảnh check-in của giới trẻ. Bạn có thể đổi gió cho chuyến đi đến miền đất di sản bằng những địa điểm mới lạ hơn như khu phố Tây, đầm Lập An, đồi Vọng Cảnh... Dưới đây là gợi ý tham khảo cho chuyến vi vu xứ Huế 3 ngày 2 đêm.\n**Ngày 1: Quốc Học Huế - cung An Định - phố đi bộ**",
+        "###### Du lịch văn hóa\n#####  [3 ngày 2 đêm ở Huế](https://visithue.vn/3-ngay-2-dem-o-Hue.html/?pid=MTk4NzN8Y3NkbGRs0 \"3 ngày 2 đêm ở Huế\")\nXứ Huế hút tín đồ xê dịch bởi sự hài hoài của kiến trúc, thiên nhiên. Việc kết hợp kh...\nXem thêm",
+        "# 3 ngày 2 đêm ở Huế\n\n**Source:** https://visithue.vn/3-ngay-2-dem-o-Hue.html/?pid=MTk4NzN8Y3NkbGRs0\n\n**Crawled:** 2026-09-25T11:00:47.221564\n\n---",
+        "**Ngày 2: Lăng Tự Đức - làng hương Thủy Xuân - đồi Vọng Cảnh**\nCách trung tâm Huế chỉ tầm 5 km, lăng Tự Đức, làng hương, đồi Vọng Cảnh là 3 địa điểm lân cận nhau bạn có thể kết hợp khám phá cho chuyến đi ngày thứ 2. Là nơi yên nghỉ của ông vua thi sĩ triều Nguyễn, với gần 50 công trình lớn nhỏ cả trong khu vực tẩm điện và lăng mộ, lăng Tự Đức có sự hòa hợp giữa kiến trúc nhân tạo và thiên nhiên hữu tình. Giá vé: 150.000 đồng/người.\n_\n_\n_Ảnh: Luffosten._",
+        "###### Tour du lịch\n#####  [Khám phá các địa điểm và tour Du lịch tâm lin...](https://visithue.vn/du-lich-tam-linh-o-hue/?pid=MjI2NzN8Y3NkbGRs0 \"Khám phá các địa điểm và tour Du lịch tâm linh nổi bật ở Huế\")\nMảnh đất Thừa Thiên Huế có rất nhiều di sản văn hóa tâm linh độc đáo, nổi tiếng. Huế ...\n###### Sinh thái\n#####  [Những ngày cuối tuần ở Huế](https://visithue.vn/nhung-ngay-cuoi-tuan-o-hue/?pid=MjI0NTB8Y3NkbGRs0 \"Những ngày cuối tuần ở Huế\")\nKhông chỉ đi tham quan những di tích, thắng cảnh nổi tiếng. Bạn có biết Huế còn có nh...\n###### Văn hóa\n#####  [Đêm nghe ca Huế trên dòng Hương](https://visithue.vn/dem-nghe-ca-hue-tren-dong-huong/?pid=MjI0NDJ8Y3NkbGRs0 \"Đêm nghe ca Huế trên dòng Hương\")\nChín thương bến Ngự sang ngang Mười thương, mười thương tà áo Ố tang, ố tang tình t..."
+      ],
+      "source_ids": [
+        "news/article_01.md::chunk-1",
+        "news/article_04.md::chunk-4",
+        "news/article_01.md::chunk-0",
+        "news/article_01.md::chunk-6",
+        "news/article_04.md::chunk-2"
+      ],
+      "retrieval_methods": [
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid"
+      ],
+      "latency_seconds": 1.678146917023696,
+      "scores": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 0.0,
+        "context_precision": 0.0
+      }
+    },
+    {
+      "case_id": 14,
+      "configuration": "hybrid_rrf",
+      "question": "Tiệc cỗ tế lớn trong ẩm thực cung đình Huế có bao nhiêu phẩm vị?",
+      "reference": "Tiệc cỗ tế lớn có 161 phẩm vị.",
+      "reference_context": "Tiệc cỗ tế lớn có 161 phẩm vị (món ăn), tiệc cỗ trân tu có 50 món ăn, tiệc cỗ ngọc soạn có 30 món ăn.",
+      "response": "161 phẩm vị [S1]",
+      "retrieved_contexts": [
+        "## **Ẩm thực cung đình là một di sản văn hóa**\nẨm thực cung đình Huế ngày xưa rất phong phú, đa dạng. Các cách thức ăn uống, yến tiệc của triều đình có ghi lại trong sử sách. Như Đại Nam thực lục chính biên viết về nhật ký hàng ngày của nhà vua và Khâm định Đại Nam hội điển sự lệ, ghi lại tất cả các điển lệ, nghi lễ… trong cung đình cũng như ngoài dân gian, bao gồm các loại yến tiệc khác nhau: Tiệc cỗ tế lớn có 161 phẩm vị (món ăn), tiệc cỗ trân tu có 50 món ăn, tiệc cỗ ngọc soạn có 30 món ăn, tiệc cỗ chay hạng nhất có 25 món, tiệc cỗ chay hạng nhì có 20 món.\n_Ẩm thực cung đình Huế. Ảnh: Internet_",
+        "_Ẩm thực cung đình Huế. Ảnh: Internet_\nNgoài ra là Ngọc thực: 3 bữa ăn hằng ngày của nhà vua. Điểm tâm gồm 12 món; ăn trưa có 50 món mặn, 16 món ngọt, ăn tối có 50 món mặn, 16 món ngọt. Nhưng để có những mỹ vị đó cũng cần phải có nhiều yếu tố để tạo nên tác phẩm.\nĐầu tiên, nguyên vật liệu sử dụng để chế biến phải là loại thượng hảo hạng, những đặc sản thời trân, từ nhiều địa phương trong nước dâng tiến. Miền Bắc có nhãn Hưng Yên; mía, cam đường Thanh Hoá, vải Hải Dương, chim sâm cầm Hà Nội, sá sùng Quảng Ninh…\nMiền Trung có dâu rừng Quảng Bình, khoai mài Mỹ Lợi, quýt Hương Cần, hạt sen Tịnh Tâm, gạo de An Cựu, cá chình, sò huyết Bình Định, xoài vùng Bạch Thạch, Phú Yên, bòn bon Quảng Nam…",
+        "Dưới triều Nguyễn (từ 1802-1945), nghệ thuật ẩm thực vừa được kế thừa truyền thống ẩm thực lâu đời của đất Bắc, vừa được bổ sung những món ăn phong phú của vùng đất mới phương Nam. Tất cả những nét tinh tế về ẩm thực của 3 miền đất nước đã hội tụ ở vùng đất kinh đô để hình thành và phát triển nên nghệ thuật ẩm thực Huế, đặc biệt là ẩm thực cung đình.\n## **Ẩm thực cung đình là một di sản văn hóa**",
+        "####  Vị thế đặc biệt của ẩm thực Huế\nẨm thực Huế từ dân gian đến cung đình, từ cung đình trở lại dân gian với những đặc tính, hương vị khó có thể quên, như một đặc trưng chỉ có thể nói là “Ẩm thực Huế”. Ở một khía cạnh, ẩm thực cung đình Huế là một di sản văn hóa cần giữ gìn và phục dựng để trở thành một “đại sứ văn hóa” đặc biệt.\n## Khi mùa xuân đến, hương vị cung đình từ bánh mứt lại thêm một lần khẳng định vị thế “đại sứ văn hóa” của ẩm thực Huế.",
+        "_Mứt bát bửu do nghệ nhân ẩm thực cung đình Tôn Nữ Thị Hà thực hiện_\nCó thể nói đây là những tác phẩm tuyệt khéo của đôi bàn tay và cả tâm- trí cùng kiến thức thẩm mỹ tinh tế của nghệ nhân để đưa những phẩm vị nhân gian nâng tầm thành mỹ vị tuyệt hảo. Từ mứt “bát bửu” đến các loại xôi ngọt, bánh, mứt, chè… quen tên đến chưa bao giờ nghe, được bày biện trong bát, đĩa, mâm, quả gỗ sơn son thếp vàng có chạm trổ tinh xảo, hay các đĩa- quả gốm sứ cổ men lam Huế, đẹp như những tác phẩm mỹ thuật hoàn mỹ.."
+      ],
+      "source_ids": [
+        "news/article_03.md::chunk-3",
+        "news/article_03.md::chunk-4",
+        "news/article_03.md::chunk-2",
+        "news/article_03.md::chunk-1",
+        "news/article_03.md::chunk-8"
+      ],
+      "retrieval_methods": [
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid"
+      ],
+      "latency_seconds": 1.605554583016783,
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999
+      }
+    },
+    {
+      "case_id": 15,
+      "configuration": "hybrid_rrf",
+      "question": "Cầu Trường Tiền có bao nhiêu vài và bao nhiêu nhịp?",
+      "reference": "Cầu Trường Tiền có 6 vài và 12 nhịp.",
+      "reference_context": "Cầu Tràng Tiền gồm 6 vài. Cầu có 12 nhịp được thiết kế theo kiểu kiến trúc Gothique; mỗi nhịp có hình bán nguyệt.",
+      "response": "Cầu Trường Tiền có 6 vài và 12 nhịp. [S2]",
+      "retrieved_contexts": [
+        "Kể từ sau Festival Huế năm 2002, Cầu Trường Tiền lại có một thay đổi mới khiến các tín đồ du lịch phải choáng ngợp. Từ thời điểm này, Cầu Trường Tiền được lắp đặt một hệ thống chiếu sáng đổi màu vô cùng hiện đại. Trong ánh sáng rực rỡ ấy, Cầu Trường Tiền ngày càng được nhiều tín đồ du lịch check-in khi đến Huế. Ngoài ra, địa danh này cũng được đưa lên màn ảnh qua bộ phim Gái Già Lắm Chiêu với cảnh quan vô cùng hiện đại, rạng rỡ.\nDẫu qua bao thăng trầm biến cố lịch sử, chiếc cầu qua dòng Hương giang này đã mấy lần \"thay tên, đổi họ\", nhưng dân chúng xứ Huế và khắp nơi trong cả nước đều gọi tên cầu Tràng Tiền. Cái tên thông dụng bao đời nay vẫn thấm sâu trong tâm thức của mọi người. Ngày xưa còn gọi là Trường Tiền vì vị trí cầu nằm gần sát bờ sông Hương, cạnh xưởng đúc tiền xu thời xa xưa.",
+        "Cầu Tràng Tiền gồm 6 vài, mỗi vài dài 66 thước 8 tấc 5 phân (mỗi thước mộc ta bằng 0,425 mét); rộng 6 thước 2 tấc. Tổng chiều dài cây cầu là 401 thước 1 tấc. Cầu có 12 nhịp được thiết kế theo kiểu kiến trúc Gothique; mỗi nhịp có hình bán nguyệt. Các nhịp kế tiếp nhau làm thành một dải sóng đều đặn, mềm mại như làn nước sông Hương. Với kiểu kiến trúc cầu độc đáo lại ở ví trí trung tâm thành phố càng làm cho dòng Hương Giang và thành phố Huế thêm duyên dáng, thơ mộng.",
+        "\"…Cầu cong như chiếc lược ngà\nSông dài mái tóc cung nga buông hờ…\"\n(Vài nét Huế - Nguyễn Bính)\nNhững thăng trầm lịch sử của cầu Trường Tiền cũng được ghi chép lại rất nhiều bằng thi ca, âm nhạc. Năm 1946, cầu bị sập và đã có câu ca mang âm hưởng hò sông thế này:\n\"Cầu Trường Tiền bấy nhiêu niên (năm) qua lại,\nKể tự đời Thành Thái đến nay.\nChạnh lòng biết hỏi ai đây,\nViệc chi nên nỗi đang tay dứt cầu?\"\nCầu Trường Tiền là sự kết nối giữa kinh thành cổ kính, cung điện vàng son, kiến trúc trầm mặc rêu phong… ở bờ Bắc với một thành phố mới phát triển, những nhà cao tầng hiện đại, khu dân cư đông đúc đầy sức sống… ở bờ Nam. Cây cầu mảnh mai ấy là sự kết nối đầy quan trọng và ý nghĩa của lịch sử, của quá khứ - hiện tại, và là khát vọng của tương lai.",
+        "_Nhẹ nhàng với sắc Phượng bên dòng Hương giang_\nChiếc cầu lịch sử này đã bao lần bị thiên tai và chiến tranh tàn phá hư hại. Cầu đã từng chứng kiến trước bao cảnh hưng vong, thăng trầm của đất nước qua các thời đại. Cầu Tràng Tiền là thắng cảnh nổi tiếng đã đi vào thơ ca dân gian xứ Huế từ bao đời nay và là đề tài vô tận của biết bao ca khúc trữ tình, là biểu tượng của Huế xưa và nay. Cầu Trường Tiền cũng là một địa danh gắn bó với cuộc sống, tình yêu của con người nơi đây:\n\"Cầu Trường Tiền sáu vài mười hai nhịp\nEm theo không kịp, tội lắm em anh ơi!\nBấy lâu mang tiếng chịu lời\nAnh có xa em đi nữa, cũng tại ông Trời nên xa\"\nNăm 1941, trong thời gian lưu lạc tới xứ Huế, thi sỹ Nguyễn Bính đã ví nét cong cong của nhịp cầu cùng màu sơn nhũ bạc như hình ảnh của chiếc lược ngà:",
+        "Theo các nguồn tư liệu được ghi lại, Cầu Trường Tiền ban đầu được Vua Thành Thái ban lệnh xây dựng vào năm 1896. Cầu được khởi công xây dựng vào năm 1887 và hoàn thiện vào năm 1899. Lúc bấy giờ, công trình này đã được đưa vào sử dụng và mang tên vua Thành Thái. Trải qua các biến động lịch sử, Cầu Trường Tiền đã bao phen thay tên. Giai đoạn 1919 đến tháng 3 năm 1945, cầu mang tên Clémenceau, một vị tướng thời Pháp lúc bấy giờ. Sau đó, chính quyền Trần Trọng Kim đã đổi tên cầu thành Nguyễn Hoàng, một vị chúa Nguyễn đã có công khai thác vùng Thuận Hóa. Cuối cùng, cầu chính thức có tên gọi là Trường Tiền từ sau năm 1975."
+      ],
+      "source_ids": [
+        "news/article_05.md::chunk-6",
+        "news/article_05.md::chunk-2",
+        "news/article_05.md::chunk-9",
+        "news/article_05.md::chunk-8",
+        "news/article_05.md::chunk-3"
+      ],
+      "retrieval_methods": [
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid",
+        "hybrid"
+      ],
+      "latency_seconds": 1.799234457896091,
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5470147576655572,
+        "context_recall": 1.0,
+        "context_precision": 0.499999999975
+      }
+    }
+  ]
+}

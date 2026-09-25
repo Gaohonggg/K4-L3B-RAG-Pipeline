@@ -30,16 +30,14 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 STANDARDIZED_DIR = ROOT_DIR / "data" / "standardized"
 CHROMA_DIR = ROOT_DIR / "chroma_db"
 
-# Giải thích lựa chọn tham số trong báo cáo nhóm.
-# Corpus Huế hiện có 8 Markdown (3 legal, 5 news). Trên corpus này, 500/50
-# tạo 306 chunks với 27 chunks <200 ký tự; 800/80 còn 177 chunks và 5 chunks
-# <200 ký tự. Chọn 800 ký tự để giữ đủ ngữ cảnh của điều khoản/đoạn văn,
-# overlap 10% để hạn chế mất ý ở ranh giới mà không nhân quá nhiều dữ liệu.
+# Corpus Huế có 8 Markdown (3 legal, 5 news). Chọn 800 ký tự để
+# giữ phần lớn điều khoản hoặc đoạn bài viết trong một chunk; overlap 80
+# ký tự (10%) giữ evidence gần ranh giới mà không lặp quá nhiều nội dung.
 CHUNK_SIZE = 800
 CHUNK_OVERLAP = 80
 CHUNKING_METHOD = "recursive"
-# Corpus hiện tại khoảng 177 chunks: 64 input/lượt giới hạn kích thước mỗi
-# request OpenAI, 100 records/lượt upsert giữ thao tác Chroma ở mức vừa phải.
+# 64 input/lượt giữ request embedding ở kích thước có giới hạn; 100
+# records/lượt giữ thao tác upsert Chroma ở mức vừa phải.
 EMBEDDING_BATCH_SIZE = 64
 CHROMA_BATCH_SIZE = 100
 COLLECTION_NAME = "rag_documents"
@@ -62,13 +60,6 @@ def _embedding_config() -> str:
 
 def embed_texts(texts: list[str]) -> list[list[float]]:
     """Embed texts with OpenAI, preserving input order across API batches."""
-    # Ghi chú TODO từ skeleton gốc; ví dụ local chỉ để tham khảo.
-    # TODO: Dispatch theo EMBEDDING_PROVIDER trong .env.
-    #
-    # Provider local gợi ý:
-    # from sentence_transformers import SentenceTransformer
-    # model = SentenceTransformer(EMBEDDING_MODEL)
-    # return model.encode(texts).tolist()
     if not texts:
         return []
     if any(not isinstance(text, str) or not text.strip() for text in texts):
@@ -104,16 +95,6 @@ def embed_texts(texts: list[str]) -> list[list[float]]:
 
 def get_collection():
     """Mở Chroma collection dùng cosine distance."""
-    # Ghi chú TODO từ skeleton gốc; implementation nằm bên dưới.
-    # TODO: Tạo hoặc mở persistent collection.
-    #
-    # import chromadb
-    # CHROMA_DIR.mkdir(parents=True, exist_ok=True)
-    # client = chromadb.PersistentClient(path=str(CHROMA_DIR))
-    # return client.get_or_create_collection(
-    #     name=COLLECTION_NAME,
-    #     metadata={"hnsw:space": "cosine"},
-    # )
     model = _embedding_config()
     CHROMA_DIR.mkdir(parents=True, exist_ok=True)
     client = chromadb.PersistentClient(path=str(CHROMA_DIR))
@@ -137,23 +118,6 @@ def get_collection():
 
 def load_documents() -> list[dict]:
     """Đọc Markdown và trả về danh sách Document."""
-    # Ghi chú TODO từ skeleton gốc; implementation nằm bên dưới.
-    # TODO: Đọc mọi .md và tạo Document theo contract.
-    #
-    # documents = []
-    # for path in STANDARDIZED_DIR.rglob("*.md"):
-    #     doc_type = "legal" if "legal" in path.parts else "news"
-    #     documents.append({
-    #         "id": path.relative_to(STANDARDIZED_DIR).as_posix(),
-    #         "content": path.read_text(encoding="utf-8"),
-    #         "metadata": {
-    #             "source": path.name,
-    #             "title": path.stem,
-    #             "doc_type": doc_type,
-    #             "url": None,
-    #         },
-    #     })
-    # return documents
     documents: list[dict] = []
     for path in sorted(STANDARDIZED_DIR.rglob("*.md")):
         relative_path = path.relative_to(STANDARDIZED_DIR)
@@ -192,24 +156,6 @@ def load_documents() -> list[dict]:
 
 def chunk_documents(documents: list[dict]) -> list[dict]:
     """Chia Document thành chunks có id và chunk_index."""
-    # Ghi chú TODO từ skeleton gốc; implementation nằm bên dưới.
-    # TODO: Chunk bằng RecursiveCharacterTextSplitter.
-    #
-    # from langchain_text_splitters import RecursiveCharacterTextSplitter
-    # splitter = RecursiveCharacterTextSplitter(
-    #     chunk_size=CHUNK_SIZE,
-    #     chunk_overlap=CHUNK_OVERLAP,
-    #     separators=["\n\n", "\n", ". ", " ", ""],
-    # )
-    # chunks = []
-    # for document in documents:
-    #     for index, text in enumerate(splitter.split_text(document["content"])):
-    #         chunks.append({
-    #             "id": f"{document['id']}::chunk-{index}",
-    #             "content": text,
-    #             "metadata": {**document["metadata"], "chunk_index": index},
-    #         })
-    # return chunks
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=CHUNK_SIZE,
         chunk_overlap=CHUNK_OVERLAP,
@@ -237,13 +183,6 @@ def chunk_documents(documents: list[dict]) -> list[dict]:
 
 def embed_chunks(chunks: list[dict]) -> list[dict]:
     """Thêm embedding vào từng chunk."""
-    # Ghi chú TODO từ skeleton gốc; implementation nằm bên dưới.
-    # TODO: Embed theo batch và giữ nguyên các field của chunk.
-    #
-    # vectors = embed_texts([chunk["content"] for chunk in chunks])
-    # for chunk, vector in zip(chunks, vectors):
-    #     chunk["embedding"] = vector
-    # return chunks
     for chunk in chunks:
         validate_document(chunk, require_chunk=True)
     vectors = embed_texts([chunk["content"] for chunk in chunks])
@@ -254,16 +193,6 @@ def embed_chunks(chunks: list[dict]) -> list[dict]:
 
 def index_to_vectorstore(chunks: list[dict]) -> None:
     """Upsert chunks vào ChromaDB."""
-    # Ghi chú TODO từ skeleton gốc; implementation nằm bên dưới.
-    # TODO: Upsert ids, documents, embeddings và metadatas.
-    #
-    # collection = get_collection()
-    # collection.upsert(
-    #     ids=[chunk["id"] for chunk in chunks],
-    #     documents=[chunk["content"] for chunk in chunks],
-    #     embeddings=[chunk["embedding"] for chunk in chunks],
-    #     metadatas=[chunk["metadata"] for chunk in chunks],
-    # )
     if not chunks:
         return
     ids = [chunk["id"] for chunk in chunks]

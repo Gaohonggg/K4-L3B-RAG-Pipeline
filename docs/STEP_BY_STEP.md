@@ -89,7 +89,7 @@ streamlit run app.py
 - Tạo ít nhất 15 golden Q&A dựa trên corpus.
 - Chạy 4 metric: faithfulness, answer relevance, context recall, context precision.
 - So sánh dense-only với hybrid + RRF trên cùng cấu hình còn lại.
-- Điền `group_project/evaluation/RESULT.md`.
+- Điền `reports/RESULT.md`.
 
 **Hoàn thành khi:** chatbot chạy end-to-end và báo cáo không còn placeholder.
 
