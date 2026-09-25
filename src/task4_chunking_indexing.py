@@ -31,9 +31,15 @@ STANDARDIZED_DIR = ROOT_DIR / "data" / "standardized"
 CHROMA_DIR = ROOT_DIR / "chroma_db"
 
 # Giải thích lựa chọn tham số trong báo cáo nhóm.
-CHUNK_SIZE = 500
-CHUNK_OVERLAP = 50
+# Corpus Huế hiện có 8 Markdown (3 legal, 5 news). Trên corpus này, 500/50
+# tạo 306 chunks với 27 chunks <200 ký tự; 800/80 còn 177 chunks và 5 chunks
+# <200 ký tự. Chọn 800 ký tự để giữ đủ ngữ cảnh của điều khoản/đoạn văn,
+# overlap 10% để hạn chế mất ý ở ranh giới mà không nhân quá nhiều dữ liệu.
+CHUNK_SIZE = 800
+CHUNK_OVERLAP = 80
 CHUNKING_METHOD = "recursive"
+# Corpus hiện tại khoảng 177 chunks: 64 input/lượt giới hạn kích thước mỗi
+# request OpenAI, 100 records/lượt upsert giữ thao tác Chroma ở mức vừa phải.
 EMBEDDING_BATCH_SIZE = 64
 CHROMA_BATCH_SIZE = 100
 COLLECTION_NAME = "rag_documents"
